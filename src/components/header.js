@@ -50,7 +50,7 @@ const Header = () => {
                 .search_input {
                     width: 100%;
                     height: 100%;
-                    padding: 8px 55px 8px 15px;
+                    padding: 9px 55px 9px 15px;
                     font-family: Lalezar;
                     border-radius: 30px;
                     border: none;
@@ -119,6 +119,114 @@ const Header = () => {
                     background: none;
                     color: #ff9000;
                     border: 1px solid #ff9000;
+                }
+
+                @media (max-width: 800px) {
+                    .sign_btn {
+                        display: none;
+                    }
+
+                    .sign_box {
+                        width: fit-content;
+                    }
+
+                    .menu_icon {
+                        margin: 0;
+                        padding: 8.5px 10px;
+                        font-size: 14px;
+                    }
+
+                    .logo_box {
+                        font-size: 28px;
+                    }
+
+                    .header_container {
+                        padding: 0 50px;
+                        height: 90px;
+                    }
+
+                    .search_input {
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        font-size: 12px;
+                    }
+                    .search_input::placeholder {
+                        font-size: 12px;
+                    }
+
+                    .search_box {
+                        width: 50%;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .logo_box {
+                        font-size: 20px;
+                    }
+
+                    .header_container {
+                        padding: 0 20px;
+                        height: 80px;
+                    }
+
+                    .menu_icon {
+                        margin: 0;
+                        padding: 6.5px 8px;
+                        font-size: 12px;
+                    }
+
+                    .search_input {
+                        padding: 1px 35px 1px 15px;
+                        font-size: 10px;
+                    }
+                    .search_input::placeholder {
+                        font-size: 10px;
+                    }
+
+                    .search_box {
+                        width: 50%;
+                    }
+    
+                    .search_btn {
+                        right: 14px;
+                        top: 8px;
+                        font-size: 11px;
+                    }
+                }
+
+                @media (max-width: 376px) {
+                    .header_container {
+                        padding: 0 15px;
+                        height: 70px;
+                    }
+
+                    .logo_box {
+                        font-size: 18px;
+                    }
+
+                    .menu_icon {
+                        margin: 0;
+                        padding: 5.5px 7px;
+                        font-size: 10px;
+                    }
+
+                    .search_btn {
+                        right: 14px;
+                        top: 9px;
+                        font-size: 10px;
+                    }
+
+                    .search_input {
+                        padding: 0 35px 0 15px;
+                        font-size: 8px;
+                    }
+                    .search_input::placeholder {
+                        font-size: 8px;
+                    }
+
+                    .search_box {
+                        width: 55%;
+                    }
                 }
             `}</style>
         </div>

@@ -1,8 +1,18 @@
+// components
+import Menu from "./menu"
+
+// redux
+import { useDispatch } from "react-redux"
+import { openMenu } from "./../redux/actions"
+
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons"
 
 const Header = () => {
+
+    const dispatch = useDispatch()
+
     return (
         <div className="header_container">
             <div className="logo_box">CHO|CKO</div>
@@ -13,10 +23,13 @@ const Header = () => {
             </form>
 
             <div className="sign_box">
-                <div className="menu_icon"><FontAwesomeIcon icon={faBars} /></div>
+                <div className="menu_icon" onClick={ () => dispatch(openMenu()) }><FontAwesomeIcon icon={faBars} /></div>
+
                 <div className="sign_btn">ورود</div>
                 <div className="sign_btn">عضویت</div>
             </div>
+
+            <Menu />
             <style jsx>{`
                 .header_container {
                     background-color: #151515;
@@ -113,12 +126,6 @@ const Header = () => {
                 .sign_btn:hover {
                     background: none;
                     color: #ff9000;
-                }
-
-                .sign_in_btn {
-                    background: none;
-                    color: #ff9000;
-                    border: 1px solid #ff9000;
                 }
 
                 @media (max-width: 800px) {

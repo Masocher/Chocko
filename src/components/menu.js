@@ -7,7 +7,7 @@ import Link from "next/link"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPhone, faHome, faTicket } from "@fortawesome/free-solid-svg-icons"
+import { faPhone, faHome, faTicket, faClose } from "@fortawesome/free-solid-svg-icons"
 
 const Menu = () => {
 
@@ -19,6 +19,8 @@ const Menu = () => {
         <div className={`menu_container ${ menuStatus ? 'show' : '' }`}>
             <div className={`black_layer ${ menuStatus ? 'show' : '' }`} onClick={ () => dispatch(closeMenu()) }></div>
             <div className="menu_box">
+                <div className="close_box" onClick={ () => dispatch(closeMenu()) }><FontAwesomeIcon icon={faClose} /></div>
+
                 <div className="logo_box">CHO|CKO</div>
                 
                 <div className="menu_sections">
@@ -35,7 +37,7 @@ const Menu = () => {
 
                 <div className="status_btn">
                     {
-                        temStatus ? "حالت شب" : "حالت روز"
+                        temStatus ? "حالت روز" : "حالت شب"
                     }
                     <div className={`check_box ${ temStatus ? 'show' : '' }`} onClick={ () => dispatch(setLight()) }>
                         <div className={`check_btn ${ temStatus ? 'show' : '' }`}></div>
@@ -121,7 +123,7 @@ const Menu = () => {
                     cursor: pointer;
                     transition: .3s;
                     color: #999;
-                } 
+                }
                 .categories:hover, .actors:hover {
                     border-color: #ff9000;
                     color: #ff9000;
@@ -241,6 +243,100 @@ const Menu = () => {
                 }
                 .check_btn.show {
                     background-color: #000;
+                }
+
+                .close_box {
+                    position: absolute;
+                    top: 42px;
+                    left: 40px;
+                    background-color: #ff9000;
+                    color: #000;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: .2s;
+                    border: 1px solid #ff9000;
+                    display: none;
+                    font-size: 14px;
+                }
+                .close_box:hover {
+                    background: none;
+                    color: #ff9000;
+                }
+
+                @media (max-width: 426px) {
+                    .menu_box {
+                        width: 100%;
+                    }
+
+                    .close_box {
+                        display: flex;
+                    }
+
+                    .pages {
+                        margin-top: 0;
+                    }
+
+                    .logo_box {
+                        font-size: 36px;
+                        padding: 10px 0;
+                        margin: 20px auto 25px auto;
+                    }
+
+                    .menu_sections {
+                        width: 55%;
+                    }
+
+                    .page_link {
+                        font-size: 12px;
+                    }
+                    
+                    .categories, .actors {
+                        width: 100px;
+                        font-size: 12px;
+                    }
+
+                    .user_box {
+                        width: 100%;
+                        padding: 25px 0 30px 0;
+                        bottom: 0;
+                        border-radius: 0;
+                        borde-top: 1px solid #303030;
+                    }
+
+                    .have_not_account {
+                        font-size: 14px;
+                    }
+    
+                    .sign_buttons {
+                        margin-top: 10px;
+                    }
+    
+                    .sign_btn {
+                        padding: 4.5px 12px;
+                    }
+
+                    .status_btn {
+                        width: calc(70% - 50px);
+                        padding: 15px 25px;
+                        margin-top: 15px;
+                        border: none;
+                    }
+                }
+
+                @media (max-width: 376px) {
+                    .menu_sections {
+                        width: 60%;
+                    }
+                }
+
+                @media (max-width: 321px) {
+                    .menu_sections {
+                        width: 70%;
+                    }
                 }
             `}</style>
         </div>

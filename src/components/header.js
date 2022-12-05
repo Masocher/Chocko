@@ -5,6 +5,9 @@ import Menu from "./menu"
 import { useDispatch } from "react-redux"
 import { openMenu } from "./../redux/actions"
 
+// tools
+import Link from "next/link"
+
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons"
@@ -25,8 +28,8 @@ const Header = () => {
             <div className="sign_box">
                 <div className="menu_icon" onClick={ () => dispatch(openMenu()) }><FontAwesomeIcon icon={faBars} /></div>
 
-                <div className="sign_btn">ورود</div>
-                <div className="sign_btn">عضویت</div>
+                <Link style={{textDecoration: "none"}} href="/sign-in"><div className="sign_btn">ورود</div></Link>
+                <Link style={{textDecoration: "none"}} href="/sign-up"><div className="sign_btn">عضویت</div></Link>
             </div>
 
             <Menu />

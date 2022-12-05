@@ -16,6 +16,74 @@ const Layout = (props) => {
                     background-color: #000;
                     max-height: 100vh;
                 }
+
+                // sign forms
+                @font-face {
+                    font-family: Lalezar;
+                    url(../../public/fonts/Lalezar-Regular.ttf)
+                }
+
+                .sign_container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    font-family: Lalezar;
+                    direction: rtl;
+                    height: 95vh;
+                }
+
+                .title_box {
+                    color: #ff9000;
+                    font-size: 40px;
+                    margin-bottom: 15px;
+                }
+
+                .sign_input {
+                    background-color: #121212;
+                    padding: 8px 20px;
+                    border: 1px solid #2c2c2c;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    font-family: Lalezar;
+                    font-size: 16px;
+                    font-weight: 0;
+                    color: #fff;
+                    width: 250px;
+                    outline: 0;
+                }
+                .sign_input::placeholder {
+                    color: #757575;
+                    font-size: 14px;
+                }
+                .sign_input:focus {
+                    border-color: #7c7c7c;
+                }
+
+                .submit_btn {
+                    background-color: #ff9000;
+                    font-weight: 0;
+                    color: #000;
+                    padding: 2px 0;
+                    border-radius: 5px;
+                    border: 1px solid #ff9000;
+                    cursor: pointer;
+                    transition: .2s;
+                    margin-top: 10px;
+                    width: 75px;
+                    text-align: center;
+                }
+                .submit_btn:hover {
+                    background: none;
+                    color: #ff9000;
+                }
+
+                .sign_link {
+                    color: #757575;
+                    font-size: 14px;
+                    font-weight: 100;
+                    margin-top: 20px;
+                }
             `}</style>
         </div>
     )

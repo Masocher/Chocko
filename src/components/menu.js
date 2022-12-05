@@ -47,8 +47,8 @@ const Menu = () => {
                 <div className="user_box">
                     <div className="have_not_account">شما حساب کاربری ندارید !</div>
                     <div className="sign_buttons">
-                        <div className="sign_btn">ورود</div>
-                        <div className="sign_btn">عضویت</div>
+                        <Link href="/sign-in" style={{textDecoration: "none"}}><div className="sign_btn">ورود</div></Link>
+                        <Link href="/sign-up" style={{textDecoration: "none"}}><div className="sign_btn">عضویت</div></Link>
                     </div>
                 </div>
             </div>
@@ -153,14 +153,14 @@ const Menu = () => {
                     display: flex;
                     justify-content: space-between;
                     width: 120px;
-                    margin-top: 15px;
+                    margin-top: 14px;
                 }
 
                 .sign_btn {
                     width: fit-content;
                     background-color: #ff9000;
                     color: #000;
-                    padding: 5.5px 13px;
+                    padding: 5px 13px;
                     border-radius: 3px;
                     cursor: pointer;
                     transition: .1s;

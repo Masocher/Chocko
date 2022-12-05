@@ -48,6 +48,7 @@ const Layout = (props) => {
                     font-family: Lalezar;
                     font-size: 16px;
                     font-weight: 0;
+                    letter-spacing: .5px;
                     color: #fff;
                     width: 250px;
                     outline: 0;
@@ -57,7 +58,7 @@ const Layout = (props) => {
                     font-size: 14px;
                 }
                 .sign_input:focus {
-                    border-color: #7c7c7c;
+                    border-color: #5c5c5c;
                 }
 
                 .submit_btn {
@@ -83,6 +84,23 @@ const Layout = (props) => {
                     font-size: 14px;
                     font-weight: 100;
                     margin-top: 20px;
+                }
+
+                @media (max-width: 376px) {
+                    .sign_input {
+                        width: 200px;
+                        font-size: 14px;
+                    }
+
+                    .title_box {
+                        font-size: 35px;
+                        margin-bottom: 20px;
+                    }
+
+                    .submit_btn {
+                        font-size: 14px;
+                        padding: 4px 0;
+                    }
                 }
             `}</style>
         </div>

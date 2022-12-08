@@ -1,6 +1,9 @@
+// components
+import Categories from "./categories"
+
 // redux
 import { useDispatch, useSelector } from "react-redux"
-import { closeMenu, setLight } from "./../redux/actions"
+import { closeMenu, setLight, openCategories, closeCategories } from "./../redux/actions"
 
 // tools
 import Link from "next/link"
@@ -14,17 +17,24 @@ const Menu = () => {
     const dispatch = useDispatch()
     let menuStatus = useSelector(rootReducer => rootReducer.reducer_1)
     let temStatus = useSelector(rootReducer => rootReducer.reducer_2)
+    let categoriesStatus = useSelector(rootReducer => rootReducer.reducer_3)
 
     return (
         <div className={`menu_container ${ menuStatus ? 'show' : '' }`}>
-            <div className={`black_layer ${ menuStatus ? 'show' : '' }`} onClick={ () => dispatch(closeMenu()) }></div>
+            <div className={`black_layer ${ menuStatus ? 'show' : '' }`} onClick={ () => {
+                dispatch(closeMenu())
+                dispatch(closeCategories())
+            } }></div>
+
+            <Categories />
+
             <div className="menu_box">
                 <div className="close_box" onClick={ () => dispatch(closeMenu()) }><FontAwesomeIcon icon={faClose} /></div>
 
                 <div className="logo_box">CHO|CKO</div>
                 
                 <div className="menu_sections">
-                    <div className="categories">دسته بندی ها</div>
+                    <div className={`categories ${ categoriesStatus ? 'show' : '' }`} onClick={ () => categoriesStatus ? dispatch(closeCategories()) : dispatch(openCategories()) }>دسته بندی ها</div>
                     <div className="actors">بــازیگران</div>
                 </div>
 
@@ -36,9 +46,7 @@ const Menu = () => {
 
 
                 <div className="status_btn">
-                    {
-                        temStatus ? "حالت روز" : "حالت شب"
-                    }
+                    حالت روز
                     <div className={`check_box ${ temStatus ? 'show' : '' }`} onClick={ () => dispatch(setLight()) }>
                         <div className={`check_btn ${ temStatus ? 'show' : '' }`}></div>
                     </div>
@@ -52,6 +60,7 @@ const Menu = () => {
                     </div>
                 </div>
             </div>
+            
             <style jsx>{`
                 .menu_container {
                     position: fixed;
@@ -73,7 +82,6 @@ const Menu = () => {
                     width: 100%;
                     height: 100%;
                     background-color: rgba(0, 0, 0, .6);
-                    cursor: pointer;
                     transition: .3s;
                 }
                 .black_layer.show {
@@ -82,7 +90,7 @@ const Menu = () => {
 
                 .menu_box {
                     width: 420px;
-                    background-color: #111111;
+                    background-color: #111;
                     height: 100%;
                     position: absolute;
                     right: 0;
@@ -127,6 +135,10 @@ const Menu = () => {
                 .categories:hover, .actors:hover {
                     border-color: #ff9000;
                     color: #ff9000;
+                }
+                .categories.show, .actors.show {
+                    background-color: #ff9000;
+                    color: #000;
                 }
 
                 .user_box {

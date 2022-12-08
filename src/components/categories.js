@@ -1,10 +1,10 @@
 // redux
 import { useDispatch, useSelector } from "react-redux"
-import { openCategoriesSections } from "../redux/actions"
+import { openCategoriesSections, closeCategories } from "../redux/actions"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLinesLeaning, faVideoCamera, faFilm, faList } from "@fortawesome/free-solid-svg-icons"
+import { faLinesLeaning, faVideoCamera, faFilm, faList, faClose, faAngleRight } from "@fortawesome/free-solid-svg-icons"
 
 const Categories = () => {
 
@@ -19,6 +19,8 @@ const Categories = () => {
     return (
         <div className={`categories_container ${ categoriesStatus ? 'show' : '' }`}>
             <div className="genres_box">
+                <div className="close_btn_2" onClick={ () => dispatch(closeCategories()) }><FontAwesomeIcon icon={faAngleRight} /> بازگشت</div>
+
                 <div className="genres_title">دسته بندی ها</div>
 
                 <div className="genres">
@@ -30,6 +32,8 @@ const Categories = () => {
             </div>
 
             <div className="categories_sections_content">
+                <div className="close_btn" onClick={ () => dispatch(closeCategories()) }><FontAwesomeIcon icon={faClose} /></div>
+
                 <div className={`content_box ${ categoriesSectionsNumber == 1 ? 'show' : '' }`}>
                     {
                         sectionsCategoriesList.map(category => 
@@ -88,6 +92,7 @@ const Categories = () => {
                     align-items: center;
                     justify-content: space-between;
                     padding: 30px 30px 30px 0px;
+                    z-index: 2;
                 }
                 .categories_container.show {
                     left: 130px;
@@ -95,6 +100,7 @@ const Categories = () => {
 
                 .genres_box {
                     width: fit-content;
+                    position: relative;
                 }
 
                 .genres {
@@ -142,6 +148,7 @@ const Categories = () => {
                 .categories_sections_content {
                     display: flex;
                     justify-content: center;
+                    position: relative;
                 }
 
                 .content_box {
@@ -165,6 +172,7 @@ const Categories = () => {
                     padding: 10px 15px;
                     border-radius: 10px;
                     border: 1px solid #111;
+                    height: fit-content;
                 }
                 .film_category:hover, .serial_category:hover, .sec_category:hover, .list_category:hover {
                     border-color: #ff9000;
@@ -203,6 +211,174 @@ const Categories = () => {
                 .list_category .category_title {
                     font-size: 13px;
                     font-weight: 100;
+                }
+
+                .close_btn {
+                    background-color: #ff9000;
+                    color: #000;
+                    font-size: 20px;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    left: -10px;
+                    top: -10px;
+                    cursor: pointer;
+                    transition: .2s;
+                    border: 1px solid #ff9000;
+                    display: none;
+                }
+                .close_btn:hover, .close_btn_2:hover {
+                    background-color: #111;
+                    color: #ff9000;
+                }
+
+                .close_btn_2 {
+                    font-size: 14px;
+                    background-color: #ff9000;
+                    color: #000;
+                    width: 50px;
+                    padding: 5px 13px;
+                    border-radius: 10px 10px 0 10px;
+                    transition: .2s;
+                    cursor: pointer;
+                    border: 1px solid #ff9000;
+                    justify-content: space-between;
+                    align-items: center;
+                    display: none;
+                    position: absolute;
+                    top: -15px;
+                    right: 0;
+                }
+
+                @media (max-width: 1530px) {
+                    .close_btn {
+                        display: flex;
+                    }
+
+                    .categories_container {
+                        width: calc(100% - 30px);
+                        height: calc(100% - 60px);
+                        top: 100%;
+                        left: 0;
+                        border-radius: 0;
+                        border: none;
+                        background-color: #000;
+                        justify-content: center;
+                    }
+                    .categories_container.show {
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .genres_box {
+                        background-color: #111;
+                        padding: 30px;
+                        border-radius: 0 10px 10px 0;
+                    }
+                    
+                    .genres {
+                        width: fit-content;
+                        background-color: #111;
+                        padding: 0 30px;
+                        border: none;
+                    }
+
+                    .categories_sections_content {
+                        background-color: #111;
+                        padding: 30px 0;
+                        height: 305px;
+                        border-radius: 10px 0 0 10px;
+                        align-items: center;
+                        width: 70%;
+                    }
+                    
+                    .film_category, .serial_category, .sec_category, .list_category {
+                        margin: 5px;
+                    }
+                }
+
+                @media (max-width: 953px) {
+                    .genres_box {
+                        padding: 80px 30px;
+                    }
+
+                    .categories_sections_content {
+                        height: 405px;
+                        margin-left: 30px;
+                    }
+
+                    .category_title {
+                        font-size: 11px;
+                    }
+
+                    .category_number {
+                        font-size: 11px;
+                    }
+
+                    .film_category, .serial_category, .sec_category, .list_category {
+                        margin: 3px;
+                    }
+                }
+
+                @media (max-width: 620px) {
+                    .close_btn {
+                        display: none;
+                    }
+
+                    .close_btn_2 {
+                        display: flex;
+                    }
+
+                    .genres_box {
+                        border-radius: 10px;
+                        padding: 50px 20px;
+                    }
+
+                    .categories_sections_content {
+                        background: none;
+                    }
+
+                    .film_category, .serial_category, .sec_category, .list_category {
+                        background-color: #111;
+                    }
+                    .film_category:hover, .serial_category:hover, .sec_category:hover, .list_category:hover {
+                        background-color: #000;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .categories_container {
+                        overflow-y: scroll;
+                    }
+
+                    .genres_box {
+                        border-radius: 10px;
+                        padding: 30px 20px 10px 20px;
+                    }
+                    
+                    .genres {
+                        width: fit-content;
+                        background-color: #111;
+                        padding: 0 10px;
+                        border: none;
+                        justify-content: space-evenly;
+                    }
+                    
+                    .genre {
+                        font-size: 12px;
+                        padding: 10px 5px 10px 0;
+                        width: 90px;
+                    }
+
+                    .close_btn_2 {
+                        font-size: 10px;
+                        width: 35px;
+                        top: -10px;
+                    }
                 }
             `}</style>
         </div>

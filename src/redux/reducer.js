@@ -78,7 +78,7 @@ let listsCategoriesList = [
     { id: 4, title: "4K فیلم های", number: 103 },
     { id: 5, title: "250 فیلم برتر", number: 104 },
     { id: 6, title: "3D فیلم های", number: 105 },
-    { id: 6, title: "فیلم های ایرانی", number: 105 },
+    { id: 7, title: "فیلم های ایرانی", number: 105 },
 ]
 
 const reducer_1 = (state = menuStatus, action) => {

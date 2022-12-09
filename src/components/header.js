@@ -35,7 +35,7 @@ const Header = () => {
             <Menu />
             <style jsx>{`
                 .header_container {
-                    background-color: #151515;
+                    background-color: #111;
                     padding: 0 70px;
                     height: 100px;
                     display: flex;

@@ -380,6 +380,98 @@ const Categories = () => {
                         top: -10px;
                     }
                 }
+
+                @media (max-width: 426px) {
+                    .categories_container {
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .genres {
+                        height: fit-content;
+                        padding: 0 20px 30px 20px;
+                        width: calc(100% - 40px);
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+
+                    .genres_box {
+                        width: 100%;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        border-radius: 0;
+                    }
+
+                    .genres_title {
+                        font-size: 16px;
+                        width: 50%;
+                        padding: 20px 0 10px 0;
+                    }
+
+                    .close_btn_2 {
+                        top: 0;
+                        right: 0;
+                        border-radius: 0 0 0 10px;
+                    }
+
+                    .categories_sections_content {
+                        padding: 0;
+                        height: 100%;
+                        align-items: flex-start;
+                        width: 100%;
+                        margin: 20px auto;
+                    }
+
+                    .genre {
+                        font-size: 12px;
+                        padding: 10px 2px 10px 8px;
+                        width: 75px;
+                    }
+
+                    .sec_category, .list_category {
+                        margin: 5px;
+                    }
+                }
+
+                @media (max-width: 376px) {
+                    .genres {
+                        padding: 0 10px 30px 10px;
+                        width: calc(100% - 20px);
+                    }
+
+                    .genres_title {
+                        font-size: 14px;
+                        width: 55%;
+                    }
+
+                    .genre {
+                        font-size: 10px;
+                        width: 70px;
+                    }
+                }
+
+                @media (max-width: 321px) {
+                    .genres {
+                        padding: 0 10px 20px 10px;
+                    }
+
+                    .genres_title {
+                        font-size: 12px;
+                    }
+
+                    .genre {
+                        font-size: 8px;
+                        width: 57px;
+                        text-align: center;
+                    }
+                }
             `}</style>
         </div>
     )

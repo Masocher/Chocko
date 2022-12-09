@@ -128,7 +128,7 @@ const ContactUs = () => {
                     background-color: #111;
                     width: 230px;
                     margin: 0 20px;
-                    padding: 30px 20px;
+                    padding: 25px 20px;
                     letter-spacing: 1px;
                     text-align: center;
                     border-radius: 10px;

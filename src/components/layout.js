@@ -18,11 +18,6 @@ const Layout = (props) => {
                 }
 
                 // sign forms
-                @font-face {
-                    font-family: Lalezar;
-                    url(../../public/fonts/Lalezar-Regular.ttf)
-                }
-
                 .sign_container {
                     display: flex;
                     justify-content: center;

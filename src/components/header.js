@@ -42,7 +42,6 @@ const Header = () => {
                     align-items: center;
                     justify-content: space-between;
                     direction: rtl;
-                    margin-top: 40px;
                     color: #9c9c9c;
                 }
 

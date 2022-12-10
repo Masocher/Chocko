@@ -17,6 +17,22 @@ const Layout = (props) => {
                     max-height: 100vh;
                 }
 
+                body::-webkit-scrollbar {
+                    width: 7px;
+                }
+
+                body::-webkit-scrollbar-track {
+                    background: #000;
+                }
+                
+                body::-webkit-scrollbar-thumb {
+                    background: #111;
+                }
+                
+                body::-webkit-scrollbar-thumb:hover {
+                    background: #333;
+                }
+
                 // sign forms
                 .sign_container {
                     display: flex;

@@ -81,6 +81,15 @@ let listsCategoriesList = [
     { id: 7, title: "فیلم های ایرانی", number: 105 },
 ]
 
+let homeSliderSlides = [
+    { id: 1, title: 1 },
+    { id: 2, title: 2 },
+    { id: 3, title: 3 },
+    { id: 4, title: 4 },
+    { id: 5, title: 5 },
+    { id: 6, title: 6 },
+]
+
 const reducer_1 = (state = menuStatus, action) => {
     switch (action.type) {
         case OPEN_MENU: return state = true
@@ -130,10 +139,14 @@ const reducer_8 = (state = listsCategoriesList) => {
     return state
 }
 
+const reducer_9 = (state = homeSliderSlides) => {
+    return state
+}
+
 const rootReducer = combineReducers({
     reducer_1, reducer_2, reducer_3,
     reducer_4, reducer_5, reducer_6,
-    reducer_7, reducer_8
+    reducer_7, reducer_8, reducer_9
 })
 
 export default rootReducer

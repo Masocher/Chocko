@@ -1,5 +1,6 @@
 // components
 import Header from '../components/header'
+import FilterBox from '../components/filter-box';
 
 // redux
 import { useSelector } from 'react-redux';
@@ -47,6 +48,8 @@ export default function Home() {
           )
         }
       </Swiper>
+      
+      <FilterBox />
     </div>
   )
 }

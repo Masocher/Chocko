@@ -90,6 +90,51 @@ let homeSliderSlides = [
     { id: 6, title: 6 },
 ]
 
+let filterBoxFilters = [
+    [
+        { id: 1, order: "پیشفرض" },
+        { id: 2, order: "جدیدترین ها" },
+        { id: 3, order: "پر بازدیدترین ها" },
+        { id: 4, order: "برترین ها" },
+    ],
+    [
+        { id: 1, country: "آرژانتین" },
+        { id: 2, country: "آفریقای جنوبی" },
+        { id: 3, country: "آلبانی" },
+        { id: 4, country: "آلمان" },
+        { id: 5, country: "آلمان غربی" },
+        { id: 6, country: "آمریکا" },
+        { id: 7, country: "اتریش" },
+        { id: 8, country: "اسپانیا" },
+        { id: 9, country: "استرالیا" },
+        { id: 10, country: "اسرائیل" },
+        { id: 11, country: "اسلواکی" },
+        { id: 12, country: "ایران" },
+        { id: 13, country: "افغانستان" },
+        { id: 14, country: "الجزایر" },
+        { id: 15, country: "انگلستان" },
+        { id: 16, country: "ایتالیا" },
+        { id: 17, country: "ایرلند" },
+        { id: 18, country: "ایسلند" },
+        { id: 19, country: "بلژیک" },
+        { id: 20, country: "برزیل" },
+    ],
+    [
+        { id: 1, quality: "4K" },
+        { id: 2, quality: "1080p" },
+        { id: 3, quality: "720p" },
+        { id: 4, quality: "480p" },
+        { id: 5, quality: "360p" },
+        { id: 6, quality: "240p" },
+    ],
+    [
+        { id: 1, age: "عمومی" },
+        { id: 2, age: "تصمیم گیری با والدین" },
+        { id: 3, age: "بالای 13 سال" },
+        { id: 4, age: "بالای 17 سال" },
+    ]
+]
+
 const reducer_1 = (state = menuStatus, action) => {
     switch (action.type) {
         case OPEN_MENU: return state = true
@@ -143,10 +188,15 @@ const reducer_9 = (state = homeSliderSlides) => {
     return state
 }
 
+const reducer_10 = (state = filterBoxFilters) => {
+    return state
+}
+
 const rootReducer = combineReducers({
     reducer_1, reducer_2, reducer_3,
     reducer_4, reducer_5, reducer_6,
-    reducer_7, reducer_8, reducer_9
+    reducer_7, reducer_8, reducer_9,
+    reducer_10,
 })
 
 export default rootReducer

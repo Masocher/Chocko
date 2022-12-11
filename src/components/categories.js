@@ -86,7 +86,6 @@ const Categories = () => {
                     bottom: 170px;
                     left: -200%;
                     transition: .6s cubic-bezier(.8,0,0,1);
-                    box-shadow: 0 0 100px rgba(0, 0, 0, .7);
                     border: 1px solid #1f1f1f;
                     display: flex;
                     align-items: center;

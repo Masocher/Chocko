@@ -1,5 +1,5 @@
 // components
-import Layout from "../components/Layout"
+import Layout from "./../components/layout"
 
 // redux
 import store from "../redux/store"

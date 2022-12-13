@@ -1,6 +1,7 @@
 // components
 import Header from '../components/header'
 import FilterBox from '../components/filter-box';
+import SliderVid from '../components/slider-vid';
 
 // redux
 import { useSelector } from 'react-redux';
@@ -12,7 +13,8 @@ import 'swiper/css';
 
 export default function Home() {
 
-  const slides = useSelector(rootReducer => rootReducer.reducer_9)
+  const topSliderSlides = useSelector(rootReducer => rootReducer.reducer_9)
+  const filmsAndSerialsInformation = useSelector(rootReducer => rootReducer.reducer_11)
 
   return (
     <div className="home_container">
@@ -30,7 +32,7 @@ export default function Home() {
         spaceBetween={10}
       >
         {
-          slides.map(slide =>
+          topSliderSlides.map(slide =>
             <SwiperSlide
               style={{
                 backgroundColor: "#222",
@@ -50,6 +52,13 @@ export default function Home() {
       </Swiper>
       
       <FilterBox />
+
+      <SliderVid title="سریال ها" information={ filmsAndSerialsInformation[0] } />
+      <SliderVid title="سریال کره ای" information={ filmsAndSerialsInformation[1] } />
+      <SliderVid title="فیلم ها" information={ filmsAndSerialsInformation[2] } />
+      <SliderVid title="فیلم هندی" information={ filmsAndSerialsInformation[3] } />
+      <SliderVid title="انیمه ها" information={ filmsAndSerialsInformation[4] } />
+      <SliderVid title="انیمیشن ها" information={ filmsAndSerialsInformation[5] } />
     </div>
   )
 }

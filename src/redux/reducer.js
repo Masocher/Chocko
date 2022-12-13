@@ -135,6 +135,63 @@ let filterBoxFilters = [
     ]
 ]
 
+let filmsAndSerialsInformation = [
+    [
+        { id: 1, title: "serial" },
+        { id: 2, title: "serial" },
+        { id: 3, title: "serial" },
+        { id: 4, title: "serial" },
+        { id: 5, title: "serial" },
+        { id: 6, title: "serial" },
+        { id: 7, title: "serial" },
+    ],
+    [
+        { id: 1, title: "Korean serial" },
+        { id: 2, title: "Korean serial" },
+        { id: 3, title: "Korean serial" },
+        { id: 4, title: "Korean serial" },
+        { id: 5, title: "Korean serial" },
+        { id: 6, title: "Korean serial" },
+        { id: 7, title: "Korean serial" },
+    ],
+    [
+        { id: 1, title: "film" },
+        { id: 2, title: "film" },
+        { id: 3, title: "film" },
+        { id: 4, title: "film" },
+        { id: 5, title: "film" },
+        { id: 6, title: "film" },
+        { id: 7, title: "film" },
+    ],
+    [
+        { id: 1, title: "Indian film" },
+        { id: 2, title: "Indian film" },
+        { id: 3, title: "Indian film" },
+        { id: 4, title: "Indian film" },
+        { id: 5, title: "Indian film" },
+        { id: 6, title: "Indian film" },
+        { id: 7, title: "Indian film" },
+    ],
+    [
+        { id: 1, title: "anime" },
+        { id: 2, title: "anime" },
+        { id: 3, title: "anime" },
+        { id: 4, title: "anime" },
+        { id: 5, title: "anime" },
+        { id: 6, title: "anime" },
+        { id: 7, title: "anime" },
+    ],
+    [
+        { id: 1, title: "animation" },
+        { id: 2, title: "animation" },
+        { id: 3, title: "animation" },
+        { id: 4, title: "animation" },
+        { id: 5, title: "animation" },
+        { id: 6, title: "animation" },
+        { id: 7, title: "animation" },
+    ],
+]
+
 const reducer_1 = (state = menuStatus, action) => {
     switch (action.type) {
         case OPEN_MENU: return state = true
@@ -192,11 +249,15 @@ const reducer_10 = (state = filterBoxFilters) => {
     return state
 }
 
+const reducer_11 = (state = filmsAndSerialsInformation) => {
+    return state
+}
+
 const rootReducer = combineReducers({
     reducer_1, reducer_2, reducer_3,
     reducer_4, reducer_5, reducer_6,
     reducer_7, reducer_8, reducer_9,
-    reducer_10,
+    reducer_10, reducer_11,
 })
 
 export default rootReducer

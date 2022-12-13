@@ -161,7 +161,7 @@ const FilterBox = () => {
                     width: 23px;
                     height: 23px;
                     border-radius: 50%;
-                    transition: .3s;
+                    transition: .1s;
                 }
                 .filter span.show {
                     transform: rotateZ(-90deg);
@@ -190,19 +190,19 @@ const FilterBox = () => {
                 }
 
                 .drop_down {
-                    height: 100px;
                     position: absolute;
-                    bottom: -190px;
+                    bottom: -240px;
                     right: -50px;
                     direction: rtl;
                     color: #757575;
                     overflow-y: scroll;
                     overflow-x: hidden;
                     width: 250px;
-                    height: 175px;
+                    height: 225px;
                     border: 1px solid #1f1f1f;
                     border-radius: 10px;
                     display: none;
+                    z-index: 2;
                 }
                 .drop_down.show {
                     display: block;

@@ -70,7 +70,7 @@ const Menu = () => {
                     height: 100%;
                     transition: .3s;
                     user-select: none;
-                    z-index: 2;
+                    z-index: 3;
                 }
                 .menu_container.show {
                     right: 0;

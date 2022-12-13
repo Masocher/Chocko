@@ -2,6 +2,7 @@
 import Header from '../components/header'
 import FilterBox from '../components/filter-box';
 import SliderVid from '../components/slider-vid';
+import Footer from '../components/footer';
 
 // redux
 import { useSelector } from 'react-redux';
@@ -59,6 +60,8 @@ export default function Home() {
       <SliderVid title="فیلم هندی" information={ filmsAndSerialsInformation[3] } />
       <SliderVid title="انیمه ها" information={ filmsAndSerialsInformation[4] } />
       <SliderVid title="انیمیشن ها" information={ filmsAndSerialsInformation[5] } />
+
+      <Footer />
     </div>
   )
 }

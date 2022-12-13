@@ -1,5 +1,6 @@
 // components
 import Header from "./../components/header"
+import Footer from "../components/footer"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -42,7 +43,6 @@ const ContactUs = () => {
                     <span><FontAwesomeIcon icon={faHeadphones} /></span>
                     <div className="message_form_title">فرم تماس با ما</div>
                     <div className="message_form_title_des">شما میتوانید از طریق فرم زیر پیام خودرا برای ما ارسال کنید</div>
-                    {/* <hr className="box_bottom_border" /> */}
 
                     <form className="sign_container">
                         <input className="sign_input" placeholder="نام خودرا وارد کنید" />  
@@ -53,6 +53,8 @@ const ContactUs = () => {
                     </form>                    
                 </div>
             </div>
+
+            <Footer />
 
             <style jsx>{`
                 textarea {
@@ -180,6 +182,51 @@ const ContactUs = () => {
                     color: #505050;
                     text-align: center;
                     margin-top: 5px;
+                }
+
+                @media (max-width: 800px) {
+                    .send_message_form {
+                        width: 100%;
+                        border-radius: 0;
+                        margin-top: 50px;
+                    }
+
+                    .contact_us_sections {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .contact_boxes {
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                    }
+    
+                    .contact_box {
+                        width: 170px;
+                        margin: 30px 15px 0 15px;
+                    }
+
+                    .contact_us_title_box {
+                        margin: 50px 0 -30px 0;
+                    }
+                }
+
+                @media (max-width: 376px) {
+                    .contact_us_title_des {
+                        margin: 0 20px;
+                    }
+                }
+
+                @media (max-width: 321px) {
+                    .send_message_form {
+                        width: calc(100% - 40px);
+                        padding: 40px 20px;
+                    }
+
+                    .sign_input {
+                        width: 200px;
+                    }
                 }
             `}</style>
         </div>

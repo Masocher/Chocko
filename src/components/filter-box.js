@@ -25,6 +25,8 @@ const FilterBox = () => {
 
     return (
         <div className="filter_box_container">
+            <div className="black_layer"></div>
+            
             <div className="search_btn">جستجو</div>
 
             <div className="filter" onClick={ () => {
@@ -127,6 +129,7 @@ const FilterBox = () => {
                     align-items: center;
                     justify-content: space-between;
                     border: 1px solid #1f1f1f;
+                    position: relative;
                 }
 
                 .filter {
@@ -206,6 +209,7 @@ const FilterBox = () => {
                 }
                 .drop_down::-webkit-scrollbar {
                     width: 5px;
+                    background-color: #000;
                 }
                 .drop_down::-webkit-scrollbar-thumb {
                     background: #1f1f1f !important;
@@ -225,6 +229,179 @@ const FilterBox = () => {
                 }
                 .filter_box:hover {
                     color: #ff9000;
+                }
+
+                @media (max-width: 1200px) {
+                    .filter {
+                        padding: 12px 20px 12px 15px;
+                        width: 70px;
+                        font-size: 14px;
+                    }
+
+                    .filter span {
+                        font-size: 10px;
+                        width: 20px;
+                        height: 20px;
+                        transition: .2s;
+                    }
+
+                    .search_btn {
+                        padding: 9px 20px;
+                        font-size: 14px;
+                    }
+                }
+
+                @media (max-width: 970px) {
+                    .filter_box_container {
+                        margin-top: 60px;
+                        padding: 0 25px;
+                        width: calc(95% - 50px);
+                    }
+
+                    .filter_box_title {
+                        font-size: 20px;
+                        position: absolute;
+                        right: 20px;
+                        top: -35px;
+                        background-color: #111;
+                        padding: 10px 30px 5px 30px;
+                        border-radius: 10px;
+                    }
+                }
+
+                @media (max-width: 970px) {
+                    .filter_box_container {
+                        margin-top: 60px;
+                        padding: 0 25px;
+                        width: calc(95% - 50px);
+                    }
+
+                    .filter_box_title {
+                        font-size: 20px;
+                        position: absolute;
+                        right: 20px;
+                        top: -35px;
+                        background-color: #111;
+                        padding: 10px 30px 5px 30px;
+                        border-radius: 10px;
+                    }
+
+                    .drop_down {
+                        width: 200px;
+                        right: -30px;
+                    }
+                }
+
+                @media (max-width: 720px) {
+                    .filter_box_title {
+                        font-size: 18px;
+                    }
+
+                    .filter {
+                        padding: 12px 15px 12px 10px;
+                        width: 60px;
+                        font-size: 12px;
+                    }
+
+                    .filter span {
+                        font-size: 8px;
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    .search_btn {
+                        padding: 9px 15px;
+                        font-size: 12px;
+                    }
+                }
+
+                @media (max-width: 605px) {
+                    .filter span {
+                        display: none;
+                    }
+
+                    .filter {
+                        justify-content: center;
+                        padding: 11px 2px;
+                    }
+
+                    .drop_down {
+                        bottom: -170px;
+                        width: 180px;
+                        height: 150px;
+                        right: -30px;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .filter {
+                        width: 40px;
+                        font-size: 10px;
+                    }
+
+                    .drop_down {
+                        bottom: -170px;
+                        width: 180px;
+                        height: 150px;
+                        right: -30px;
+                    }
+
+                    .search_btn {
+                        padding: 9px 12px;
+                        font-size: 10px;
+                    }
+
+                    .filter_box_container {
+                        height: 80px;
+                        width: calc(95% - 25px);
+                        padding: 0 20px 0 5px;
+                    }
+
+                    .filter_box_title {
+                        font-size: 16px;
+                    }
+                    
+                    .drop_down {
+                        bottom: -165px;
+                        width: 120px;
+                        height: 150px;
+                        right: -20px;
+                    }
+                }
+
+                @media (max-width: 321px) {
+                    .filter_box_title {
+                        font-size: 14px;
+                        top: -30px;
+                    }
+
+                    .filter_box_container {
+                        width: calc(100% - 20px);
+                        height: 85px;
+                        border-radius: 0;
+                        padding: 0 10px 0 10px;
+                    }
+
+                    .drop_down {
+                        right: 0px;
+                    }
+
+                    .filter {
+                        width: 37px;
+                        font-size: 9px;
+                    }
+
+                    .search_btn {
+                        padding: 9px 10px;
+                        font-size: 9px;
+                    }
+
+                    .drop_down {
+                        bottom: -105px;
+                        width: 90px;
+                        height: 90px;
+                        text-align: center;
+                    }
                 }
             `}</style>
         </div>

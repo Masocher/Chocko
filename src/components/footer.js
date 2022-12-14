@@ -46,6 +46,33 @@ const Footer = () => {
                 .copy_write_box {
                     color: #757575;
                 }
+
+                @media (max-width: 601px) {
+                    .footer_container {
+                        width: calc(100% - 80px);
+                        padding: 0 40px;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .footer_container {
+                        width: calc(100% - 80px);
+                        padding: 0 40px;
+                        height: 60px;
+                        margin-top: 60px;
+                    }
+
+                    .site_section {
+                        height: 22px;
+                        width: 22px;
+                        font-size: 16px;
+                        bottom: 1px;
+                    }
+
+                    .copy_write_box {
+                        font-size: 12px;
+                    }
+                }
             `}</style>
         </div>
     )

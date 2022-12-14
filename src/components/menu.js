@@ -3,7 +3,7 @@ import Categories from "./categories"
 
 // redux
 import { useDispatch, useSelector } from "react-redux"
-import { closeMenu, setLight, openCategories, closeCategories } from "./../redux/actions"
+import { closeMenu, setLight, openCategories, closeCategories, openActors, closeActors } from "./../redux/actions"
 
 // tools
 import Link from "next/link"
@@ -18,6 +18,7 @@ const Menu = () => {
     let menuStatus = useSelector(rootReducer => rootReducer.reducer_1)
     let temStatus = useSelector(rootReducer => rootReducer.reducer_2)
     let categoriesStatus = useSelector(rootReducer => rootReducer.reducer_3)
+    let actorsStatus = useSelector(rootReducer => rootReducer.reducer_12)
 
     return (
         <div className={`menu_container ${ menuStatus ? 'show' : '' }`}>
@@ -35,7 +36,12 @@ const Menu = () => {
                 
                 <div className="menu_sections">
                     <div className={`categories ${ categoriesStatus ? 'show' : '' }`} onClick={ () => categoriesStatus ? dispatch(closeCategories()) : dispatch(openCategories()) }>دسته بندی ها</div>
-                    <div className="actors">هنرمندان</div>
+                    <Link href="/actors" style={{textDecoration: "none"}} 
+                        onClick={ () => {
+                            dispatch(closeMenu())
+                            dispatch(closeCategories())
+                        }}
+                    ><div className={`actors ${ actorsStatus ? 'show' : '' }`} onClick={ () => dispatch(openActors()) }>هنرمندان</div></Link>
                 </div>
 
                 <div className="pages">
@@ -43,6 +49,7 @@ const Menu = () => {
                         <div onClick={ () => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
+                            dispatch(closeActors())
                         }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faHome} />صفحه اصلی</div>
                     </Link>
 
@@ -50,6 +57,7 @@ const Menu = () => {
                         <div onClick={ () => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
+                            dispatch(closeActors())
                         }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faPhone} />تماس با ما</div>
                     </Link>
 
@@ -57,9 +65,9 @@ const Menu = () => {
                         <div onClick={ () => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
+                            dispatch(closeActors())
                         }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faTicket} />خرید اشتراک</div>
                     </Link>
-
                 </div>
 
 

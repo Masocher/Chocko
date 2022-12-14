@@ -98,6 +98,7 @@ const BuySubscription = () => {
                     display: flex;
                     justify-content: space-between;
                     direction: rtl;
+                    flex-wrap: wrap;
                 }
 
                 .subscription {
@@ -184,6 +185,36 @@ const BuySubscription = () => {
                     position: relative;
                     bottom: 5px;
                     right: 2px;
+                }
+
+                @media (max-width: 1480px) {
+                    .subscriptions_box {
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                    }
+
+                    .subscription {
+                        width: 40%;
+                        margin-top: 20px;
+                    }
+                }
+
+                @media (max-width: 820px) {
+                    .subscriptions_box {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .subscription {
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .buy_subscription_title_des {
+                        margin: 0 20px;
+                    }
                 }
             `}</style>
         </div>

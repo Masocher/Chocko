@@ -194,6 +194,21 @@ let filmsAndSerialsInformation = [
     ],
 ]
 
+let actors = [
+    { id: 1, name: "Morgan Freeman" },
+    { id: 2, name: "Morgan Freeman" },
+    { id: 3, name: "Morgan Freeman" },
+    { id: 4, name: "Morgan Freeman" },
+    { id: 5, name: "Morgan Freeman" },
+    { id: 6, name: "Morgan Freeman" },
+    { id: 7, name: "Morgan Freeman" },
+    { id: 8, name: "Morgan Freeman" },
+    { id: 9, name: "Morgan Freeman" },
+    { id: 10, name: "Morgan Freeman" },
+    { id: 11, name: "Morgan Freeman" },
+    { id: 12, name: "Morgan Freeman" },
+]
+
 const reducer_1 = (state = menuStatus, action) => {
     switch (action.type) {
         case OPEN_MENU: return state = true
@@ -263,11 +278,16 @@ const reducer_12 = (state = actorsStatus, action) => {
     }
 }
 
+const reducer_13 = (state = actors) => {
+    return state
+}
+
 const rootReducer = combineReducers({
     reducer_1, reducer_2, reducer_3,
     reducer_4, reducer_5, reducer_6,
     reducer_7, reducer_8, reducer_9,
     reducer_10, reducer_11, reducer_12,
+    reducer_13,
 })
 
 export default rootReducer

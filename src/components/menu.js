@@ -39,9 +39,27 @@ const Menu = () => {
                 </div>
 
                 <div className="pages">
-                    <Link style={{color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center"}} href='/'><div className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faHome} />صفحه اصلی</div></Link>
-                    <Link style={{color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center"}} href='/contact-us'><div className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faPhone} />تماس با ما</div></Link>
-                    <Link style={{color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center"}} href='/buy-subscription'><div className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faTicket} />خرید اشتراک</div></Link>
+                    <Link style={{color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center"}} href='/'>
+                        <div onClick={ () => {
+                            dispatch(closeMenu())
+                            dispatch(closeCategories())
+                        }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faHome} />صفحه اصلی</div>
+                    </Link>
+
+                    <Link style={{color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center"}} href='/contact-us'>
+                        <div onClick={ () => {
+                            dispatch(closeMenu())
+                            dispatch(closeCategories())
+                        }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faPhone} />تماس با ما</div>
+                    </Link>
+
+                    <Link style={{color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center"}} href='/buy-subscription'>
+                        <div onClick={ () => {
+                            dispatch(closeMenu())
+                            dispatch(closeCategories())
+                        }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faTicket} />خرید اشتراک</div>
+                    </Link>
+
                 </div>
 
 

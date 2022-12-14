@@ -3,7 +3,7 @@ import Categories from "./categories"
 
 // redux
 import { useDispatch, useSelector } from "react-redux"
-import { closeMenu, setLight, openCategories, closeCategories, openActors, closeActors } from "./../redux/actions"
+import { closeMenu, setLight, openCategories, closeCategories } from "./../redux/actions"
 
 // tools
 import Link from "next/link"
@@ -43,7 +43,7 @@ const Menu = () => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
                         }}
-                    ><div className={`actors ${ route.pathname == '/actors' ? 'show' : '' }`} onClick={ () => dispatch(openActors()) }>هنرمندان</div></Link>
+                    ><div className={`actors ${ route.pathname == '/actors' ? 'show' : '' }`}>هنرمندان</div></Link>
                 </div>
 
                 <div className="pages">
@@ -51,7 +51,6 @@ const Menu = () => {
                         <div onClick={ () => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
-                            dispatch(closeActors())
                         }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faHome} />صفحه اصلی</div>
                     </Link>
 
@@ -59,7 +58,6 @@ const Menu = () => {
                         <div onClick={ () => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
-                            dispatch(closeActors())
                         }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faPhone} />تماس با ما</div>
                     </Link>
 
@@ -67,7 +65,6 @@ const Menu = () => {
                         <div onClick={ () => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
-                            dispatch(closeActors())
                         }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faTicket} />خرید اشتراک</div>
                     </Link>
                 </div>

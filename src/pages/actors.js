@@ -73,6 +73,56 @@ const Actors = () => {
                     position: absolute;
                     bottom: -35px;
                     left: 5px;
+                    font-size: 14px;
+                    font-weight: 100;
+                }
+
+                @media (max-width: 550px) {
+                    .actors_title_des {
+                        margin: 0 20px;
+                    }
+
+                    .actors {
+                        width: calc(100% - 40px);
+                        padding: 0 20px;
+                        justify-content: space-evenly;
+                    }
+
+                    .actor {
+                        width: 45%;
+                        margin: 0 0 70px 0;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .actors {
+                        width: calc(100% - 100px);
+                        padding: 0 50px;
+                    }
+
+                    .actor {
+                        width: 300px;
+                        height: 400px;
+                        margin: 0 0 70px 0;
+                    }
+                }
+
+                @media (max-width: 376px) {
+                    .actor {
+                        height: 370px;
+                    }
+                }
+
+                @media (max-width: 321px) {
+                    .actors {
+                        width: calc(100% - 80px);
+                        padding: 0 40px;
+                    }
+
+                    .actor {
+                        width: 100%;
+                        height: 320px;
+                    }
                 }
             `}</style>
         </div>

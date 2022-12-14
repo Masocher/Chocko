@@ -35,7 +35,7 @@ const Menu = () => {
                 
                 <div className="menu_sections">
                     <div className={`categories ${ categoriesStatus ? 'show' : '' }`} onClick={ () => categoriesStatus ? dispatch(closeCategories()) : dispatch(openCategories()) }>دسته بندی ها</div>
-                    <div className="actors">بــازیگران</div>
+                    <div className="actors">هنرمندان</div>
                 </div>
 
                 <div className="pages">

@@ -13,17 +13,26 @@ const BuySubscription = () => {
 
             <div className="buy_subscription_title_box">
                 <div className="buy_subscription_title">خرید اشتراک</div>
-                <div className="buy_subscription_title_des">با خرید اشتراک با تعداد ماه های بیشتر از رایگان بودن خدمات چوکو بهره مند بشید</div>
+                <div className="buy_subscription_title_des">با خرید اشتراک با تعداد ماه های بیشتر از خدمات چوکو بهره مند بشید</div>
             </div>
 
             <div className="subscriptions_box">
                 <div className="subscription">
-                    <div className="subscription_title">۱ ساله</div>
+                    <div className="subscription_title">۳۰ روزه</div>
                     <div className="subscription_price">۳۰,۰۰۰ <span>تومان</span></div>
                     <div className="advantages">
                         <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> تماشای آنلاین</div>
                         <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> امکان دانلود فیلم ها و سریال ها</div>
-                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> درخواست فیلم و سریال</div>
+                    </div>
+                    <div className="buy_btn">خرید</div>
+                </div>
+
+                <div className="subscription">
+                    <div className="subscription_title">۳ ماهه</div>
+                    <div className="subscription_price">۸۵,۰۰۰ <span>تومان</span></div>
+                    <div className="advantages">
+                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> تماشای آنلاین</div>
+                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> امکان دانلود فیلم ها و سریال ها</div>
                         <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> استفاده از سیستم پشتیبانی چوکو</div>
                     </div>
                     <div className="buy_btn">خرید</div>
@@ -31,36 +40,24 @@ const BuySubscription = () => {
 
                 <div className="subscription">
                     <div className="subscription_title">۶ ماهه</div>
-                    <div className="subscription_price">۸۵,۰۰۰ <span>تومان</span></div>
-                    <div className="advantages">
-                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> تماشای آنلاین</div>
-                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> امکان دانلود فیلم ها و سریال ها</div>
-                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> درخواست فیلم و سریال</div>
-                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> استفاده از سیستم پشتیبانی چوکو</div>
-                    </div>
-                    <div className="buy_btn">خرید</div>
-                </div>
-
-                <div className="subscription">
-                    <div className="subscription_title">۳ ماهه</div>
                     <div className="subscription_price">۱۵۵,۰۰۰ <span>تومان</span></div>
                     <div className="advantages">
                         <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> تماشای آنلاین</div>
                         <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> امکان دانلود فیلم ها و سریال ها</div>
-                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> درخواست فیلم و سریال</div>
                         <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> استفاده از سیستم پشتیبانی چوکو</div>
+                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> درخواست فیلم و سریال</div>
                     </div>
                     <div className="buy_btn">خرید</div>
                 </div>
 
                 <div className="subscription">
-                    <div className="subscription_title">۳۰ روزه</div>
+                    <div className="subscription_title">۱ ساله</div>
                     <div className="subscription_price">۲۸۰,۰۰۰ <span>تومان</span></div>
                     <div className="advantages">
                         <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> تماشای آنلاین</div>
                         <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> امکان دانلود فیلم ها و سریال ها</div>
-                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> درخواست فیلم و سریال</div>
                         <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> استفاده از سیستم پشتیبانی چوکو</div>
+                        <div className="advantage_box"><div className="icon_box"><FontAwesomeIcon icon={faCheck} /></div> درخواست فیلم و سریال</div>
                     </div>
                     <div className="buy_btn">خرید</div>
                 </div>
@@ -71,7 +68,7 @@ const BuySubscription = () => {
             <style jsx>{`
                 .buy_subscription_title_box {
                     text-align: center;
-                    margin: 50px 0 60px 0;
+                    margin: 50px 0 55px 0;
                 }
 
                 .buy_subscription_title {
@@ -97,8 +94,8 @@ const BuySubscription = () => {
                     margin: 0 auto;
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     direction: rtl;
-                    flex-wrap: wrap;
                 }
 
                 .subscription {

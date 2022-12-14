@@ -1,12 +1,9 @@
-import { OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, CLOSE_CATEGORIES, OPEN_CATEGORIES, OPEN_ACTORS, CLOSE_ACTORS } from "./types";
-
+import { OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, CLOSE_CATEGORIES, OPEN_CATEGORIES } from "./types";
 import { combineReducers } from "redux";
-import { closeActors, openActors } from "./actions";
 
 let menuStatus = false;
 let temStatus  = false;
 let categoriesStatus = false;
-let actorsStatus = false
 let categoriesSectionsNumber = 1;
 
 let filmsCategoriesList = [
@@ -270,15 +267,7 @@ const reducer_11 = (state = filmsAndSerialsInformation) => {
     return state
 }
 
-const reducer_12 = (state = actorsStatus, action) => {
-    switch (action.type) {
-        case OPEN_ACTORS: return state = true
-        case CLOSE_ACTORS: return state = false
-        default: return state
-    }
-}
-
-const reducer_13 = (state = actors) => {
+const reducer_12 = (state = actors) => {
     return state
 }
 
@@ -287,7 +276,6 @@ const rootReducer = combineReducers({
     reducer_4, reducer_5, reducer_6,
     reducer_7, reducer_8, reducer_9,
     reducer_10, reducer_11, reducer_12,
-    reducer_13,
 })
 
 export default rootReducer

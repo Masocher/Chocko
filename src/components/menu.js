@@ -7,6 +7,7 @@ import { closeMenu, setLight, openCategories, closeCategories, openActors, close
 
 // tools
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -14,11 +15,12 @@ import { faPhone, faHome, faTicket, faClose } from "@fortawesome/free-solid-svg-
 
 const Menu = () => {
 
+    const route = useRouter()
+
     const dispatch = useDispatch()
     let menuStatus = useSelector(rootReducer => rootReducer.reducer_1)
     let temStatus = useSelector(rootReducer => rootReducer.reducer_2)
     let categoriesStatus = useSelector(rootReducer => rootReducer.reducer_3)
-    let actorsStatus = useSelector(rootReducer => rootReducer.reducer_12)
 
     return (
         <div className={`menu_container ${ menuStatus ? 'show' : '' }`}>
@@ -41,7 +43,7 @@ const Menu = () => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
                         }}
-                    ><div className={`actors ${ actorsStatus ? 'show' : '' }`} onClick={ () => dispatch(openActors()) }>هنرمندان</div></Link>
+                    ><div className={`actors ${ route.pathname == '/actors' ? 'show' : '' }`} onClick={ () => dispatch(openActors()) }>هنرمندان</div></Link>
                 </div>
 
                 <div className="pages">

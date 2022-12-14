@@ -7,7 +7,7 @@ import { useSelector } from "react-redux"
 
 const Actors = () => {
 
-    const actors = useSelector(rootReducer => rootReducer.reducer_13)
+    const actors = useSelector(rootReducer => rootReducer.reducer_12)
 
     return (
         <div className="actors_container">

@@ -213,6 +213,12 @@ const BuySubscription = () => {
                         margin: 0 20px;
                     }
                 }
+
+                @media (max-width: 321px) {
+                    .advantages {
+                        width: 81%;
+                    }
+                }
             `}</style>
         </div>
     )

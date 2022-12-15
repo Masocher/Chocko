@@ -48,6 +48,7 @@ const Layout = (props) => {
                     color: #ff9000;
                     font-size: 40px;
                     margin-bottom: 15px;
+                    position: relative;
                 }
 
                 .sign_input {
@@ -98,19 +99,24 @@ const Layout = (props) => {
                 }
 
                 .back_btn {
+                    margin-top: 15px;
+                }
+
+                .mini_logo_box {
+                    font-size: 24px;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    color: #000;
+                    user-select: none;
                     background-color: #ff9000;
-                    width: fit-content;
-                    padding: 5px 15px 5px 19px;
-                    border-radius: 0 0 10px 0;
-                    transition: .2s;
-                    cursor: pointer;
-                    border: 1px solid #ff9000;
-                    justify-content: space-between;
-                    align-items: center;
+                    border-radius: 50%;
+                    width: 60px;
+                    height: 57px;
+                    padding-top: 3px;
                     display: flex;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 35px;
                 }
 
                 @media (max-width: 376px) {

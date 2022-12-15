@@ -133,11 +133,11 @@ const Menu = () => {
                 }
 
                 .menu_box::-webkit-scrollbar-track {
-                    background: #000;
+                    background: #111;
                 }
                 
                 .menu_box::-webkit-scrollbar-thumb {
-                    background: #111;
+                    background: #191919;
                 }
                 
                 .menu_box::-webkit-scrollbar-thumb:hover {
@@ -192,8 +192,7 @@ const Menu = () => {
                     flex-direction: column;
                     background-color: #000;
                     padding: 30px 0;
-                    position: absolute;
-                    bottom: 30px;
+                    margin: 50px 0 0 0;
                     border-radius: 10px;
                     border: 1px solid #303030;
                 }
@@ -258,7 +257,6 @@ const Menu = () => {
                     border-radius: 10px 0 0 10px;
                 }
 
-
                 .status_btn {
                     display: flex;
                     justify-content: space-between;
@@ -267,7 +265,7 @@ const Menu = () => {
                     width: calc(85% - 50px);
                     padding: 12px 25px;
                     border-radius: 10px;
-                    margin-top: 50px;
+                    margin-top: 30px;
                     border: 1px solid #303030;
                 }
 
@@ -320,6 +318,12 @@ const Menu = () => {
                 .close_box:hover {
                     background: none;
                     color: #ff9000;
+                }
+
+                @media (max-height: 700px) {
+                    .user_box {
+                        margin: 30px 0;
+                    }
                 }
 
                 @media (max-width: 426px) {

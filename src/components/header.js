@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <div className="header_container">
-            <div className="logo_box">CHO|CKO</div>
+            <Link href="/" style={{textDecoration: "none"}}><div className="logo_box">CHO|CKO</div></Link>
 
             <form className="search_box">
                 <input className="search_input" type="text" placeholder="نام فیلم یا سریال مورد نظر را وارد کنید ..." />

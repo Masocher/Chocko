@@ -97,6 +97,22 @@ const Layout = (props) => {
                     margin-top: 20px;
                 }
 
+                .back_btn {
+                    background-color: #ff9000;
+                    width: fit-content;
+                    padding: 5px 15px 5px 19px;
+                    border-radius: 0 0 10px 0;
+                    transition: .2s;
+                    cursor: pointer;
+                    border: 1px solid #ff9000;
+                    justify-content: space-between;
+                    align-items: center;
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
                 @media (max-width: 376px) {
                     .sign_input {
                         width: 200px;

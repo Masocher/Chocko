@@ -103,20 +103,20 @@ const Layout = (props) => {
                 }
 
                 .mini_logo_box {
-                    font-size: 24px;
+                    font-size: 18px;
                     font-weight: bold;
                     letter-spacing: 2px;
                     color: #000;
                     user-select: none;
                     background-color: #ff9000;
                     border-radius: 50%;
-                    width: 60px;
-                    height: 57px;
+                    width: 45px;
+                    height: 42px;
                     padding-top: 3px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
 
                 @media (max-width: 376px) {

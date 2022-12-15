@@ -125,6 +125,23 @@ const Menu = () => {
                     flex-direction: column;
                     justify-content: flex-start;
                     align-items: center;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                }
+                .menu_box::-webkit-scrollbar {
+                    width: 7px;
+                }
+
+                .menu_box::-webkit-scrollbar-track {
+                    background: #000;
+                }
+                
+                .menu_box::-webkit-scrollbar-thumb {
+                    background: #111;
+                }
+                
+                .menu_box::-webkit-scrollbar-thumb:hover {
+                    background: #333;
                 }
 
                 .logo_box {

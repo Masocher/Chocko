@@ -116,7 +116,7 @@ const Layout = (props) => {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 35px;
+                    margin-bottom: 20px;
                 }
 
                 @media (max-width: 376px) {

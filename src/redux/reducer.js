@@ -2,7 +2,7 @@ import { OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, CLOSE_CATEGORIES, OPEN_CATEGOR
 import { combineReducers } from "redux";
 
 let menuStatus = false;
-let temStatus  = false;
+let temStatus = false;
 let categoriesStatus = false;
 let categoriesSectionsNumber = 1;
 
@@ -136,58 +136,114 @@ let filterBoxFilters = [
 
 let filmsAndSerialsInformation = [
     [
-        { id: 1, title: "serial" },
-        { id: 2, title: "serial" },
-        { id: 3, title: "serial" },
-        { id: 4, title: "serial" },
-        { id: 5, title: "serial" },
-        { id: 6, title: "serial" },
-        { id: 7, title: "serial" },
+        {
+            id: 0, category: "serial", manufacturingCountry: "هند",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+
+        {
+            id: 1, category: "serial", manufacturingCountry: "ایران",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+
+        {
+            id: 2, category: "serial", manufacturingCountry: "چین",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+
+        {
+            id: 3, category: "serial", manufacturingCountry: "آفریقای جنوبی",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+
+        {
+            id: 4, category: "serial", manufacturingCountry: "آمریکا",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+
+        {
+            id: 5, category: "serial", manufacturingCountry: "کره جنوبی",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+
+        {
+            id: 6, category: "serial", manufacturingCountry: "انگلستان",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+
     ],
     [
-        { id: 1, title: "Korean serial" },
-        { id: 2, title: "Korean serial" },
-        { id: 3, title: "Korean serial" },
-        { id: 4, title: "Korean serial" },
-        { id: 5, title: "Korean serial" },
-        { id: 6, title: "Korean serial" },
-        { id: 7, title: "Korean serial" },
+        { id: 0, category: "korean-serial" },
+        { id: 1, category: "korean-serial" },
+        { id: 2, category: "korean-serial" },
+        { id: 3, category: "korean-serial" },
+        { id: 4, category: "korean-serial" },
+        { id: 5, category: "korean-serial" },
+        { id: 6, category: "korean-serial" },
     ],
     [
-        { id: 1, title: "film" },
-        { id: 2, title: "film" },
-        { id: 3, title: "film" },
-        { id: 4, title: "film" },
-        { id: 5, title: "film" },
-        { id: 6, title: "film" },
-        { id: 7, title: "film" },
+        { id: 0, category: "film" },
+        { id: 1, category: "film" },
+        { id: 2, category: "film" },
+        { id: 3, category: "film" },
+        { id: 4, category: "film" },
+        { id: 5, category: "film" },
+        { id: 6, category: "film" },
     ],
     [
-        { id: 1, title: "Indian film" },
-        { id: 2, title: "Indian film" },
-        { id: 3, title: "Indian film" },
-        { id: 4, title: "Indian film" },
-        { id: 5, title: "Indian film" },
-        { id: 6, title: "Indian film" },
-        { id: 7, title: "Indian film" },
+        { id: 0, category: "indian-film" },
+        { id: 1, category: "indian-film" },
+        { id: 2, category: "indian-film" },
+        { id: 3, category: "indian-film" },
+        { id: 4, category: "indian-film" },
+        { id: 5, category: "indian-film" },
+        { id: 6, category: "indian-film" },
     ],
     [
-        { id: 1, title: "anime" },
-        { id: 2, title: "anime" },
-        { id: 3, title: "anime" },
-        { id: 4, title: "anime" },
-        { id: 5, title: "anime" },
-        { id: 6, title: "anime" },
-        { id: 7, title: "anime" },
+        { id: 0, category: "anime" },
+        { id: 1, category: "anime" },
+        { id: 2, category: "anime" },
+        { id: 3, category: "anime" },
+        { id: 4, category: "anime" },
+        { id: 5, category: "anime" },
+        { id: 6, category: "anime" },
     ],
     [
-        { id: 1, title: "animation" },
-        { id: 2, title: "animation" },
-        { id: 3, title: "animation" },
-        { id: 4, title: "animation" },
-        { id: 5, title: "animation" },
-        { id: 6, title: "animation" },
-        { id: 7, title: "animation" },
+        { id: 0, category: "animation" },
+        { id: 1, category: "animation" },
+        { id: 2, category: "animation" },
+        { id: 3, category: "animation" },
+        { id: 4, category: "animation" },
+        { id: 5, category: "animation" },
+        { id: 6, category: "animation" },
     ],
 ]
 
@@ -222,7 +278,7 @@ const reducer_2 = (state = temStatus, action) => {
 }
 
 const reducer_3 = (state = categoriesStatus, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case OPEN_CATEGORIES: return state = true
         case CLOSE_CATEGORIES: return state = false
         default: return state
@@ -230,7 +286,7 @@ const reducer_3 = (state = categoriesStatus, action) => {
 }
 
 const reducer_4 = (state = categoriesSectionsNumber, action) => {
-    switch(action.payload) {
+    switch (action.payload) {
         case 1: return state = 1
         case 2: return state = 2
         case 3: return state = 3

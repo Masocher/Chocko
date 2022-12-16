@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft } from '@fortawesome/free-solid-svg-icons';
 
 // tools
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const SliderVid = ({ title, information }) => {
@@ -68,22 +69,12 @@ const SliderVid = ({ title, information }) => {
             >
                 {
                     information.map(inf =>
-                        <SwiperSlide
-                            style={{
-                                backgroundColor: "#222",
-                                width: "180px",
-                                height: "100%",
-                                borderRadius: "10px",
-                                color: "#fff",
-                                fontSize: "22px",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                cursor: "pointer"
-                            }}
-                            key={inf.id}
-                        >
-                            <div className='slide_title'>{inf.title}</div>
+                        <SwiperSlide key={inf.id} style={{width: "180px", height: "100%"}}>
+                            <Link href={`/${inf.category}/${inf.id}`}>
+                                <div className='slide_content'>
+                                    <div className='slide_title'>{inf.category}</div>
+                                </div>
+                            </Link>
                         </SwiperSlide>
                     )
                 }
@@ -94,6 +85,19 @@ const SliderVid = ({ title, information }) => {
                     direction: rtl;
                     width: 95%;
                     margin: 60px auto;
+                }
+
+                .slide_content {
+                    background-color: #222;
+                    border-radius: 10px;
+                    color: #fff;
+                    font-size: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
                 }
 
                 .slider_title {

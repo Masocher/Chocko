@@ -100,7 +100,7 @@ const SerialPage = () => {
                     background-color: #222;
                     border-radius: 10px;
                     width: 275px;
-                    height: 350px;
+                    height: 360px;
                     margin-left: 40px;
                 }
 
@@ -232,6 +232,7 @@ const SerialPage = () => {
                 .attribute_title span {
                     font-size: 14px;
                     margin-top: 5px;
+                    color: #999;
                 }
 
                 .attribute_icon {

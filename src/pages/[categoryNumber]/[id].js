@@ -83,6 +83,10 @@ const SerialPage = () => {
                         <div className="serial_score"><span>10 /</span> {itemInformation.score}</div>
                         <div className="serial_score_icon"><FontAwesomeIcon icon={faStar} /></div>
                     </div>
+
+                    <div className="about_serial">
+                        طراح گرافیک از این نوشتار به‌عنوان عنصری از ترکیب‌ بندی برای پر کردن صفحه و ارائه اولیه شکل ظاهری استفاده میکند.
+                    </div>
                 </div>
             </div>
 
@@ -291,6 +295,18 @@ const SerialPage = () => {
                     margin: 0 0 2px 15px;
                     border: 1.5px solid #333;
                     color: #999;
+                }
+
+                .about_serial {
+                    font-size: 14px;
+                    font-weight: 100;
+                    width: 350px;
+                    letter-spacing: .5px;
+                    border: solid #222;
+                    border-width: 1px 0 1px 0;
+                    padding: 30px 0;
+                    text-align: center;
+                    margin-top: 10px;
                 }
             `}</style>
         </div>

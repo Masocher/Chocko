@@ -10,7 +10,7 @@ import Footer from "../../components/footer"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBookmark, faHeart, faClosedCaptioning, faUserPlus, faLocationDot, faCalendarDays, faRotate } from "@fortawesome/free-solid-svg-icons"
+import { faBookmark, faHeart, faClosedCaptioning, faUserPlus, faLocationDot, faCalendarDays, faRotate, faStar } from "@fortawesome/free-solid-svg-icons"
 
 const SerialPage = () => {
     const router = useRouter()
@@ -76,6 +76,14 @@ const SerialPage = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="left_side">
+                    <div className="left_side_title">
+                        <div className="serial_score_votes">{serialInformation.votes} رای</div>
+                        <div className="serial_score"><span>10 /</span> {serialInformation.score}</div>
+                        <div className="serial_score_icon"><FontAwesomeIcon icon={faStar} /></div>
+                    </div>
+                </div>
             </div>
 
             <Footer />
@@ -85,6 +93,8 @@ const SerialPage = () => {
                     width: calc(100% - 100px);
                     direction: rtl;
                     margin: 100px 50px;
+                    display: flex;
+                    justify-content: space-between;
                 }
 
                 .right_side {
@@ -238,6 +248,39 @@ const SerialPage = () => {
                 .attribute_icon {
                     font-size: 20px;
                     color: #ff9000;
+                }
+
+                .left_side_title {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .serial_score {
+                    font-size: 50px;
+                    color: #fff;
+                    font-weight: 100;
+                    display: flex;
+                    align-items: center;
+                }
+                .serial_score span {
+                    font-size: 20px;
+                    margin: 2px 0 0 5px;
+                }
+
+                .serial_score_icon {
+                    color: #ff9000;
+                    font-size: 24px;
+                    margin: 5px 10px 0 0 ;
+                }
+
+                .serial_score_votes {
+                    font-size: 14px;
+                    background-color: #111;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    margin: 0 0 4px 15px;
+                    border: 1px solid #555;
+                    color: #999;
                 }
             `}</style>
         </div>

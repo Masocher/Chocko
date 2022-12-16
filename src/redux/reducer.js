@@ -137,7 +137,7 @@ let filterBoxFilters = [
 let filmsAndSerialsInformation = [
     [
         {
-            id: 0, category: "serial", manufacturingCountry: "هند",
+            id: 0, category: "serial", manufacturingCountry: "هند", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -146,7 +146,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 1, category: "serial", manufacturingCountry: "ایران",
+            id: 1, category: "serial", manufacturingCountry: "ایران", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -155,7 +155,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 2, category: "serial", manufacturingCountry: "چین",
+            id: 2, category: "serial", manufacturingCountry: "چین", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -164,7 +164,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 3, category: "serial", manufacturingCountry: "آفریقای جنوبی",
+            id: 3, category: "serial", manufacturingCountry: "آفریقای جنوبی", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -173,7 +173,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 4, category: "serial", manufacturingCountry: "آمریکا",
+            id: 4, category: "serial", manufacturingCountry: "آمریکا", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -182,7 +182,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 5, category: "serial", manufacturingCountry: "کره جنوبی",
+            id: 5, category: "serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -191,7 +191,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 6, category: "serial", manufacturingCountry: "انگلستان",
+            id: 6, category: "serial", manufacturingCountry: "انگلستان", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },

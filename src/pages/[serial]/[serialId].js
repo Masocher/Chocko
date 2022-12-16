@@ -10,7 +10,7 @@ import Footer from "../../components/footer"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBookmark, faHeart } from "@fortawesome/free-solid-svg-icons"
+import { faBookmark, faHeart, faClosedCaptioning, faUserPlus, faLocationDot, faCalendarDays, faRotate } from "@fortawesome/free-solid-svg-icons"
 
 const SerialPage = () => {
     const router = useRouter()
@@ -47,6 +47,33 @@ const SerialPage = () => {
                                 }
                             </div>
                         </div>
+
+                        <div className="attributes">
+                            <div className="attribute">
+                                <div className="attribute_icon"><FontAwesomeIcon icon={faClosedCaptioning} /></div>
+                                <div className="attribute_title">زیرنویس <span>دارد</span></div>
+                            </div>
+
+                            <div className="attribute">
+                                <div className="attribute_icon"><FontAwesomeIcon icon={faUserPlus} /></div>
+                                <div className="attribute_title">رده سنی <span>بالای 14 سال</span></div>
+                            </div>
+
+                            <div className="attribute">
+                                <div className="attribute_icon"><FontAwesomeIcon icon={faLocationDot} /></div>
+                                <div className="attribute_title">کشور <span>{serialInformation.manufacturingCountry}</span></div>
+                            </div>
+
+                            <div className="attribute">
+                                <div className="attribute_icon"><FontAwesomeIcon icon={faCalendarDays} /></div>
+                                <div className="attribute_title">سال تولید <span>۲۰۲۲</span></div>
+                            </div>
+
+                            <div className="attribute">
+                                <div className="attribute_icon"><FontAwesomeIcon icon={faRotate} /></div>
+                                <div className="attribute_title">وضعیت <span>اتمام پخش</span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,13 +108,10 @@ const SerialPage = () => {
                     display: flex;
                     align-items: end;
                     height: fit-content;
-                    width: 180px;
-                    justify-content: space-between;
                     color: #757575;
                     border: solid #222;
                     border-width: 0 0 1px 0;
                     padding: 0 0 12px 100px;
-                    margin-top: 10px;
                 }
 
                 .icon_box {
@@ -102,6 +126,7 @@ const SerialPage = () => {
                     align-items: center;
                     border-radius: 5px;
                     cursor: pointer;
+                    margin-left: 10px;
                 }
 
                 .manufacturing_country {
@@ -113,6 +138,7 @@ const SerialPage = () => {
                     border-radius: 5px;
                     letter-spacing: .5px;
                     border: 1px solid #111;
+                    margin-right: 10px;
                 }
                 .manufacturing_country:hover {
                     color: #ff9000;
@@ -134,7 +160,7 @@ const SerialPage = () => {
                     margin-top: 30px;
                     border: solid #222;
                     border-width: 0 0 1px 0;
-                    padding: 0 0 12px 100px;
+                    padding: 0 0 12px 5px;
                 }
 
                 .genres_title {
@@ -164,6 +190,41 @@ const SerialPage = () => {
                 }
                 .genre:hover {
                     border-color: #ff9000;
+                    color: #ff9000;
+                }
+
+                .attributes {
+                    display: flex;
+                    margin-top: 20px;
+                }
+
+                .attribute {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #111;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100px;
+                    height: 100px;
+                    border: solid #000;
+                    border-width: 0 0 0 4px;
+                }
+
+                .attribute_title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 10px;
+                    color: #757575;
+                }
+
+                .attribute_title span {
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+
+                .attribute_icon {
+                    font-size: 20px;
                     color: #ff9000;
                 }
             `}</style>

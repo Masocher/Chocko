@@ -87,6 +87,11 @@ const SerialPage = () => {
                     <div className="about_serial">
                         طراح گرافیک از این نوشتار به‌عنوان عنصری از ترکیب‌ بندی برای پر کردن صفحه و ارائه اولیه شکل ظاهری استفاده میکند.
                     </div>
+
+                    <div className="left_side_buttons">
+                        <div className="left_side_btn play_btn">پخش آنلاین</div>
+                        <div className="left_side_btn">مشاهده تریلر</div>
+                    </div>
                 </div>
             </div>
 
@@ -307,6 +312,30 @@ const SerialPage = () => {
                     padding: 30px 0;
                     text-align: center;
                     margin-top: 10px;
+                }
+
+                .left_side_buttons {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: center;
+                    margin: 40px auto 0 auto;
+                }
+
+                .left_side_btn {
+                    background-color: #c0c0c0;
+                    color: #000;
+                    padding: 12px 25px;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    font-weight: 100;
+                    cursor: pointer;
+                    margin: 0 5px;
+                }
+
+                .play_btn {
+                    background-color: #ff9000;
+                    color: #000;
                 }
             `}</style>
         </div>

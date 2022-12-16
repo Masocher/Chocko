@@ -137,7 +137,7 @@ let filterBoxFilters = [
 let filmsAndSerialsInformation = [
     [
         {
-            id: 0, category: "serial", manufacturingCountry: "هند", score: "7.5", votes: "7,149",
+            id: 0, categoryNumber: 0, category: "serial", manufacturingCountry: "هند", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -146,7 +146,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 1, category: "serial", manufacturingCountry: "ایران", score: "7.5", votes: "7,149",
+            id: 1, categoryNumber: 0, category: "serial", manufacturingCountry: "ایران", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -155,7 +155,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 2, category: "serial", manufacturingCountry: "چین", score: "7.5", votes: "7,149",
+            id: 2, categoryNumber: 0, category: "serial", manufacturingCountry: "چین", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -164,7 +164,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 3, category: "serial", manufacturingCountry: "آفریقای جنوبی", score: "7.5", votes: "7,149",
+            id: 3, categoryNumber: 0, category: "serial", manufacturingCountry: "آفریقای جنوبی", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -173,7 +173,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 4, category: "serial", manufacturingCountry: "آمریکا", score: "7.5", votes: "7,149",
+            id: 4, categoryNumber: 0, category: "serial", manufacturingCountry: "آمریکا", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -182,7 +182,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 5, category: "serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            id: 5, categoryNumber: 0, category: "serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -191,7 +191,7 @@ let filmsAndSerialsInformation = [
         },
 
         {
-            id: 6, category: "serial", manufacturingCountry: "انگلستان", score: "7.5", votes: "7,149",
+            id: 6, categoryNumber: 0, category: "serial", manufacturingCountry: "انگلستان", score: "7.5", votes: "7,149",
             genres: [
                 { id: 1, title: "خانوادگی" },
                 { id: 2, title: "درام" },
@@ -201,49 +201,294 @@ let filmsAndSerialsInformation = [
 
     ],
     [
-        { id: 0, category: "korean-serial" },
-        { id: 1, category: "korean-serial" },
-        { id: 2, category: "korean-serial" },
-        { id: 3, category: "korean-serial" },
-        { id: 4, category: "korean-serial" },
-        { id: 5, category: "korean-serial" },
-        { id: 6, category: "korean-serial" },
+        {
+            id: 0, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 1, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 2, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 3, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 4, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 5, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 6, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
     ],
     [
-        { id: 0, category: "film" },
-        { id: 1, category: "film" },
-        { id: 2, category: "film" },
-        { id: 3, category: "film" },
-        { id: 4, category: "film" },
-        { id: 5, category: "film" },
-        { id: 6, category: "film" },
+        {
+            id: 0, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 1, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 2, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 3, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 4, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 5, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 6, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
     ],
     [
-        { id: 0, category: "indian-film" },
-        { id: 1, category: "indian-film" },
-        { id: 2, category: "indian-film" },
-        { id: 3, category: "indian-film" },
-        { id: 4, category: "indian-film" },
-        { id: 5, category: "indian-film" },
-        { id: 6, category: "indian-film" },
+        {
+            id: 0, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 1, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 2, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 3, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 4, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 5, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 6, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
     ],
     [
-        { id: 0, category: "anime" },
-        { id: 1, category: "anime" },
-        { id: 2, category: "anime" },
-        { id: 3, category: "anime" },
-        { id: 4, category: "anime" },
-        { id: 5, category: "anime" },
-        { id: 6, category: "anime" },
+        {
+            id: 0, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 1, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 2, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 3, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 4, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 5, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 6, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
     ],
     [
-        { id: 0, category: "animation" },
-        { id: 1, category: "animation" },
-        { id: 2, category: "animation" },
-        { id: 3, category: "animation" },
-        { id: 4, category: "animation" },
-        { id: 5, category: "animation" },
-        { id: 6, category: "animation" },
+        {
+            id: 0, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 1, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 2, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 3, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 4, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 5, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
+        {
+            id: 6, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 1, title: "خانوادگی" },
+                { id: 2, title: "درام" },
+                { id: 3, title: "کمدی" },
+            ],
+        },
     ],
 ]
 

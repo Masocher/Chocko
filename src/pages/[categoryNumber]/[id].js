@@ -17,7 +17,7 @@ const SerialPage = () => {
 
     const filmsAndSerialsInformation = useSelector(rootReducer => rootReducer.reducer_11)
 
-    const serialInformation = filmsAndSerialsInformation[0][router.query.serialId]
+    const itemInformation = filmsAndSerialsInformation[router.query.categoryNumber][router.query.id]
 
     return (
         <div className="serial_box_container" style={{ color: "#fff" }}>
@@ -31,17 +31,17 @@ const SerialPage = () => {
                         <div className="meta_box">
                             <div className="icon_box blue_box"><FontAwesomeIcon icon={faBookmark} /></div>
                             <div className="icon_box red_box"><FontAwesomeIcon icon={faHeart} /></div>
-                            <div className="manufacturing_country">{serialInformation.manufacturingCountry}</div>
+                            <div className="manufacturing_country">{itemInformation.manufacturingCountry}</div>
                         </div>
 
-                        <div className="serial_title">سریال - {router.query.serialId}</div>
+                        <div className="serial_title">{itemInformation.category} - {router.query.id}</div>
 
                         <div className="genres">
                             <div className="genres_title">ژانر ها :</div>
 
                             <div className="genres_boxes">
                                 {
-                                    serialInformation.genres.map(genre =>
+                                    itemInformation.genres.map(genre =>
                                         <div className="genre" key={genre.id}>{genre.title}</div>
                                     )
                                 }
@@ -61,7 +61,7 @@ const SerialPage = () => {
 
                             <div className="attribute">
                                 <div className="attribute_icon"><FontAwesomeIcon icon={faLocationDot} /></div>
-                                <div className="attribute_title">کشور <span>{serialInformation.manufacturingCountry}</span></div>
+                                <div className="attribute_title">کشور <span>{itemInformation.manufacturingCountry}</span></div>
                             </div>
 
                             <div className="attribute">
@@ -79,8 +79,8 @@ const SerialPage = () => {
 
                 <div className="left_side">
                     <div className="left_side_title">
-                        <div className="serial_score_votes">{serialInformation.votes} رای</div>
-                        <div className="serial_score"><span>10 /</span> {serialInformation.score}</div>
+                        <div className="serial_score_votes">{itemInformation.votes} رای</div>
+                        <div className="serial_score"><span>10 /</span> {itemInformation.score}</div>
                         <div className="serial_score_icon"><FontAwesomeIcon icon={faStar} /></div>
                     </div>
                 </div>
@@ -250,6 +250,16 @@ const SerialPage = () => {
                     color: #ff9000;
                 }
 
+                .left_side {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    // border-left: 1px solid #222;
+                    padding-left: 20px;
+                    margin-top: 20px;
+                }
+
                 .left_side_title {
                     display: flex;
                     align-items: center;
@@ -270,16 +280,16 @@ const SerialPage = () => {
                 .serial_score_icon {
                     color: #ff9000;
                     font-size: 24px;
-                    margin: 5px 10px 0 0 ;
+                    margin: 5px 10px 2px 0;
                 }
 
                 .serial_score_votes {
-                    font-size: 14px;
+                    font-size: 13px;
                     background-color: #111;
                     padding: 5px 10px;
                     border-radius: 5px;
-                    margin: 0 0 4px 15px;
-                    border: 1px solid #555;
+                    margin: 0 0 2px 15px;
+                    border: 1.5px solid #333;
                     color: #999;
                 }
             `}</style>

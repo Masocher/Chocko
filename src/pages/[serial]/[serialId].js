@@ -29,8 +29,8 @@ const SerialPage = () => {
 
                     <div className="right_side_information">
                         <div className="meta_box">
-                            <div className="icon_box"><FontAwesomeIcon icon={faBookmark} /></div>
-                            <div className="icon_box"><FontAwesomeIcon icon={faHeart} /></div>
+                            <div className="icon_box blue_box"><FontAwesomeIcon icon={faBookmark} /></div>
+                            <div className="icon_box red_box"><FontAwesomeIcon icon={faHeart} /></div>
                             <div className="manufacturing_country">{serialInformation.manufacturingCountry}</div>
                         </div>
 
@@ -127,6 +127,17 @@ const SerialPage = () => {
                     border-radius: 5px;
                     cursor: pointer;
                     margin-left: 10px;
+                    transition: .1s;
+                }
+
+                .blue_box:hover {
+                    background-color: #ff9000;
+                    color: #fff;
+                }
+
+                .red_box:hover {
+                    background-color: red;
+                    color: #fff;
                 }
 
                 .manufacturing_country {

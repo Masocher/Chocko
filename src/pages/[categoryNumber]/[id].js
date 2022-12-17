@@ -7,6 +7,7 @@ import { useSelector } from "react-redux"
 // components
 import Header from "../../components/header"
 import Footer from "../../components/footer"
+import Stars from "../../components/stars"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -94,6 +95,8 @@ const SerialPage = () => {
                     </div>
                 </div>
             </div>
+
+            <Stars stars={itemInformation.stars} />
 
             <Footer />
 

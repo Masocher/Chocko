@@ -46,7 +46,7 @@ const Stars = ({ stars }) => {
         } else if (width < 380 && width >= 330) {
             return { perview: 1, spaceBetween: 10, height: "180px" }
         } else if (width < 330 && width >= 0) {
-            return { perview: 2, spaceBetween: 10, height: "125px" }
+            return { perview: 1, spaceBetween: 10, height: "250px" }
         } else {
             return { perview: 10, spaceBetween: 10 }
         }
@@ -125,13 +125,8 @@ const Stars = ({ stars }) => {
                     bottom: 10px;
                     color: #fff;
                     bottom: -38px;
-                }
-
-                @media (max-width: 1025px) {
-                    .star_name {
-                        width: 100%;
-                        text-align: center;
-                    }
+                    width: 100%;
+                    text-align: center;
                 }
 
                 @media (max-width: 770px) {
@@ -148,10 +143,10 @@ const Stars = ({ stars }) => {
                     }
                 }
 
-                @media (max-width: 376px) {
+                @media (max-width: 321px) {
                     .star_name {
-                        font-size: 9px;
-                        bottom: -25px;
+                        font-size: 16px;
+                        bottom: -45px;
                         letter-spacing: 0;
                     }
                 }

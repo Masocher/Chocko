@@ -30,6 +30,8 @@ const SerialPage = () => {
                     <div className="serial_cover"></div>
 
                     <div className="right_side_information">
+                        <div className="serial_title_2">{itemInformation.category} - {router.query.id}</div>
+
                         <div className="meta_box">
                             <div className="icon_box blue_box"><FontAwesomeIcon icon={faBookmark} /></div>
                             <div className="icon_box red_box"><FontAwesomeIcon icon={faHeart} /></div>
@@ -91,6 +93,7 @@ const SerialPage = () => {
                     </div>
 
                     <div className="left_side_buttons">
+                        <div className="left_side_btn download_btn">دانلود</div>
                         <div className="left_side_btn play_btn">پخش آنلاین</div>
                         <div className="left_side_btn">مشاهده تریلر</div>
                     </div>
@@ -181,13 +184,23 @@ const SerialPage = () => {
                     border-color: #ff9000;
                 }
 
-                .serial_title {
+                .serial_title, .serial_title_2 {
                     font-size: 30px;
                     color: #fff;
                     font-weight: 100;
                     margin: 50px 0;
                     border-right: 1px solid #ff9000;
                     padding-right: 20px;
+                }
+
+                .serial_title_2 {
+                    width: 100%;
+                    text-align: center;
+                    margin: 30px 0;
+                    display: none;
+                    border: none;
+                    padding: 0;
+                    margin: 40px 0 30px 0;
                 }
 
                 .genres {
@@ -350,6 +363,127 @@ const SerialPage = () => {
                 .play_btn:hover {
                     background: none;
                     color: #ff9000;
+                }
+
+                .download_btn {
+                    display: none;
+                }
+
+                @media (max-width: 1390px) {
+                    .serial_box {
+                        width: fit-content;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 100px auto;
+                    }
+
+                    .left_side {
+                        margin-top: 50px;
+                        width: 70%;
+                    }
+
+                    .about_serial {
+                        width: 100%;
+                    }
+
+                    .download_btn {
+                        display: block;
+                    }
+
+                    .left_side_btn {
+                        padding: 11px 18px;
+                        font-size: 13px;
+                    }
+                    
+                    .play_btn {
+                        background-color: #ff9000;
+                        color: #000;
+                        border-color: #ff9000;
+                    }
+
+                    .attribute {
+                        width: 98px;
+                    }
+                }
+
+                @media (max-width: 850px) {
+                    .serial_box {
+                        width: 100%;
+                        margin-top: 50px;
+                    }
+
+                    .right_side {
+                        flex-direction: column;
+                        align-items: center;
+                        height: fit-content;
+                    }
+    
+                    .right_side_information {
+                        height: 100%;
+                    }
+
+                    .serial_title {
+                        display: none;
+                    }
+
+                    .serial_title_2 {
+                        display: block;
+                    }
+
+                    .meta_box {
+                        justify-content: center;
+                        padding: 0 0 12px 0;
+                        border: none;
+                    }
+
+                    .serial_cover {
+                        margin-left: 0;
+                    }
+
+                    .genres {
+                        justify-content: center;
+                        margin-top: 5px;
+                        border: none;
+                        padding: 0 0 12px 0;
+                    }
+    
+                    .genres_title {
+                        display: none;
+                    }
+    
+                    .genres_boxes {
+                        width: 190px;
+                    }
+    
+                    .genre {
+                        padding: 6px 12px;
+                        font-size: 13px;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .attributes {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+    
+                    .attribute {
+                        margin-bottom: 5px
+                    }
+                }
+
+                @media (max-width: 376px) {
+                    .left_side_btn {
+                        padding: 11px 14px;
+                        font-size: 12px;
+                    }
+                }
+
+                @media (max-width: 321px) {
+                    .left_side_btn {
+                        padding: 11px 13px;
+                        font-size: 10px;
+                    }
                 }
             `}</style>
         </div>

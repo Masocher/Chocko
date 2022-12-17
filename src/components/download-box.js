@@ -154,6 +154,23 @@ const DownloadBox = () => {
                     font-size: 16px;
                     padding: 6px 0;
                 }
+
+                @media (max-width: 1390px) {
+                    .download_box_container {
+                        display: none;
+                    }
+                }
+
+                @media (max-width: 730px) {
+                    .download_box {
+                        align-items: center;
+                        flex-direction: column;
+                    }
+
+                    .down_box {
+                        flex-direction: column-reverse;
+                    }
+                }
             `}</style>
         </div>
     )

@@ -37,8 +37,10 @@ const Stars = ({ stars }) => {
             return { perview: 4, spaceBetween: 25, height: "130px" }
         } else if (width < 700 && width >= 590) {
             return { perview: 3, spaceBetween: 20, height: "130px" }
-        } else if (width < 590 && width >= 430) {
+        } else if (width < 590 && width >= 521) {
             return { perview: 2, spaceBetween: 110, height: "130px" }
+        } else if (width < 521 && width >= 430) {
+            return { perview: 2, spaceBetween: 40, height: "140px" }
         } else if (width < 430 && width >= 380) {
             return { perview: 2, spaceBetween: 20, height: "110px" }
         } else if (width < 380 && width >= 330) {
@@ -58,7 +60,7 @@ const Stars = ({ stars }) => {
             style={{
                 width: `${windowWidth <= 321 ? 'calc(100% - 50px)' : 'calc(100% - 200px)'}`,
                 height: windowWidthSize(windowWidth).height,
-                padding: `${windowWidth <= 321 ? '40px 0' : '40px 60px'}`,
+                padding: `${windowWidth <= 321 ? '60px 0 40px 0' : '60px 60px 40px 60px'}`,
                 margin: "0 auto 0 auto",
             }}
             slidesPerView={windowWidthSize(windowWidth).perview}
@@ -93,10 +95,11 @@ const Stars = ({ stars }) => {
                 }
 
                 .stars_slider_title {
-                    font-size: 20px;
+                    font-size: 30px;
                     position: absolute;
-                    top: -20px;
+                    top: -9px;
                     right: 0;
+                    letter-spacing: .5px;
                 }
 
                 .star_box {

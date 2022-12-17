@@ -66,7 +66,7 @@ const SerialPage = () => {
 
                             <div className="attribute">
                                 <div className="attribute_icon"><FontAwesomeIcon icon={faCalendarDays} /></div>
-                                <div className="attribute_title">سال تولید <span>۲۰۲۲</span></div>
+                                <div className="attribute_title">سال تولید <span>2022</span></div>
                             </div>
 
                             <div className="attribute">
@@ -264,8 +264,6 @@ const SerialPage = () => {
                     flex-direction: column;
                     justify-content: start;
                     align-items: center;
-                    // border-left: 1px solid #222;
-                    padding-left: 20px;
                     margin-top: 20px;
                 }
 
@@ -288,24 +286,23 @@ const SerialPage = () => {
 
                 .serial_score_icon {
                     color: #ff9000;
-                    font-size: 24px;
-                    margin: 5px 10px 2px 0;
+                    font-size: 28px;
+                    margin: 5px 10px 4px 0;
                 }
 
                 .serial_score_votes {
-                    font-size: 13px;
-                    background-color: #111;
+                    font-size: 12px;
+                    background-color: #ff9000;
                     padding: 5px 10px;
                     border-radius: 5px;
                     margin: 0 0 2px 15px;
-                    border: 1.5px solid #333;
-                    color: #999;
+                    color: #000;
                 }
 
                 .about_serial {
                     font-size: 14px;
                     font-weight: 100;
-                    width: 350px;
+                    width: 450px;
                     letter-spacing: .5px;
                     border: solid #222;
                     border-width: 1px 0 1px 0;
@@ -331,11 +328,22 @@ const SerialPage = () => {
                     font-weight: 100;
                     cursor: pointer;
                     margin: 0 5px;
+                    border: 1px solid #c0c0c0;
+                    transition: .2s;
+                }
+                .left_side_btn:hover {
+                    background: none;
+                    color: #c0c0c0;
                 }
 
                 .play_btn {
                     background-color: #ff9000;
                     color: #000;
+                    border-color: #ff9000;
+                }
+                .play_btn:hover {
+                    background: none;
+                    color: #ff9000;
                 }
             `}</style>
         </div>

@@ -78,6 +78,7 @@ const Stars = ({ stars }) => {
                             height: "100%",
                             position: "relative"
                         }}
+                        key={star.id}
                     >
                         <div className="star_img"></div>
                         <div className="star_name">{star.name}</div>

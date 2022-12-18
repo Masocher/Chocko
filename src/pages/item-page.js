@@ -5,21 +5,21 @@ import { useRouter } from "next/router"
 import { useSelector } from "react-redux"
 
 // components
-import Header from "../../components/header"
-import Footer from "../../components/footer"
-import Stars from "../../components/stars"
-import DownloadBox from "../../components/download-box"
+import Header from "../components/header"
+import Footer from "../components/footer"
+import Stars from "../components/stars"
+import DownloadBox from "../components/download-box"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBookmark, faHeart, faClosedCaptioning, faUserPlus, faLocationDot, faCalendarDays, faRotate, faStar } from "@fortawesome/free-solid-svg-icons"
 
-const SerialPage = () => {
+const ItemPage = () => {
     const router = useRouter()
 
     const filmsAndSerialsInformation = useSelector(rootReducer => rootReducer.reducer_11)
 
-    const itemInformation = filmsAndSerialsInformation[router.query.categoryNumber][router.query.id]
+    const itemInformation = filmsAndSerialsInformation[router.query.category][router.query.id]
 
     return (
         <div className="serial_box_container" style={{ color: "#fff" }}>
@@ -490,4 +490,4 @@ const SerialPage = () => {
     )
 }
 
-export default SerialPage
+export default ItemPage

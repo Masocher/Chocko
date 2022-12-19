@@ -1,8 +1,8 @@
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper";
-import 'swiper/css';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/navigation";
 
 // tools
 import { useState, useEffect } from "react";
@@ -18,7 +18,7 @@ const Stars = ({ stars }) => {
 
         handleResize()
         window.addEventListener("resize", handleResize)
-    },[])
+    }, [])
 
     const windowWidth = windowSize.width
 
@@ -55,12 +55,12 @@ const Stars = ({ stars }) => {
     console.log(windowWidth);
 
     return (
-        <Swiper 
+        <Swiper
             className="stars_container"
             style={{
-                width: `${windowWidth <= 321 ? 'calc(100% - 50px)' : 'calc(100% - 200px)'}`,
+                width: `${windowWidth <= 321 ? "calc(100% - 50px)" : "calc(100% - 200px)"}`,
                 height: windowWidthSize(windowWidth).height,
-                padding: `${windowWidth <= 321 ? '60px 0 40px 0' : '60px 60px 40px 60px'}`,
+                padding: `${windowWidth <= 321 ? "60px 0 40px 0" : "60px 60px 40px 60px"}`,
                 margin: "0 auto 0 auto",
             }}
             slidesPerView={windowWidthSize(windowWidth).perview}

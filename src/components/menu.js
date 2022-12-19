@@ -23,69 +23,69 @@ const Menu = () => {
     let categoriesStatus = useSelector(rootReducer => rootReducer.reducer_3)
 
     return (
-        <div className={`menu_container ${ menuStatus ? 'show' : '' }`}>
-            <div className={`black_layer ${ menuStatus ? 'show' : '' }`} onClick={ () => {
+        <div className={`menu_container ${menuStatus ? "show" : ""}`}>
+            <div className={`black_layer ${menuStatus ? "show" : ""}`} onClick={() => {
                 dispatch(closeMenu())
                 dispatch(closeCategories())
-            } }></div>
+            }}></div>
 
             <Categories />
 
             <div className="menu_box">
-                <div className="close_box" onClick={ () => dispatch(closeMenu()) }><FontAwesomeIcon icon={faClose} /></div>
+                <div className="close_box" onClick={() => dispatch(closeMenu())}><FontAwesomeIcon icon={faClose} /></div>
 
                 <div className="logo_box">CHO|CKO</div>
-                
+
                 <div className="menu_sections">
-                    <div className={`categories ${ categoriesStatus ? 'show' : '' }`} onClick={ () => categoriesStatus ? dispatch(closeCategories()) : dispatch(openCategories()) }>دسته بندی ها</div>
-                    <Link href="/actors" style={{textDecoration: "none"}} 
-                        onClick={ () => {
+                    <div className={`categories ${categoriesStatus ? "show" : ""}`} onClick={() => categoriesStatus ? dispatch(closeCategories()) : dispatch(openCategories())}>دسته بندی ها</div>
+                    <Link href="/actors" style={{ textDecoration: "none" }}
+                        onClick={() => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
                         }}
-                    ><div className={`actors ${ route.pathname == '/actors' ? 'show' : '' }`}>هنرمندان</div></Link>
+                    ><div className={`actors ${route.pathname == "/actors" ? "show" : ""}`}>هنرمندان</div></Link>
                 </div>
 
                 <div className="pages">
-                    <Link style={{color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center"}} href='/'>
-                        <div onClick={ () => {
+                    <Link style={{ color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center" }} href="/">
+                        <div onClick={() => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
-                        }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faHome} />صفحه اصلی</div>
+                        }} className="page_link"><FontAwesomeIcon style={{ marginLeft: "10px" }} className="page_icon" icon={faHome} />صفحه اصلی</div>
                     </Link>
 
-                    <Link style={{color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center"}} href='/contact-us'>
-                        <div onClick={ () => {
+                    <Link style={{ color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center" }} href="/contact-us">
+                        <div onClick={() => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
-                        }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faPhone} />تماس با ما</div>
+                        }} className="page_link"><FontAwesomeIcon style={{ marginLeft: "10px" }} className="page_icon" icon={faPhone} />تماس با ما</div>
                     </Link>
 
-                    <Link style={{color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center"}} href='/buy-subscription'>
-                        <div onClick={ () => {
+                    <Link style={{ color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center" }} href="/buy-subscription">
+                        <div onClick={() => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
-                        }} className="page_link"><FontAwesomeIcon style={{marginLeft: "10px"}} className="page_icon" icon={faTicket} />خرید اشتراک</div>
+                        }} className="page_link"><FontAwesomeIcon style={{ marginLeft: "10px" }} className="page_icon" icon={faTicket} />خرید اشتراک</div>
                     </Link>
                 </div>
 
 
                 <div className="status_btn">
                     حالت روز
-                    <div className={`check_box ${ temStatus ? 'show' : '' }`} onClick={ () => dispatch(setLight()) }>
-                        <div className={`check_btn ${ temStatus ? 'show' : '' }`}></div>
+                    <div className={`check_box ${temStatus ? "show" : ""}`} onClick={() => dispatch(setLight())}>
+                        <div className={`check_btn ${temStatus ? "show" : ""}`}></div>
                     </div>
                 </div>
 
                 <div className="user_box">
                     <div className="have_not_account">شما حساب کاربری ندارید !</div>
                     <div className="sign_buttons">
-                        <Link href="/sign-in" style={{textDecoration: "none"}}><div className="sign_btn">ورود</div></Link>
-                        <Link href="/sign-up" style={{textDecoration: "none"}}><div className="sign_btn">عضویت</div></Link>
+                        <Link href="/sign-in" style={{ textDecoration: "none" }}><div className="sign_btn">ورود</div></Link>
+                        <Link href="/sign-up" style={{ textDecoration: "none" }}><div className="sign_btn">عضویت</div></Link>
                     </div>
                 </div>
             </div>
-            
+
             <style jsx>{`
                 .menu_container {
                     position: fixed;

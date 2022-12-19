@@ -17,99 +17,99 @@ const FilterBox = () => {
 
     const filmsCategoriesList = useSelector(rootReducer => rootReducer.reducer_5)
 
-    let [ order, setOrder ] = useState(false)
-    let [ country, setCountry ] = useState(false)
-    let [ quality, setQuality ] = useState(false)
-    let [ age, setAge ] = useState(false)
-    let [ genres, setGenres ] = useState(false)
+    let [order, setOrder] = useState(false)
+    let [country, setCountry] = useState(false)
+    let [quality, setQuality] = useState(false)
+    let [age, setAge] = useState(false)
+    let [genres, setGenres] = useState(false)
 
     return (
         <div className="filter_box_container">
             <div className="black_layer"></div>
-            
+
             <div className="search_btn">جستجو</div>
 
-            <div className="filter" onClick={ () => {
-                setAge(! age)
+            <div className="filter" onClick={() => {
+                setAge(!age)
                 setCountry(false)
                 setGenres(false)
                 setOrder(false)
                 setQuality(false)
-            } }>          
-                <span className={`${ age ? 'show' : '' }`}><FontAwesomeIcon icon={faAngleLeft} /></span>
+            }}>
+                <span className={`${age ? "show" : ""}`}><FontAwesomeIcon icon={faAngleLeft} /></span>
                 رده سنی
-                
-                <div className={`drop_down ${ age ? 'show' : '' }`}>
+
+                <div className={`drop_down ${age ? "show" : ""}`}>
                     {
-                        age_filters.map(filter => <div onClick={ () => setAge(false) } className="filter_box" key={ filter.id }>{ filter.age }</div>)
+                        age_filters.map(filter => <div onClick={() => setAge(false)} className="filter_box" key={filter.id}>{filter.age}</div>)
                     }
                 </div>
             </div>
 
-            <div className="filter" onClick={ () => {
-                setQuality(! quality)
+            <div className="filter" onClick={() => {
+                setQuality(!quality)
                 setCountry(false)
                 setGenres(false)
                 setOrder(false)
                 setAge(false)
-            } }>
-                <span className={`${ quality ? 'show' : '' }`}><FontAwesomeIcon icon={faAngleLeft} /></span>
+            }}>
+                <span className={`${quality ? "show" : ""}`}><FontAwesomeIcon icon={faAngleLeft} /></span>
                 کیفیت
 
-                <div className={`drop_down ${ quality ? 'show' : '' }`}>
+                <div className={`drop_down ${quality ? "show" : ""}`}>
                     {
-                        quality_filters.map(filter => <div onClick={ () => setAge(false) } className="filter_box" key={ filter.id }>{ filter.quality }</div>)
+                        quality_filters.map(filter => <div onClick={() => setAge(false)} className="filter_box" key={filter.id}>{filter.quality}</div>)
                     }
                 </div>
             </div>
 
-            <div className="filter" onClick={ () => {
-                setCountry(! country)
+            <div className="filter" onClick={() => {
+                setCountry(!country)
                 setQuality(false)
                 setGenres(false)
                 setOrder(false)
                 setAge(false)
-            } }>
-                <span className={`${ country ? 'show' : '' }`}><FontAwesomeIcon icon={faAngleLeft} /></span>
+            }}>
+                <span className={`${country ? "show" : ""}`}><FontAwesomeIcon icon={faAngleLeft} /></span>
                 کشور
 
-                <div className={`drop_down ${ country ? 'show' : '' }`}>
+                <div className={`drop_down ${country ? "show" : ""}`}>
                     {
-                        country_filters.map(filter => <div onClick={ () => setCountry(false) } className="filter_box" key={ filter.id }>{ filter.country }</div>)
+                        country_filters.map(filter => <div onClick={() => setCountry(false)} className="filter_box" key={filter.id}>{filter.country}</div>)
                     }
                 </div>
             </div>
 
-            <div className="filter" onClick={ () => {
-                setOrder(! order)
+            <div className="filter" onClick={() => {
+                setOrder(!order)
                 setQuality(false)
                 setGenres(false)
                 setCountry(false)
                 setAge(false)
-            } }>
-                <span className={`${ order ? 'show' : '' }`}><FontAwesomeIcon icon={faAngleLeft} /></span>
+            }}>
+                <span className={`${order ? "show" : ""}`}><FontAwesomeIcon icon={faAngleLeft} /></span>
                 ترتیب
 
-                <div className={`drop_down ${ order ? 'show' : '' }`}>
+                <div className={`drop_down ${order ? "show" : ""}`}>
                     {
-                        order_filters.map(filter => <div onClick={ () => setOrder(false) } className="filter_box" key={ filter.id }>{ filter.order }</div>)
+                        order_filters.map(filter => <div onClick={() => setOrder(false)} className="filter_box" key={filter.id}>{filter.order}</div>)
                     }
                 </div>
             </div>
 
-            <div className="filter" onClick={ () => {
-                setGenres(! genres)
+            <div className="filter" onClick={() => {
+                setGenres(!genres)
                 setQuality(false)
                 setOrder(false)
                 setCountry(false)
                 setAge(false)
-            } }>
-                <span className={`${ genres ? 'show' : '' }`}><FontAwesomeIcon icon={faAngleLeft} /></span>
+            }}>
+                <span className={`${genres ? "show" : ""}`}><FontAwesomeIcon icon={faAngleLeft} /></span>
                 ژانر
 
-                <div className={`drop_down ${ genres ? 'show' : '' }`}>
+                <div className={`drop_down ${genres ? "show" : ""}`}>
                     {
-                        filmsCategoriesList.map(filter => <div onClick={ () => setGenres(false) } className="filter_box" key={ filter.id }>{ filter.title }</div>)
+                        filmsCategoriesList.map(filter => <div onClick={() => setGenres(false)} className="filter_box" key={filter.id}>{filter.title}</div>)
                     }
                 </div>
             </div>

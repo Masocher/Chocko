@@ -1,16 +1,16 @@
 // components
-import Header from '../components/header'
-import FilterBox from '../components/filter-box';
-import SliderVid from '../components/slider-vid';
-import Footer from '../components/footer';
+import Header from "../components/header"
+import FilterBox from "../components/filter-box";
+import SliderVid from "../components/slider-vid";
+import Footer from "../components/footer";
 
 // redux
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 
 // swiper
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import "swiper/css";
 
 export default function Home() {
 
@@ -51,15 +51,15 @@ export default function Home() {
           )
         }
       </Swiper>
-      
+
       <FilterBox />
 
-      <SliderVid title="سریال ها" information={ filmsAndSerialsInformation[0] } />
-      <SliderVid title="سریال کره ای" information={ filmsAndSerialsInformation[1] } />
-      <SliderVid title="فیلم ها" information={ filmsAndSerialsInformation[2] } />
-      <SliderVid title="فیلم هندی" information={ filmsAndSerialsInformation[3] } />
-      <SliderVid title="انیمه ها" information={ filmsAndSerialsInformation[4] } />
-      <SliderVid title="انیمیشن ها" information={ filmsAndSerialsInformation[5] } />
+      <SliderVid title="سریال ها" information={filmsAndSerialsInformation[0]} />
+      <SliderVid title="سریال کره ای" information={filmsAndSerialsInformation[1]} />
+      <SliderVid title="فیلم ها" information={filmsAndSerialsInformation[2]} />
+      <SliderVid title="فیلم هندی" information={filmsAndSerialsInformation[3]} />
+      <SliderVid title="انیمه ها" information={filmsAndSerialsInformation[4]} />
+      <SliderVid title="انیمیشن ها" information={filmsAndSerialsInformation[5]} />
 
       <Footer />
     </div>

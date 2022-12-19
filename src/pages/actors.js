@@ -21,8 +21,8 @@ const Actors = () => {
             <div className="actors">
                 {
                     actors.map(actor =>
-                        <div className="actor" key={ actor.id }>
-                            <div className="actor_name">{ actor.name }</div>
+                        <div className="actor" key={actor.id}>
+                            <div className="actor_name">{actor.name}</div>
                         </div>
                     )
                 }

@@ -46,7 +46,7 @@ const DownloadBox = () => {
                     </div>
                 </div>
             </div>
-            
+
             <style jsx>{`
                 .download_box_container {
                     width: 95%;

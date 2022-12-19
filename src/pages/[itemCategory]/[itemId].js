@@ -5,10 +5,10 @@ import { useRouter } from "next/router"
 import { useSelector } from "react-redux"
 
 // components
-import Header from "../components/header"
-import Footer from "../components/footer"
-import Stars from "../components/stars"
-import DownloadBox from "../components/download-box"
+import Header from "../../components/header"
+import Footer from "../../components/footer"
+import Stars from "../../components/stars"
+import DownloadBox from "../../components/download-box"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -19,7 +19,7 @@ const ItemPage = () => {
 
     const filmsAndSerialsInformation = useSelector(rootReducer => rootReducer.reducer_11)
 
-    const itemInformation = filmsAndSerialsInformation[router.query.category][router.query.id]
+    const itemInformation = filmsAndSerialsInformation[router.query.itemCategory][router.query.itemId]
 
     return (
         <div className="serial_box_container" style={{ color: "#fff" }}>
@@ -30,7 +30,7 @@ const ItemPage = () => {
                     <div className="serial_cover"></div>
 
                     <div className="right_side_information">
-                        <div className="serial_title_2">{itemInformation.category} - {router.query.id}</div>
+                        <div className="serial_title_2">{itemInformation.category} - {router.query.itemId}</div>
 
                         <div className="meta_box">
                             <div className="icon_box blue_box"><FontAwesomeIcon icon={faBookmark} /></div>
@@ -38,7 +38,7 @@ const ItemPage = () => {
                             <div className="manufacturing_country">{itemInformation.manufacturingCountry}</div>
                         </div>
 
-                        <div className="serial_title">{itemInformation.category} - {router.query.id}</div>
+                        <div className="serial_title">{itemInformation.category} - {router.query.itemId}</div>
 
                         <div className="genres">
                             <div className="genres_title">ژانر ها :</div>

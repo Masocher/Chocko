@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <div className="header_container">
-            <Link href="/" style={{textDecoration: "none"}}><div className="logo_box">CHO|CKO</div></Link>
+            <Link href="/" style={{ textDecoration: "none" }}><div className="logo_box">CHO|CKO</div></Link>
 
             <form className="search_box">
                 <input className="search_input" type="text" placeholder="نام فیلم یا سریال مورد نظر را وارد کنید ..." />
@@ -26,10 +26,10 @@ const Header = () => {
             </form>
 
             <div className="sign_box">
-                <div className="menu_icon" onClick={ () => dispatch(openMenu()) }><FontAwesomeIcon icon={faBars} /></div>
+                <div className="menu_icon" onClick={() => dispatch(openMenu())}><FontAwesomeIcon icon={faBars} /></div>
 
-                <Link style={{textDecoration: "none"}} href="/sign-in"><div className="sign_btn">ورود</div></Link>
-                <Link style={{textDecoration: "none"}} href="/sign-up"><div className="sign_btn">عضویت</div></Link>
+                <Link style={{ textDecoration: "none" }} href="/sign-in"><div className="sign_btn">ورود</div></Link>
+                <Link style={{ textDecoration: "none" }} href="/sign-up"><div className="sign_btn">عضویت</div></Link>
             </div>
 
             <Menu />

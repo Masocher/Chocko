@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="footer_container">
             <div className="copy_write_box">تمامی حقوق این وبسایت متعلق به چوکو میباشد.</div>
-            <div className="site_section" onClick={ () => window.scrollTo({top: 0, behavior: "smooth"}) }><FontAwesomeIcon icon={faCaretUp} /></div>
+            <div className="site_section" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><FontAwesomeIcon icon={faCaretUp} /></div>
 
             <style jsx>{`
                 .footer_container {

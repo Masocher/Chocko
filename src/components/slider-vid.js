@@ -1,14 +1,14 @@
 // swiper
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 // fontawesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretLeft } from "@fortawesome/free-solid-svg-icons";
 
 // tools
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const SliderVid = ({ title, information }) => {
 
@@ -21,7 +21,7 @@ const SliderVid = ({ title, information }) => {
 
         handleResize()
         window.addEventListener("resize", handleResize)
-    },[])
+    }, [])
 
     const windowWidth = windowSize.width
 
@@ -55,7 +55,7 @@ const SliderVid = ({ title, information }) => {
 
     return (
         <div className="slider_box">
-            <div className="slider_title">{title} <div className='show_more_btn'>مشاهده بیشتر <span><FontAwesomeIcon icon={faCaretLeft} /></span></div></div>
+            <div className="slider_title">{title} <div className="show_more_btn">مشاهده بیشتر <span><FontAwesomeIcon icon={faCaretLeft} /></span></div></div>
 
             <Swiper
                 style={{
@@ -69,10 +69,10 @@ const SliderVid = ({ title, information }) => {
             >
                 {
                     information.map(inf =>
-                        <SwiperSlide key={inf.id} style={{width: "180px", height: "100%"}}>
-                            <Link href={`/item-page?category=${inf.categoryNumber}&id=${inf.id}`}>
-                                <div className='slide_content'>
-                                    <div className='slide_title'>{inf.category}</div>
+                        <SwiperSlide key={inf.id} style={{ width: "180px", height: "100%" }}>
+                            <Link href={`/${inf.categoryNumber}/${inf.id}`}>
+                                <div className="slide_content">
+                                    <div className="slide_title">{inf.category}</div>
                                 </div>
                             </Link>
                         </SwiperSlide>
@@ -149,7 +149,7 @@ const SliderVid = ({ title, information }) => {
     )
 }
 
-const getServerSideProps = (props) => {
+export const getServerSideProps = (props) => {
     return {
         data: {
             title: props.title,

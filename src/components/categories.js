@@ -17,58 +17,58 @@ const Categories = () => {
     const dispatch = useDispatch()
 
     return (
-        <div className={`categories_container ${ categoriesStatus ? 'show' : '' }`}>
+        <div className={`categories_container ${categoriesStatus ? "show" : ""}`}>
             <div className="genres_box">
-                <div className="close_btn_2" onClick={ () => dispatch(closeCategories()) }><FontAwesomeIcon icon={faAngleRight} /> بازگشت</div>
+                <div className="close_btn_2" onClick={() => dispatch(closeCategories())}><FontAwesomeIcon icon={faAngleRight} /> بازگشت</div>
 
                 <div className="genres_title">دسته بندی ها</div>
 
                 <div className="genres">
-                    <div className={`genre ${ categoriesSectionsNumber == 1 ? 'show' : '' }`} onClick={ () => dispatch(openCategoriesSections(1)) }><FontAwesomeIcon style={{margin: "0 10px"}} icon={faLinesLeaning} />بخش ها</div>
-                    <div className={`genre ${ categoriesSectionsNumber == 2 ? 'show' : '' }`} onClick={ () => dispatch(openCategoriesSections(2)) }><FontAwesomeIcon style={{margin: "0 10px"}} icon={faList} />لیست ها</div>
-                    <div className={`genre ${ categoriesSectionsNumber == 3 ? 'show' : '' }`} onClick={ () => dispatch(openCategoriesSections(3)) }><FontAwesomeIcon style={{margin: "0 10px"}} icon={faVideoCamera} />ژانر فیلم</div>
-                    <div className={`genre ${ categoriesSectionsNumber == 4 ? 'show' : '' }`} onClick={ () => dispatch(openCategoriesSections(4)) }><FontAwesomeIcon style={{margin: "0 10px"}} icon={faFilm} />ژانر سریال</div>
+                    <div className={`genre ${categoriesSectionsNumber == 1 ? "show" : ""}`} onClick={() => dispatch(openCategoriesSections(1))}><FontAwesomeIcon style={{ margin: "0 10px" }} icon={faLinesLeaning} />بخش ها</div>
+                    <div className={`genre ${categoriesSectionsNumber == 2 ? "show" : ""}`} onClick={() => dispatch(openCategoriesSections(2))}><FontAwesomeIcon style={{ margin: "0 10px" }} icon={faList} />لیست ها</div>
+                    <div className={`genre ${categoriesSectionsNumber == 3 ? "show" : ""}`} onClick={() => dispatch(openCategoriesSections(3))}><FontAwesomeIcon style={{ margin: "0 10px" }} icon={faVideoCamera} />ژانر فیلم</div>
+                    <div className={`genre ${categoriesSectionsNumber == 4 ? "show" : ""}`} onClick={() => dispatch(openCategoriesSections(4))}><FontAwesomeIcon style={{ margin: "0 10px" }} icon={faFilm} />ژانر سریال</div>
                 </div>
             </div>
 
             <div className="categories_sections_content">
-                <div className="close_btn" onClick={ () => dispatch(closeCategories()) }><FontAwesomeIcon icon={faClose} /></div>
+                <div className="close_btn" onClick={() => dispatch(closeCategories())}><FontAwesomeIcon icon={faClose} /></div>
 
-                <div className={`content_box ${ categoriesSectionsNumber == 1 ? 'show' : '' }`}>
+                <div className={`content_box ${categoriesSectionsNumber == 1 ? "show" : ""}`}>
                     {
-                        sectionsCategoriesList.map(category => 
-                            <div className="sec_category" key={ category.id }>
-                                <div className="category_title"><div className="category_number">( { category.number } )</div> { category.title }</div>
+                        sectionsCategoriesList.map(category =>
+                            <div className="sec_category" key={category.id}>
+                                <div className="category_title"><div className="category_number">( {category.number} )</div> {category.title}</div>
                             </div>
                         )
                     }
                 </div>
 
-                <div className={`content_box ${ categoriesSectionsNumber == 2 ? 'show' : '' }`}>
+                <div className={`content_box ${categoriesSectionsNumber == 2 ? "show" : ""}`}>
                     {
-                        listsCategoriesList.map(category => 
-                            <div className="list_category" key={ category.id }>
-                                <div className="category_title"><div className="category_number">( { category.number } )</div> { category.title }</div>
+                        listsCategoriesList.map(category =>
+                            <div className="list_category" key={category.id}>
+                                <div className="category_title"><div className="category_number">( {category.number} )</div> {category.title}</div>
                             </div>
                         )
                     }
                 </div>
 
-                <div className={`content_box ${ categoriesSectionsNumber == 3 ? 'show' : '' }`}>
+                <div className={`content_box ${categoriesSectionsNumber == 3 ? "show" : ""}`}>
                     {
-                        filmsCategoriesList.map(category => 
-                            <div className="film_category" key={ category.id }>
-                                <div className="category_title"><div className="category_number">( { category.number } )</div> { category.title }</div>
+                        filmsCategoriesList.map(category =>
+                            <div className="film_category" key={category.id}>
+                                <div className="category_title"><div className="category_number">( {category.number} )</div> {category.title}</div>
                             </div>
                         )
                     }
                 </div>
 
-                <div className={`content_box ${ categoriesSectionsNumber == 4 ? 'show' : '' }`}>
+                <div className={`content_box ${categoriesSectionsNumber == 4 ? "show" : ""}`}>
                     {
-                        serialsCategoriesList.map(category => 
-                            <div className="serial_category" key={ category.id }>
-                                <div className="category_title"><div className="category_number">( { category.number } )</div> { category.title }</div>
+                        serialsCategoriesList.map(category =>
+                            <div className="serial_category" key={category.id}>
+                                <div className="category_title"><div className="category_number">( {category.number} )</div> {category.title}</div>
                             </div>
                         )
                     }

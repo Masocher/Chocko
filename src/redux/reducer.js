@@ -997,18 +997,18 @@ let filmsAndSerialsInformation = [
 ]
 
 let actors = [
-    { id: 1, name: "Morgan Freeman" },
-    { id: 2, name: "Morgan Freeman" },
-    { id: 3, name: "Morgan Freeman" },
-    { id: 4, name: "Morgan Freeman" },
-    { id: 5, name: "Morgan Freeman" },
-    { id: 6, name: "Morgan Freeman" },
-    { id: 7, name: "Morgan Freeman" },
-    { id: 8, name: "Morgan Freeman" },
-    { id: 9, name: "Morgan Freeman" },
-    { id: 10, name: "Morgan Freeman" },
-    { id: 11, name: "Morgan Freeman" },
-    { id: 12, name: "Morgan Freeman" },
+    { id: 0, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 1, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 2, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 3, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 4, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 5, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 6, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 7, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 8, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 9, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 10, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    { id: 11, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
 ]
 
 const reducer_1 = (state = menuStatus, action) => {

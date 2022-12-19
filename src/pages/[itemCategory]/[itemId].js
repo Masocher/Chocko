@@ -1,5 +1,5 @@
 // tools
-import { useRouter } from "next/router"
+import Router from "next/router"
 
 // redux
 import { useSelector } from "react-redux"
@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBookmark, faHeart, faClosedCaptioning, faUserPlus, faLocationDot, faCalendarDays, faRotate, faStar } from "@fortawesome/free-solid-svg-icons"
 
 const ItemPage = () => {
-    const router = useRouter()
+    const router = Router
 
     const filmsAndSerialsInformation = useSelector(rootReducer => rootReducer.reducer_11)
 

@@ -38,7 +38,7 @@ const Menu = () => {
 
                 <div className="menu_sections">
                     <div className={`categories ${categoriesStatus ? "show" : ""}`} onClick={() => categoriesStatus ? dispatch(closeCategories()) : dispatch(openCategories())}>دسته بندی ها</div>
-                    <Link href="/actors" style={{ textDecoration: "none" }}
+                    <Link href="/stars" style={{ textDecoration: "none" }}
                         onClick={() => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())

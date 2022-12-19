@@ -1,9 +1,12 @@
 // components
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Header from "../../components/header"
+import Footer from "../../components/footer"
 
 // redux
 import { useSelector } from "react-redux"
+
+// tools
+import Link from "next/link"
 
 const Actors = () => {
 
@@ -21,9 +24,11 @@ const Actors = () => {
             <div className="actors">
                 {
                     actors.map(actor =>
-                        <div className="actor" key={actor.id}>
-                            <div className="actor_name">{actor.name}</div>
-                        </div>
+                        <Link href="/stars/[starId]" as={`/stars/${actor.id}`} style={{textDecoration: "none", color: "#fff", cursor: "default"}}>
+                            <div className="actor" key={actor.id} style={{cursor: "pointer"}}>
+                                <div className="actor_name">{actor.name}</div>
+                            </div>
+                        </Link>
                     )
                 }
             </div>

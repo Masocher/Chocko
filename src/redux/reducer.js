@@ -997,18 +997,102 @@ let filmsAndSerialsInformation = [
 ]
 
 let actors = [
-    { id: 0, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 1, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 2, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 3, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 4, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 5, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 6, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 7, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 8, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 9, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 10, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
-    { id: 11, name: "Morgan Freeman", birthDate: "1990", birthPlace: "Iran - Tehran", age: "60", profession: "بازیگری"},
+    {
+        id: 0, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 1, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 2, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 3, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 4, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 5, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 6, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 7, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 8, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 9, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 10, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
+    {
+        id: 11, name: "Morgan Freeman", birthDate: "1990", birthPlace: "آمریکا", age: "60",
+        professions: [
+            { id: 0, title: "بازیگر" },
+            { id: 1, title: "نویسنده" },
+            { id: 2, title: "کارگردان" },
+        ]
+    },
 ]
 
 const reducer_1 = (state = menuStatus, action) => {

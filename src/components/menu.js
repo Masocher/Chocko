@@ -43,7 +43,7 @@ const Menu = () => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
                         }}
-                    ><div className={`actors ${route.pathname == "/actors" ? "show" : ""}`}>هنرمندان</div></Link>
+                    ><div className={`actors ${route.pathname == "/stars" ? "show" : ""}`}>هنرمندان</div></Link>
                 </div>
 
                 <div className="pages">

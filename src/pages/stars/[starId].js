@@ -10,7 +10,7 @@ import Footer from "../../components/footer";
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBookmark, faHeart, faClosedCaptioning, faUserPlus, faLocationDot, faCalendarDays, faRotate, faStar } from "@fortawesome/free-solid-svg-icons"
+import { faUserPlus, faLocationDot, faCalendarDays, faAddressCard } from "@fortawesome/free-solid-svg-icons"
 
 const StarPage = () => {
     const router = Router
@@ -23,37 +23,46 @@ const StarPage = () => {
         <div className="star_box_container">
             <Header />
 
-            <div className="star_box">
-                <div className="right_side">
-                    <div className="star_img"></div>
-                </div>
-
-                <div className="left_side">
-                    <div className="star_professions">
-                        {
-                            starInformation.professions.map(profession =>
-                                <div className="profession" key={profession.id}>{profession.title}</div>
-                            )
-                        }
+            <div className="star_container">
+                <div className="star_box">
+                    <div className="right_side">
+                        <div className="star_img"></div>
                     </div>
 
-                    <div className="star_name">{starInformation.name}</div>
-
-                    <div className="star_information">
-                        <div className="star_info">
-                            <div className="star_info_icon"><FontAwesomeIcon icon={faCalendarDays} /></div>
-                            <div className="star_info_title">تاریخ تولد <span>{starInformation.birthDate}</span></div>
+                    <div className="left_side">
+                        <div className="star_professions">
+                            {
+                                starInformation.professions.map(profession =>
+                                    <div className="profession" key={profession.id}>{profession.title}</div>
+                                )
+                            }
                         </div>
 
-                        <div className="star_info">
-                            <div className="star_info_icon"><FontAwesomeIcon icon={faUserPlus} /></div>
-                            <div className="star_info_title">سن <span>{starInformation.age}</span></div>
-                        </div>
+                        <div className="star_name">{starInformation.name}</div>
 
-                        <div className="star_info">
-                            <div className="star_info_icon"><FontAwesomeIcon icon={faLocationDot} /></div>
-                            <div className="star_info_title">محل تولد <span>{starInformation.birthPlace}</span></div>
+                        <div className="star_information">
+                            <div className="star_info">
+                                <div className="star_info_icon"><FontAwesomeIcon icon={faCalendarDays} /></div>
+                                <div className="star_info_title">تاریخ تولد <span>{starInformation.birthDate}</span></div>
+                            </div>
+
+                            <div className="star_info">
+                                <div className="star_info_icon"><FontAwesomeIcon icon={faUserPlus} /></div>
+                                <div className="star_info_title">سن <span>{starInformation.age}</span></div>
+                            </div>
+
+                            <div className="star_info">
+                                <div className="star_info_icon"><FontAwesomeIcon icon={faLocationDot} /></div>
+                                <div className="star_info_title">محل تولد <span>{starInformation.birthPlace}</span></div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+
+                <div className="about_box">
+                    <div className="about_title"><span><FontAwesomeIcon icon={faAddressCard} /></span> درباره هنرمند</div>
+                    <div className="about_description">
+                        مورگان فریمن بازیگر آمریکایی است. او برای صدای عمیق خود و نقش‌های گوناگونی که در طیف گسترده‌ای از ژانرهای فیلم ایفا کرده، معروف است. فریمن در طول بیش از پنج دهه حرفهٔ خود افتخارات گوناگونی از جمله یک جایزهٔ اسکار و یک جایزهٔ گلدن گلوب دریافت کرده‌است.
                     </div>
                 </div>
             </div>
@@ -61,14 +70,22 @@ const StarPage = () => {
             <Footer />
 
             <style jsx>{`
-                .star_box {
+                .star_container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    direction: rtl;   
                     width: calc(100% - 100px);
                     height: 360px;
                     direction: rtl;
-                    margin: 100px 50px;
+                    margin: 100px 50px; 
+                }
+
+                .star_box {
+                    height: 100%;
+                    width: 100%;
                     display: flex;
                     align-items: center;
-                    justify-content: flex-start;
                 }
 
                 .right_side {
@@ -156,6 +173,32 @@ const StarPage = () => {
                     border-radius: 5px;
                     padding: 8px 15px;
                     font-size: 14px;
+                }
+
+                .about_box {
+                    width: 1000px;
+                    color: #fff;
+                }
+
+                .about_title {
+                    font-size: 40px;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                    padding-bottom: 10px;
+                }
+
+                .about_title span {
+                    margin: 10px 0 0 15px;
+                    color: #ff9000;
+                    font-size: 36px;
+                }
+
+                .about_description {
+                    font-weight: 100;
+                    letter-spacing: .5px;
+                    font-size: 19px;
                 }
             `}</style>
         </div>

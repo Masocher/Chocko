@@ -32,6 +32,8 @@ const StarPage = () => {
                         </div>
 
                         <div className="left_side">
+                            <div className="star_name_2">{starInformation.name}</div>
+
                             <div className="star_professions">
                                 {
                                     starInformation.professions.map(profession =>
@@ -88,7 +90,6 @@ const StarPage = () => {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    direction: rtl;
                     width: 100%;
                     height: 360px;
                     direction: rtl;
@@ -123,7 +124,6 @@ const StarPage = () => {
                 }
 
                 .star_name {
-                    color: #fff;
                     font-size: 35px;
                     color: #fff;
                     border-right: 1px solid #ff9000;
@@ -131,6 +131,16 @@ const StarPage = () => {
                     letter-spacing: .5px;
                     width: fit-content;
                     margin-top: 20px;
+                }
+
+                .star_name_2 {
+                    font-size: 28px;
+                    color: #fff;
+                    letter-spacing: .5px;
+                    margin-top: 30px;
+                    width: 100%;
+                    text-align: center;
+                    display: none;
                 }
 
                 .star_information {
@@ -236,6 +246,118 @@ const StarPage = () => {
                     color: #ff9000;
                     font-size: 22px;
                     margin-left: 7px;
+                }
+
+                @media (max-width: 1390px) {
+                    .star_internal_container {
+                        margin: 220px 50px 100px 50px;
+                    }
+                    
+                    .star_box {
+                        width: fit-content;
+                        height: fit-content;
+                    }
+
+                    .star_container {
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+
+                    .star_img {
+                        height: 360px;
+                    }
+
+                    .relics {
+                        margin-top: 150px;
+                    }
+
+                    .about_box {
+                        width: 100%;
+                        margin: 70px 0;
+                    }
+    
+                    .about_title {
+                        font-size: 30px;
+                    }
+    
+                    .about_title span {
+                        font-size: 30px;
+                    }
+    
+                    .about_description {
+                        font-size: 16px;
+                    }
+                }
+
+                @media (max-width: 800px) {
+                    .star_internal_container {
+                        margin: 350px 50px 100px 50px;
+                    }
+
+                    .star_box {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+
+                    .star_information {
+                        justify-content: center;
+                        border: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .relics {
+                        margin-top: 300px;
+                    }
+
+                    .left_side {
+                        margin-right: 0;
+                    }    
+
+                    .star_name {
+                        display: none;
+                    }
+
+                    .star_name_2 {
+                        display: block;
+                    }
+
+                    .star_professions {
+                        border: none;
+                        width: 100%;
+                        padding: 0;
+                        justify-content: space-evenly;
+                        width: 100%;
+                        margin: 30px 0 20px 0;
+                    }
+    
+                    .profession {
+                        margin: 0;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .relics_title {
+                        padding: 0 0 10px 0;
+                        text-align: center;
+                        width: 100%;
+                        justify-content: center;
+                    }
+    
+                    .relics_title span {
+                        display: none;
+                    }
+                }
+
+                @media (max-width: 321px) {
+                    .star_internal_container {
+                        margin: 380px 50px 100px 50px;
+                    }
+    
+                    .relics {
+                        margin-top: 330px;
+                    }
                 }
             `}</style>
         </div>

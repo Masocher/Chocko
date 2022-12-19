@@ -15,6 +15,38 @@ const StarRelics = ({ starId }) => {
                     </div>
                 )
             }
+
+            <style jsx>{`
+                .relics_container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                .relic_box {
+                    width: 150px;
+                    height: 200px;
+                    position: relative;
+                    direction: ltr;
+                    margin: 60px 10px 0 10px;
+                }
+
+                .relice_img {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #111;
+                    border-radius: 10px;
+                }
+
+                .relic_name {
+                    position: absolute;
+                    color: #fff;
+                    bottom: -30px;
+                    left: 5px;
+                    font-size: 12px;
+                    letter-spacing: .5px;
+                }
+            `}</style>
         </div>
     )
 }

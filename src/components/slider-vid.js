@@ -70,7 +70,7 @@ const SliderVid = ({ title, information }) => {
                 {
                     information.map(inf =>
                         <SwiperSlide key={inf.id} style={{ width: "180px", height: "100%" }}>
-                            <Link href={`/${inf.categoryNumber}/${inf.id}`}>
+                            <Link href="/[itemCategory]/[itemId]" as={`/${inf.categoryNumber}/${inf.id}`}>
                                 <div className="slide_content">
                                     <div className="slide_title">{inf.category}</div>
                                 </div>

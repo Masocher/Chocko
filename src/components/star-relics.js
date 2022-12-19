@@ -46,6 +46,12 @@ const StarRelics = ({ starId }) => {
                     font-size: 12px;
                     letter-spacing: .5px;
                 }
+
+                @media (max-width: 426px) {
+                    .relic_box {
+                        margin: 40px 6px 20px 6px;
+                    }
+                }
             `}</style>
         </div>
     )

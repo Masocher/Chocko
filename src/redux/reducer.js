@@ -1003,6 +1003,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1011,6 +1023,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1019,6 +1043,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1027,6 +1063,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1035,6 +1083,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1043,6 +1103,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1051,6 +1123,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1059,6 +1143,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1067,6 +1163,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1075,6 +1183,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1083,6 +1203,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
     {
@@ -1091,6 +1223,18 @@ let actors = [
             { id: 0, title: "بازیگر" },
             { id: 1, title: "نویسنده" },
             { id: 2, title: "کارگردان" },
+        ],
+        relics: [
+            { id: 0, title: "Wrong Place" },
+            { id: 1, title: "Wrong Place" },
+            { id: 2, title: "Wrong Place" },
+            { id: 3, title: "Wrong Place" },
+            { id: 4, title: "Wrong Place" },
+            { id: 5, title: "Wrong Place" },
+            { id: 6, title: "Wrong Place" },
+            { id: 7, title: "Wrong Place" },
+            { id: 8, title: "Wrong Place" },
+            { id: 9, title: "Wrong Place" },
         ]
     },
 ]

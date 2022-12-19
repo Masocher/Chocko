@@ -1,5 +1,5 @@
 // tools
-import Router from "next/router";
+import { useRouter } from "next/router";
 
 // redux
 import { useSelector } from "react-redux";
@@ -7,13 +7,14 @@ import { useSelector } from "react-redux";
 // components
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import StarRelics from "../../components/star-relics";
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faUserPlus, faLocationDot, faCalendarDays, faAddressCard } from "@fortawesome/free-solid-svg-icons"
+import { faUserPlus, faLocationDot, faCalendarDays, faAddressCard, faStar } from "@fortawesome/free-solid-svg-icons"
 
 const StarPage = () => {
-    const router = Router
+    const router = useRouter()
 
     const filmsAndSerialsInformation = useSelector(rootReducer => rootReducer.reducer_12)
 
@@ -23,62 +24,74 @@ const StarPage = () => {
         <div className="star_box_container">
             <Header />
 
-            <div className="star_container">
-                <div className="star_box">
-                    <div className="right_side">
-                        <div className="star_img"></div>
-                    </div>
-
-                    <div className="left_side">
-                        <div className="star_professions">
-                            {
-                                starInformation.professions.map(profession =>
-                                    <div className="profession" key={profession.id}>{profession.title}</div>
-                                )
-                            }
+            <div className="star_internal_container">
+                <div className="star_container">
+                    <div className="star_box">
+                        <div className="right_side">
+                            <div className="star_img"></div>
                         </div>
 
-                        <div className="star_name">{starInformation.name}</div>
-
-                        <div className="star_information">
-                            <div className="star_info">
-                                <div className="star_info_icon"><FontAwesomeIcon icon={faCalendarDays} /></div>
-                                <div className="star_info_title">تاریخ تولد <span>{starInformation.birthDate}</span></div>
+                        <div className="left_side">
+                            <div className="star_professions">
+                                {
+                                    starInformation.professions.map(profession =>
+                                        <div className="profession" key={profession.id}>{profession.title}</div>
+                                    )
+                                }
                             </div>
 
-                            <div className="star_info">
-                                <div className="star_info_icon"><FontAwesomeIcon icon={faUserPlus} /></div>
-                                <div className="star_info_title">سن <span>{starInformation.age}</span></div>
-                            </div>
+                            <div className="star_name">{starInformation.name}</div>
 
-                            <div className="star_info">
-                                <div className="star_info_icon"><FontAwesomeIcon icon={faLocationDot} /></div>
-                                <div className="star_info_title">محل تولد <span>{starInformation.birthPlace}</span></div>
+                            <div className="star_information">
+                                <div className="star_info">
+                                    <div className="star_info_icon"><FontAwesomeIcon icon={faCalendarDays} /></div>
+                                    <div className="star_info_title">تاریخ تولد <span>{starInformation.birthDate}</span></div>
+                                </div>
+
+                                <div className="star_info">
+                                    <div className="star_info_icon"><FontAwesomeIcon icon={faUserPlus} /></div>
+                                    <div className="star_info_title">سن <span>{starInformation.age}</span></div>
+                                </div>
+
+                                <div className="star_info">
+                                    <div className="star_info_icon"><FontAwesomeIcon icon={faLocationDot} /></div>
+                                    <div className="star_info_title">محل تولد <span>{starInformation.birthPlace}</span></div>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className="about_box">
+                        <div className="about_title"><span><FontAwesomeIcon icon={faAddressCard} /></span> درباره هنرمند</div>
+                        <div className="about_description">
+                            مورگان فریمن بازیگر آمریکایی است. او برای صدای عمیق خود و نقش‌های گوناگونی که در طیف گسترده‌ای از ژانرهای فیلم ایفا کرده، معروف است. فریمن در طول بیش از پنج دهه حرفهٔ خود افتخارات گوناگونی از جمله یک جایزهٔ اسکار و یک جایزهٔ گلدن گلوب دریافت کرده‌است.
                         </div>
                     </div>
                 </div>
 
-                <div className="about_box">
-                    <div className="about_title"><span><FontAwesomeIcon icon={faAddressCard} /></span> درباره هنرمند</div>
-                    <div className="about_description">
-                        مورگان فریمن بازیگر آمریکایی است. او برای صدای عمیق خود و نقش‌های گوناگونی که در طیف گسترده‌ای از ژانرهای فیلم ایفا کرده، معروف است. فریمن در طول بیش از پنج دهه حرفهٔ خود افتخارات گوناگونی از جمله یک جایزهٔ اسکار و یک جایزهٔ گلدن گلوب دریافت کرده‌است.
-                    </div>
+                <div className="relics">
+                    <div className="relics_title"><span><FontAwesomeIcon icon={faStar} /></span> آثار هنرمند</div>
+
+                    <StarRelics starId={router.query.starId} />
                 </div>
             </div>
 
             <Footer />
 
             <style jsx>{`
+                .star_internal_container {
+                    width: calc(100% - 100px);
+                    margin: 100px 50px;
+                }
+
                 .star_container {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    direction: rtl;   
-                    width: calc(100% - 100px);
+                    direction: rtl;
+                    width: 100%;
                     height: 360px;
                     direction: rtl;
-                    margin: 100px 50px; 
                 }
 
                 .star_box {
@@ -181,7 +194,7 @@ const StarPage = () => {
                 }
 
                 .about_title {
-                    font-size: 40px;
+                    font-size: 36px;
                     display: flex;
                     align-items: center;
                     margin-bottom: 20px;
@@ -192,13 +205,37 @@ const StarPage = () => {
                 .about_title span {
                     margin: 10px 0 0 15px;
                     color: #ff9000;
-                    font-size: 36px;
+                    font-size: 32px;
                 }
 
                 .about_description {
                     font-weight: 100;
                     letter-spacing: .5px;
                     font-size: 19px;
+                }
+
+                .relics {
+                    width: 100%;
+                    direction: rtl;
+                    margin-top: 60px;
+                }
+
+                .relics_title {
+                    font-size: 28px;
+                    color: #fff;
+                    border-bottom: 1px solid #ff9000;
+                    width: fit-content;
+                    padding-left: 100px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding-bottom: 5px;
+                }
+
+                .relics_title span {
+                    color: #ff9000;
+                    font-size: 22px;
+                    margin-left: 7px;
                 }
             `}</style>
         </div>

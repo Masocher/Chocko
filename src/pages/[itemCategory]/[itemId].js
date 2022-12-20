@@ -2,19 +2,23 @@
 import Router from "next/router"
 
 // redux
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
+import { openDownloadBox } from "../../redux/actions"
 
 // components
 import Header from "../../components/header"
 import Footer from "../../components/footer"
 import Stars from "../../components/stars"
 import DownloadBox from "../../components/download-box"
+import DownloadPopUpBox from "../../components/download-pop-up-box"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBookmark, faHeart, faClosedCaptioning, faUserPlus, faLocationDot, faCalendarDays, faRotate, faStar } from "@fortawesome/free-solid-svg-icons"
 
 const ItemPage = () => {
+    const dispatch = useDispatch()
+
     const router = Router
 
     const filmsAndSerialsInformation = useSelector(rootReducer => rootReducer.reducer_11)
@@ -93,7 +97,7 @@ const ItemPage = () => {
                     </div>
 
                     <div className="left_side_buttons">
-                        <div className="left_side_btn download_btn">دانلود</div>
+                        <div className="left_side_btn download_btn" onClick={() => dispatch(openDownloadBox())}>دانلود</div>
                         <div className="left_side_btn play_btn">پخش آنلاین</div>
                         <div className="left_side_btn">مشاهده تریلر</div>
                     </div>
@@ -103,6 +107,8 @@ const ItemPage = () => {
             <Stars stars={itemInformation.stars} />
 
             <DownloadBox />
+
+            <DownloadPopUpBox />
 
             <Footer />
 

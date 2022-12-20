@@ -112,7 +112,7 @@ const SliderVid = ({ title, information }) => {
                 }
 
                 .show_more_btn {
-                    color: #757575;
+                    color: #999;
                     font-size: 14px;
                     display: flex;
                     align-items: center;

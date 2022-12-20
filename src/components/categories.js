@@ -141,7 +141,7 @@ const Categories = () => {
                 }
                 .genre.show {
                     background-color: #ff9000;
-                    color: #000;
+                    color: #2a2a2a;
                 }
 
                 .categories_sections_content {
@@ -163,7 +163,7 @@ const Categories = () => {
 
                 .film_category, .serial_category, .sec_category, .list_category {
                     width: fit-content;
-                    color: #757575;
+                    color: #999;
                     margin: 0 5px 12px 5px;
                     cursor: pointer;
                     transition: .2s;

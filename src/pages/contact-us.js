@@ -63,7 +63,7 @@ const ContactUs = () => {
                 }
 
                 .contact_us_container {
-                    color: #757575;
+                    color: #999;
                     padding-bottom: 1px;
                 }
 
@@ -80,15 +80,19 @@ const ContactUs = () => {
                     width: 280px;
                 }
                 .sign_input::placeholder {
-                    color: #505050;
+                    color: #555;
                     font-size: 13px;
                 }
                 .sign_input:focus {
-                    border-color: #404040;
+                    border-color: #444;
                 }
 
                 .submit_btn {
                     padding: 5px 10px;
+                    color: #2a2a2a;
+                }
+                .submit_btn:hover {
+                    color: #ff9000;
                 }
 
                 .contact_us_sections {
@@ -105,7 +109,7 @@ const ContactUs = () => {
 
                 .contact_us_title {
                     font-size: 50px;
-                    color: #757575;
+                    color: #999;
                     margin: 0;
                     padding: 0;
                 }
@@ -113,7 +117,7 @@ const ContactUs = () => {
                 .contact_us_title_des {
                     font-size: 18px;
                     font-weight: 100;
-                    color: #454545;
+                    color: #555;
                     position: relative;
                     bottom: 5px;
                 }
@@ -165,7 +169,7 @@ const ContactUs = () => {
                     width: 30px;
                     height: 30px;
                     background-color: #ff9000;
-                    color: #000;
+                    color: #2a2a2a;
                     padding: 10px;
                     border-radius: 40px;
                     display: flex;
@@ -179,7 +183,7 @@ const ContactUs = () => {
 
                 .message_form_title_des {
                     font-size: 16px;
-                    color: #505050;
+                    color: #555;
                     text-align: center;
                     margin-top: 5px;
                 }

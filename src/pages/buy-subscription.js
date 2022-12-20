@@ -73,7 +73,7 @@ const BuySubscription = () => {
 
                 .buy_subscription_title {
                     font-size: 50px;
-                    color: #757575;
+                    color: #999;
                     margin: 0;
                     padding: 0;
                 }
@@ -81,7 +81,7 @@ const BuySubscription = () => {
                 .buy_subscription_title_des {
                     font-size: 18px;
                     font-weight: 100;
-                    color: #454545;
+                    color: #555;
                     position: relative;
                     bottom: 5px;
                 }
@@ -118,7 +118,7 @@ const BuySubscription = () => {
                     padding: 10px 20px;
                     border-radius: 50px;
                     background-color: #111;
-                    color: #757575;
+                    color: #999;
                     margin-bottom: -10px;
                 }
 
@@ -151,7 +151,7 @@ const BuySubscription = () => {
                 .buy_btn {
                     font-size: 18px;
                     background-color: #ff9000;
-                    color: #000;
+                    color: #2a2a2a;
                     margin-top: 30px;
                     width: 75%;
                     padding: 8px 0;

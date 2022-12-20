@@ -181,7 +181,7 @@ const Menu = () => {
                 }
                 .categories.show, .actors.show {
                     background-color: #ff9000;
-                    color: #000;
+                    color: #2a2a2a;
                 }
 
                 .user_box {
@@ -213,7 +213,7 @@ const Menu = () => {
                 .sign_btn {
                     width: fit-content;
                     background-color: #ff9000;
-                    color: #000;
+                    color: #2a2a2a;
                     padding: 5px 13px;
                     border-radius: 3px;
                     cursor: pointer;

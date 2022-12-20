@@ -43,7 +43,7 @@ const Actors = () => {
 
                 .actors_title {
                     font-size: 50px;
-                    color: #757575;
+                    color: #999;
                     margin: 0;
                     padding: 0;
                 }
@@ -51,7 +51,7 @@ const Actors = () => {
                 .actors_title_des {
                     font-size: 18px;
                     font-weight: 100;
-                    color: #454545;
+                    color: #555;
                     position: relative;
                     bottom: 5px;
                 }

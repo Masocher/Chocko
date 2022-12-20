@@ -1,9 +1,10 @@
-import { OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, CLOSE_CATEGORIES, OPEN_CATEGORIES } from "./types";
+import { OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, CLOSE_CATEGORIES, OPEN_CATEGORIES, OPEN_DOWNLOAD_BOX, CLOSE_DOWNLOAD_BOX } from "./types";
 import { combineReducers } from "redux";
 
 let menuStatus = false;
 let temStatus = false;
 let categoriesStatus = false;
+let downloadBoxStatus = false
 let categoriesSectionsNumber = 1;
 
 let filmsCategoriesList = [
@@ -1304,11 +1305,20 @@ const reducer_12 = (state = actors) => {
     return state
 }
 
+const reducer_13 = (state = downloadBoxStatus, action) => {
+    switch (action.type) {
+        case OPEN_DOWNLOAD_BOX: return state = true
+        case CLOSE_DOWNLOAD_BOX: return state = false
+        default: return state
+    }
+}
+
 const rootReducer = combineReducers({
     reducer_1, reducer_2, reducer_3,
     reducer_4, reducer_5, reducer_6,
     reducer_7, reducer_8, reducer_9,
     reducer_10, reducer_11, reducer_12,
+    reducer_13,
 })
 
 export default rootReducer

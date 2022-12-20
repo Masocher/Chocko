@@ -1,4 +1,4 @@
-import { OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, OPEN_CATEGORIES, CLOSE_CATEGORIES, OPEN_CATEGORIES_SECTIONS } from "./types";
+import { OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, OPEN_CATEGORIES, CLOSE_CATEGORIES, OPEN_CATEGORIES_SECTIONS, OPEN_DOWNLOAD_BOX, CLOSE_DOWNLOAD_BOX } from "./types";
 
 export const openMenu = () => {
     return { type: OPEN_MENU }
@@ -16,6 +16,13 @@ export const openCategories = () => {
 }
 export const closeCategories = () => {
     return { type: CLOSE_CATEGORIES }
+}
+
+export const openDownloadBox = () => {
+    return { type: OPEN_DOWNLOAD_BOX }
+}
+export const closeDownloadBox = () => {
+    return { type: CLOSE_DOWNLOAD_BOX }
 }
 
 export const openCategoriesSections = (section_number) => {

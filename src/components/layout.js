@@ -2,7 +2,7 @@ const Layout = (props) => {
     return (
         <div className="layout_container">
             {props.children}
-            
+
             <style jsx global>{`
                 @font-face {
                     font-family: Lalezar;

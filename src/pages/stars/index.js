@@ -24,8 +24,8 @@ const Actors = () => {
             <div className="actors">
                 {
                     actors.map(actor =>
-                        <Link href="/stars/[starId]" as={`/stars/${actor.id}`} style={{textDecoration: "none", color: "#fff", cursor: "default"}}>
-                            <div className="actor" key={actor.id} style={{cursor: "pointer"}}>
+                        <Link href="/stars/[starId]" as={`/stars/${actor.id}`} style={{ textDecoration: "none", color: "#fff", cursor: "default" }}>
+                            <div className="actor" key={actor.id} style={{ cursor: "pointer" }}>
                                 <div className="actor_name">{actor.name}</div>
                             </div>
                         </Link>

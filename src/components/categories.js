@@ -141,7 +141,7 @@ const Categories = () => {
                 }
                 .genre.show {
                     background-color: #ff9000;
-                    color: #2a2a2a;
+                    color: #111;
                 }
 
                 .categories_sections_content {

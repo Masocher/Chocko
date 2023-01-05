@@ -93,7 +93,7 @@ const Header = () => {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    color: #2a2a2a;
+                    color: #222;
                     padding: 9.5px 11px;
                     border-radius: 5px;
                     border: 1px solid #ff9000;
@@ -116,7 +116,7 @@ const Header = () => {
                 .sign_btn {
                     width: fit-content;
                     background-color: #ff9000;
-                    color: #2a2a2a;
+                    color: #222;
                     padding: 5.5px 12px;
                     border-radius: 5px;
                     border: 1px solid #ff9000;

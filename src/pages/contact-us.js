@@ -89,7 +89,7 @@ const ContactUs = () => {
 
                 .submit_btn {
                     padding: 5px 10px;
-                    color: #2a2a2a;
+                    color: #111;
                 }
                 .submit_btn:hover {
                     color: #ff9000;
@@ -169,7 +169,7 @@ const ContactUs = () => {
                     width: 30px;
                     height: 30px;
                     background-color: #ff9000;
-                    color: #2a2a2a;
+                    color: #111;
                     padding: 10px;
                     border-radius: 40px;
                     display: flex;

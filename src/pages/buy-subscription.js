@@ -151,7 +151,7 @@ const BuySubscription = () => {
                 .buy_btn {
                     font-size: 18px;
                     background-color: #ff9000;
-                    color: #2a2a2a;
+                    color: #111;
                     margin-top: 30px;
                     width: 75%;
                     padding: 8px 0;

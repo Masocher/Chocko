@@ -169,7 +169,7 @@ const FilterBox = () => {
 
                 .search_btn {
                     background-color: #ff9000;
-                    color: #2a2a2a;
+                    color: #111;
                     padding: 9px 25px;
                     border-radius: 10px;
                     border: 1px solid #ff9000;
@@ -224,7 +224,7 @@ const FilterBox = () => {
                     padding: 15px 20px;
                     width: calc(100% - 40px);
                     transition: .1s;
-                    border: solid #222;
+                    border: solid #111;
                     border-width: .5px 0 .5px 0;
                 }
                 .filter_box:hover {

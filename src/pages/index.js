@@ -22,7 +22,7 @@ export default function Home() {
       <Header />
 
       <Swiper
-        style={{ width: "95%", height: "500px", margin: "40px auto" }}
+        style={{ width: "95%", height: "500px", borderRadius: "10px", margin: "40px auto" }}
         loop={true}
         modules={[Autoplay]}
         autoplay={{

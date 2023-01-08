@@ -4,11 +4,6 @@ const Layout = (props) => {
             {props.children}
 
             <style jsx global>{`
-                @font-face {
-                    font-family: Lalezar;
-                    url(../../public/fonts/Lalezar-Regular.ttf)
-                }
-
                 body {
                     margin: 0;
                     padding: 0;

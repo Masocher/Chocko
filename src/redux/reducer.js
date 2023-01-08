@@ -1,11 +1,17 @@
-import { OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, CLOSE_CATEGORIES, OPEN_CATEGORIES, OPEN_DOWNLOAD_BOX, CLOSE_DOWNLOAD_BOX } from "./types";
+import {
+    OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, CLOSE_CATEGORIES, OPEN_CATEGORIES,
+    OPEN_DOWNLOAD_BOX, CLOSE_DOWNLOAD_BOX, OPEN_PROFILE_BOX, CLOSE_PROFILE_BOX,
+} from "./types";
 import { combineReducers } from "redux";
 
 let menuStatus = false;
 let temStatus = false;
 let categoriesStatus = false;
 let downloadBoxStatus = false
+let isAuthenticated = true;
+let profileBoxStatus = false;
 let categoriesSectionsNumber = 1;
+let dashboardSectionsNumber = 1;
 
 let filmsCategoriesList = [
     { id: 1, title: "درام", number: 100 },
@@ -82,12 +88,12 @@ let listsCategoriesList = [
 ]
 
 let homeSliderSlides = [
-    { id: 1, title: 1 },
-    { id: 2, title: 2 },
-    { id: 3, title: 3 },
-    { id: 4, title: 4 },
-    { id: 5, title: 5 },
-    { id: 6, title: 6 },
+    { id: 1, title: '1' },
+    { id: 2, title: '2' },
+    { id: 3, title: '3' },
+    { id: 4, title: '4' },
+    { id: 5, title: '5' },
+    { id: 6, title: '6' },
 ]
 
 let filterBoxFilters = [
@@ -1313,12 +1319,38 @@ const reducer_13 = (state = downloadBoxStatus, action) => {
     }
 }
 
+const reducer_14 = (state = isAuthenticated) => {
+    return state
+}
+
+const reducer_15 = (state = profileBoxStatus, action) => {
+    switch (action.type) {
+        case OPEN_PROFILE_BOX: return state = true
+        case CLOSE_PROFILE_BOX: return state = false
+        default: return state
+    }
+}
+
+const reducer_16 = (state = dashboardSectionsNumber, action) => {
+    switch (action.payload) {
+        case 1: return state = 1
+        case 2: return state = 2
+        case 3: return state = 3
+        case 4: return state = 4
+        case 5: return state = 5
+        case 6: return state = 6
+        case 7: return state = 7
+        default: return state
+    }
+}
+
 const rootReducer = combineReducers({
     reducer_1, reducer_2, reducer_3,
     reducer_4, reducer_5, reducer_6,
     reducer_7, reducer_8, reducer_9,
     reducer_10, reducer_11, reducer_12,
-    reducer_13,
+    reducer_13, reducer_14, reducer_15,
+    reducer_16
 })
 
 export default rootReducer

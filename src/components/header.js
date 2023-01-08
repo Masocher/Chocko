@@ -1,20 +1,22 @@
 // components
 import Menu from "./menu"
+import Pannel from "./pannel"
 
 // redux
-import { useDispatch } from "react-redux"
-import { openMenu } from "./../redux/actions"
+import { useDispatch, useSelector } from "react-redux"
+import { openMenu, openProfileBox } from "./../redux/actions"
 
 // tools
 import Link from "next/link"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons"
+import { faSearch, faBars, faUser } from "@fortawesome/free-solid-svg-icons"
 
 const Header = () => {
 
     const dispatch = useDispatch()
+    const isAuthenticated = useSelector(rootReducer => rootReducer.reducer_14)
 
     return (
         <div className="header_container">
@@ -28,11 +30,22 @@ const Header = () => {
             <div className="sign_box">
                 <div className="menu_icon" onClick={() => dispatch(openMenu())}><FontAwesomeIcon icon={faBars} /></div>
 
-                <Link style={{ textDecoration: "none" }} href="/sign-in"><div className="sign_btn">ورود</div></Link>
-                <Link style={{ textDecoration: "none" }} href="/sign-up"><div className="sign_btn">عضویت</div></Link>
+                {
+                    isAuthenticated ?
+                        <div className="profile_box">
+                            <div className="profile_icon" onClick={() => dispatch(openProfileBox())}><FontAwesomeIcon icon={faUser} /></div>
+                        </div>
+                        :
+                        <>
+                            <Link style={{ textDecoration: "none" }} href="/sign-in"><div className="sign_btn">ورود</div></Link>
+                            <Link style={{ textDecoration: "none" }} href="/sign-up"><div className="sign_btn">عضویت</div></Link>
+                        </>
+                }
             </div>
 
             <Menu />
+
+            <Pannel />
             <style jsx>{`
                 .header_container {
                     background-color: #111;
@@ -88,7 +101,7 @@ const Header = () => {
                     font-size: 16px;
                 }
 
-                .menu_icon {
+                .menu_icon, .profile_icon {
                     background-color: #ff9000;
                     display: flex;
                     justify-content: center;
@@ -99,15 +112,16 @@ const Header = () => {
                     border: 1px solid #ff9000;
                     cursor: pointer;
                     transition: .2s;
-                    font-size: 15px;
+                    font-size: 16px;
                     margin-left: 15px;
                 }
-                .menu_icon:hover {
-                    border-radius: 50%;
+                .menu_icon:hover, .profile_icon:hover {
+                    background: none;
+                    color: #ff9000;
                 }
 
                 .sign_box {
-                    width: 175px;
+                    width: fit-content;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -124,6 +138,7 @@ const Header = () => {
                     transition: .2s;
                     font-size: 14px;
                     font-weight: 100;
+                    margin-right: 10px;
                 }
                 .sign_btn:hover {
                     background: none;
@@ -132,6 +147,10 @@ const Header = () => {
 
                 @media (max-width: 800px) {
                     .sign_btn {
+                        display: none;
+                    }
+
+                    .profile_icon {
                         display: none;
                     }
 

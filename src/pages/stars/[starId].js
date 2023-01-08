@@ -219,9 +219,10 @@ const StarPage = () => {
                 }
 
                 .about_description {
-                    font-weight: 100;
                     letter-spacing: .5px;
-                    font-size: 19px;
+                    font-size: 15px;
+                    font-family: Vazir;
+                    line-height: 30px;
                 }
 
                 .relics {

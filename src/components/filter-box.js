@@ -134,7 +134,7 @@ const FilterBox = () => {
 
                 .filter {
                     background-color: #000;
-                    color: #757575;
+                    color: silver;
                     border-radius: 10px;
                     padding: 12px 25px 12px 20px;
                     width: 100px;

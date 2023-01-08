@@ -47,21 +47,21 @@ const Menu = () => {
                 </div>
 
                 <div className="pages">
-                    <Link style={{ color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center" }} href="/">
+                    <Link style={{ color: "silver", textDecoration: "none", width: "100%", display: "flex", alignItems: "center" }} href="/">
                         <div onClick={() => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
                         }} className="page_link"><FontAwesomeIcon style={{ marginLeft: "10px" }} className="page_icon" icon={faHome} />صفحه اصلی</div>
                     </Link>
 
-                    <Link style={{ color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center" }} href="/contact-us">
+                    <Link style={{ color: "silver", textDecoration: "none", width: "100%", display: "flex", alignItems: "center" }} href="/contact-us">
                         <div onClick={() => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
                         }} className="page_link"><FontAwesomeIcon style={{ marginLeft: "10px" }} className="page_icon" icon={faPhone} />تماس با ما</div>
                     </Link>
 
-                    <Link style={{ color: "#9c9c9c", textDecoration: "none", width: "100%", display: "flex", alignItems: "center" }} href="/buy-subscription">
+                    <Link style={{ color: "silver", textDecoration: "none", width: "100%", display: "flex", alignItems: "center" }} href="/buy-subscription">
                         <div onClick={() => {
                             dispatch(closeMenu())
                             dispatch(closeCategories())
@@ -173,7 +173,7 @@ const Menu = () => {
                     border: 1px solid #000;
                     cursor: pointer;
                     transition: .3s;
-                    color: #999;
+                    color: silver;
                 }
                 .categories:hover, .actors:hover {
                     border-color: #ff9000;
@@ -271,7 +271,7 @@ const Menu = () => {
 
                 .check_box {
                     width: 22px;
-                    border: 3px solid #999;
+                    border: 3px solid silver;
                     height: 15px;
                     border-radius: 30px;
                     display: flex;
@@ -291,7 +291,7 @@ const Menu = () => {
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
-                    background-color: #999;
+                    background-color: silver;
                     transition: .2s;
                 }
                 .check_btn.show {

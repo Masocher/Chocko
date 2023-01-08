@@ -44,7 +44,7 @@ const Footer = () => {
                 }
 
                 .copy_write_box {
-                    color: #757575;
+                    color: silver;
                 }
 
                 @media (max-width: 601px) {

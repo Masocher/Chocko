@@ -166,14 +166,16 @@ const Pannel = () => {
 
                 .right_side_content {
                     width: 300px;
-                    display: none;
+                    display: flex;
                     flex-direction: column;
                     align-items: center;
                     margin-top: 50px;
                     padding: 0 60px;
+                    transition: .5s;
+                    opacity: 0;
                 }
                 .right_side_content.show {
-                    display: flex;
+                    opacity: 1;
                 }
 
                 .close_icon {

@@ -92,9 +92,11 @@ const Categories = () => {
                     justify-content: space-between;
                     padding: 30px 30px 30px 0px;
                     z-index: 2;
+                    opacity: 0;
                 }
                 .categories_container.show {
                     left: 130px;
+                    opacity: 1;
                 }
 
                 .genres_box {

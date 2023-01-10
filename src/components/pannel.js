@@ -157,20 +157,6 @@ const Pannel = () => {
                     display: flex;
                     align-items: flex-start;
                     transition: .5s;
-                    overflow-y: scroll;
-                    background-color: #000;
-                }
-                .profile_container::-webkit-scrollbar {
-                    width: 7px;
-                }
-                .profile_container::-webkit-scrollbar-track {
-                    background: #111;
-                }
-                .profile_container::-webkit-scrollbar-thumb {
-                    background: #191919;
-                }
-                .profile_container::-webkit-scrollbar-thumb:hover {
-                    background: #333;
                 }
                 .profile_container.show {
                     bottom: 0;
@@ -181,8 +167,8 @@ const Pannel = () => {
                     display: none;
                     flex-direction: column;
                     align-items: center;
+                    margin-top: 50px;
                     padding: 0 60px;
-                    background-color: #111;
                 }
                 .right_side_content.show {
                     display: flex;
@@ -293,6 +279,19 @@ const Pannel = () => {
                     flex-wrap: wrap;
                     align-items: center;
                     justify-content: space-between;
+                    overflow-y: scroll;
+                }
+                .dashboard_box::-webkit-scrollbar {
+                    width: 7px;
+                }
+                .dashboard_box::-webkit-scrollbar-track {
+                    background: #111;
+                }
+                .dashboard_box::-webkit-scrollbar-thumb {
+                    background: #191919;
+                }
+                .dashboard_box::-webkit-scrollbar-thumb:hover {
+                    background: #333;
                 }
 
                 .subscription_time, .dashboard_inf_box {
@@ -555,8 +554,7 @@ const Pannel = () => {
 
                     .dashboard_box {
                         justify-content: center;
-                        padding: 50px;
-                        height: 1050px;
+                        padding: 50px 20px;
                         width: calc(100% - 380px);
                     }
 
@@ -578,6 +576,7 @@ const Pannel = () => {
 
                 @media (max-width: 769px) {
                     .profile_container {
+                        background-color: #000;
                         justify-content: center;
                     }
 
@@ -775,6 +774,11 @@ const Pannel = () => {
                         width: 33px;
                         height: 33px;
                         font-size: 14px;
+                        border-radius: 10px;
+                    }
+
+                    .dashboard_sections {
+                        height: 80px;
                     }
                 }
             `}</style>

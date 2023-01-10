@@ -157,9 +157,11 @@ const Pannel = () => {
                     display: flex;
                     align-items: flex-start;
                     transition: .5s;
+                    opacity: 0;
                 }
                 .profile_container.show {
                     bottom: 0;
+                    opacity: 1;
                 }
 
                 .right_side_content {

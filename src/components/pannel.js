@@ -63,31 +63,33 @@ const Pannel = () => {
                     </div>
                 </div>
 
-                <div className="dashboard_inf_box">
-                    <div className="dashboard_inf_top_content">
-                        <div className="dashboard_inf_number">۵</div>
-                        <div className="dashboard_inf_icon"><FontAwesomeIcon icon={faMessage} /></div>
+                <div className="user_inf_boxes_1">
+                    <div className="dashboard_inf_box">
+                        <div className="dashboard_inf_top_content">
+                            <div className="dashboard_inf_number">۵</div>
+                            <div className="dashboard_inf_icon"><FontAwesomeIcon icon={faMessage} /></div>
+                        </div>
+                        <div className="dashboard_inf_box_title">کامنت های ارسال شده</div>
+                        <div className="show_more_box">مشاهده بیشتر</div>
                     </div>
-                    <div className="dashboard_inf_box_title">کامنت های ارسال شده</div>
-                    <div className="show_more_box">مشاهده بیشتر</div>
-                </div>
 
-                <div className="dashboard_inf_box">
-                    <div className="dashboard_inf_top_content">
-                        <div className="dashboard_inf_number">۰</div>
-                        <div className="dashboard_inf_icon"><FontAwesomeIcon icon={faVideoCamera} /></div>
+                    <div className="dashboard_inf_box">
+                        <div className="dashboard_inf_top_content">
+                            <div className="dashboard_inf_number">۰</div>
+                            <div className="dashboard_inf_icon"><FontAwesomeIcon icon={faVideoCamera} /></div>
+                        </div>
+                        <div className="dashboard_inf_box_title">فیلم های درخواستی</div>
+                        <div className="show_more_box">مشاهده بیشتر</div>
                     </div>
-                    <div className="dashboard_inf_box_title">فیلم های درخواستی</div>
-                    <div className="show_more_box">مشاهده بیشتر</div>
-                </div>
 
-                <div className="dashboard_inf_box">
-                    <div className="dashboard_inf_top_content">
-                        <div className="dashboard_inf_number">۱۲</div>
-                        <div className="dashboard_inf_icon"><FontAwesomeIcon icon={faPlayCircle} /></div>
+                    <div className="dashboard_inf_box">
+                        <div className="dashboard_inf_top_content">
+                            <div className="dashboard_inf_number">۱۲</div>
+                            <div className="dashboard_inf_icon"><FontAwesomeIcon icon={faPlayCircle} /></div>
+                        </div>
+                        <div className="dashboard_inf_box_title">لیست پخش مورد علاقه</div>
+                        <div className="show_more_box">مشاهده بیشتر</div>
                     </div>
-                    <div className="dashboard_inf_box_title">لیست پخش مورد علاقه</div>
-                    <div className="show_more_box">مشاهده بیشتر</div>
                 </div>
 
                 <div className="user_inf_boxes">
@@ -288,7 +290,7 @@ const Pannel = () => {
 
                 .subscription_time, .dashboard_inf_box {
                     background-color: #111;
-                    width: fit-content;
+                    width: 300px;
                     height: 100px;
                     color: #ff9000;
                     display: flex;
@@ -347,9 +349,9 @@ const Pannel = () => {
                     letter-spacing: .5px;
                 }
 
-                .dashboard_inf_icon {
+                .user_inf_boxes_1 .dashboard_inf_icon {
                     color: #ff9000;
-                    font-size: 24px;
+                    font-size: 26px;
                     color: #ff9000;
                     margin: 8px 0 0 15px;
                 }
@@ -388,13 +390,20 @@ const Pannel = () => {
                     color: #ff9000;
                 }
 
-                .user_inf_boxes {
+                .user_inf_boxes, .user_inf_boxes_1 {
                     width: 425px;
                     height: 345px;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
                     align-content: space-between;
+                }
+
+                .user_inf_boxes_1 {
+                    flex-wrap: nowrap;
+                    width: calc(100% - 380px);
+                    align-items: center;
+                    height: fit-content;
                 }
 
                 .user_inf_boxes .dashboard_inf_box {

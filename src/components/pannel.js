@@ -18,6 +18,8 @@ const Pannel = () => {
                 <div className="user_img"></div>
                 <div className="user_name">Masocher</div>
                 <div className="user_phone_number">09031698509</div>
+
+                <div className="close_icon_2" onClick={() => dispatch(closeProfileBox())}><FontAwesomeIcon icon={faClose} /></div>    
             </div>
 
             <div className="close_icon" onClick={() => dispatch(closeProfileBox())}><FontAwesomeIcon icon={faClose} /></div>
@@ -503,6 +505,22 @@ const Pannel = () => {
                     text-align: center;
                 }
 
+                .close_icon_2 {
+                    color: #000;
+                    background-color: #ff9000;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    cursor: pointer;
+                }
+
                 @media (max-width: 1514px) {
                     .dashboard_box {
                         justify-content: center;
@@ -670,7 +688,7 @@ const Pannel = () => {
 
                 @media (max-width: 426px) {
                     .dashboard_box {
-                        height: 352px;
+                        height: 363px;
                     }
 
                     .user_tickets {
@@ -732,7 +750,7 @@ const Pannel = () => {
 
                 @media (max-width: 376px) {
                     .dashboard_box {
-                        height: 352px;
+                        height: 363px;
                     }
 
                     .user_inf_boxes {
@@ -771,6 +789,10 @@ const Pannel = () => {
                 }
 
                 @media (max-width: 321px) {
+                    .dashboard_box {
+                        height: 371px;
+                    }
+
                     .user_inf_boxes {
                         width: 95%;
                     }

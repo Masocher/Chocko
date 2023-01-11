@@ -452,6 +452,7 @@ const Pannel = () => {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    margin-bottom: 20px;
                 }
 
                 .user_tickets_title_box {
@@ -535,7 +536,7 @@ const Pannel = () => {
                     }
                 }
 
-                @media (max-width: 1388px) {
+                @media (max-width: 1400px) {
                     .user_inf_boxes {
                         width: 425px;
                         height: 345px;
@@ -585,8 +586,8 @@ const Pannel = () => {
                     }
 
                     .dashboard_box {
-                        padding: 135px 0 200px 0;
-                        height: 1000px;
+                        padding: 135px 0 0 0;
+                        height: 500px;
                         width: 100%;
                         position: relative;
                     }
@@ -669,7 +670,7 @@ const Pannel = () => {
 
                 @media (max-width: 426px) {
                     .dashboard_box {
-                        height: 910px;
+                        height: 352px;
                     }
 
                     .user_tickets {
@@ -731,7 +732,7 @@ const Pannel = () => {
 
                 @media (max-width: 376px) {
                     .dashboard_box {
-                        height: 810px;
+                        height: 352px;
                     }
 
                     .user_inf_boxes {
@@ -778,7 +779,7 @@ const Pannel = () => {
                         width: 33px;
                         height: 33px;
                         font-size: 14px;
-                        border-radius: 10px;
+                        border-radius: 50%;
                     }
 
                     .dashboard_sections {

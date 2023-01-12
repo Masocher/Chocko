@@ -723,9 +723,6 @@ const Pannel = () => {
                         font-size: 8px;
                     }
 
-                    .user_inf_boxes_1 {
-                        width: 100%;
-                    }
                     .user_inf_boxes_1 .dashboard_inf_box {
                         height: 120px;
                         wdith: 100%;
@@ -740,6 +737,11 @@ const Pannel = () => {
                     }
                     .user_inf_boxes_1 .dashboard_inf_box .dashboard_inf_box_title {
                         font-size: 10px;
+                    }
+
+                    .user_inf_boxes_1 {
+                        width: 100%;
+                        height: fit-content;
                     }
 
                     .subscription_time {

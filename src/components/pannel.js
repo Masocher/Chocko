@@ -2,7 +2,7 @@
 import { useSelector } from "react-redux"
 
 // components
-import DashboardBox from "./dashboard-box"
+import DashboardBox from "./pannel sections/dashboard-box"
 import PannelMenu from "./pannel-menu"
 
 const Pannel = () => {

@@ -2,8 +2,9 @@
 import { useSelector } from "react-redux"
 
 // components
-import DashboardBox from "./pannel sections/dashboard-box"
 import PannelMenu from "./pannel-menu"
+import DashboardBox from "./pannel sections/dashboard-box"
+import ProfileBox from "./pannel sections/profile-box"
 
 const Pannel = () => {
 
@@ -14,6 +15,7 @@ const Pannel = () => {
             
             <PannelMenu />
             <DashboardBox />
+            <ProfileBox />
 
             <style>{`
                 .profile_container {

@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 
 // components
 import DashboardBox from "./dashboard-box"
+import PannelMenu from "./pannel-menu"
 
 const Pannel = () => {
 
@@ -11,6 +12,7 @@ const Pannel = () => {
     return (
         <div className={`profile_container ${profileBoxStatus ? 'show' : ''}`}>
             
+            <PannelMenu />
             <DashboardBox />
 
             <style>{`

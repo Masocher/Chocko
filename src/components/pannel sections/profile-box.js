@@ -1,13 +1,23 @@
 // redux
 import { useSelector } from "react-redux"
 
+// assets
+import cover_img from './../../../public/images/user-images/cover-img.jpg'
+
+// tools
+import Image from 'next/legacy/image'
+
 const ProfileBox = () => {
 
     const dashboardSectionsNumber = useSelector(rootReducer => rootReducer.reducer_16)
 
     return (
         <div className={`profile_container ${dashboardSectionsNumber === 2 ? 'show' : ''}`}>
-            <div className="profile_box">Hello World</div>
+            <div className="profile_box">
+                <div className="profile_user_box">
+                    <Image style={{borderRadius: '10px'}} src={cover_img} fill height={700} objectFit="cover" />
+                </div>
+            </div>
 
             <style jsx>{`
                 .profile_container {
@@ -42,6 +52,13 @@ const ProfileBox = () => {
                 }
                 .profile_box::-webkit-scrollbar-thumb:hover {
                     background: #333;
+                }
+
+                .profile_user_box {
+                    width: calc(100% - 60px);
+                    padding: 30px;
+                    background-color: #111;
+                    border-radius: 10px;
                 }
             `}</style>
         </div>

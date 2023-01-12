@@ -404,7 +404,6 @@ const Pannel = () => {
 
                 .user_inf_boxes, .user_inf_boxes_1 {
                     width: 425px;
-                    height: 345px;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;

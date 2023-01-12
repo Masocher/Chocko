@@ -142,7 +142,7 @@ const ItemPage = () => {
                     display: flex;
                     align-items: end;
                     height: fit-content;
-                    color: #757575;
+                    color: #999;
                     border: solid #222;
                     border-width: 0 0 1px 0;
                     padding: 0 0 12px 100px;
@@ -237,7 +237,7 @@ const ItemPage = () => {
                     border: 1px solid #111;
                     padding: 4.5px 10px;
                     font-size: 12px;
-                    color: #757575;
+                    color: #999;
                     border-radius: 5px;
                     cursor: pointer;
                     transition: .2s;
@@ -270,7 +270,7 @@ const ItemPage = () => {
                     flex-direction: column;
                     align-items: center;
                     font-size: 10px;
-                    color: #757575;
+                    color: #999;
                 }
 
                 .attribute_title span {

@@ -168,7 +168,7 @@ const StarPage = () => {
                     flex-direction: column;
                     align-items: center;
                     font-size: 10px;
-                    color: #757575;
+                    color: #999;
                 }
 
                 .star_info_title span {
@@ -191,7 +191,7 @@ const StarPage = () => {
 
                 .profession {
                     margin-left: 15px;
-                    color: #757575;
+                    color: #999;
                     background-color: #111;
                     border-radius: 5px;
                     padding: 8px 15px;
@@ -219,7 +219,6 @@ const StarPage = () => {
                 }
 
                 .about_description {
-                    letter-spacing: .5px;
                     font-size: 15px;
                     font-family: Vazir;
                     line-height: 30px;

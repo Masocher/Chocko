@@ -1,6 +1,6 @@
 // redux
 import { useSelector, useDispatch } from "react-redux"
-import { closeProfileBox, openDashboardSections } from "../redux/actions"
+import { closeProfileBox, openDashboardSections } from "../../redux/actions"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -148,6 +148,7 @@ const PannelMenu = () => {
                 .dashboard_section.show {
                     color: #000;
                     background-color: #ff9000;
+                    border-color: #ff9000;
                 }
                 .dashboard_section.show:hover {
                     color: #000;

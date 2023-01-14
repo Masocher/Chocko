@@ -215,6 +215,122 @@ const ProfileBox = () => {
                     font-family: Vazir;
                     margin-top: 15px;
                 }
+
+                @media (max-width: 1300px) {
+                    .user_informations_container {
+                        padding: 0;
+                        flex-direction: column;
+                    }
+
+                    .user_informations_box {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .user_information_box_1 {
+                        flex-direction: column;
+                    }
+
+                    .user_information_box_2 {
+                        margin: 5px 0 10px 0;
+                    }
+
+                    .user_profile_img {
+                        position: relative;
+                        top: -75px;
+                        right: 0;
+                        width: 100px;
+                        height: 100px;
+                        border-width: 15px;
+                        margin-bottom: -75px;
+                    }
+
+                    .user_about_box {
+                        width: calc(100% - 60px);
+                        padding: 20px 30px 30px 30px;
+                    }
+    
+                    .user_about_title {
+                        font-size: 26px;
+                    }
+    
+                    .user_about_title span {
+                        font-size: 40px;
+                        top: -15px;
+                    }
+    
+                    .user_about_description {
+                        margin-top: 8px;
+                        font-size: 14px;
+                        line-height: 28px;
+                    }
+                }
+
+                @media (max-width: 1025px) {
+                    .user_about_box {
+                        margin: -40px 0 0 0;
+                    }
+                }
+
+                @media (max-width: 769px) {
+                    .profile_container {
+                        width: calc(100% - 100px);
+                        height: 521px;
+                        padding: 0 50px 0 50px;
+                        margin-top: 115px;
+                    }
+                    
+                    .profile_box {
+                        padding: 20px 50px 30px 50px;
+                    }
+
+                    .user_about_box {
+                        margin: 20px 0 0 0;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .user_information_box_2 {
+                        font-size: 10px;
+                    }
+
+                    .last_activity_date span {
+                        font-size: 10px;
+                    }
+    
+                    .user_registery_date {
+                        border-color: #ff9000;
+                    }
+    
+                    .calendar_icon, .clock_icon {
+                        display: none;
+                    }
+
+                    .profile_user_box {
+                        width: calc(100% - 40px);
+                        padding: 20px;
+                    }
+
+                    .profile_container {
+                        width: calc(100% - 40px);
+                        padding: 0 20px 0 20px;
+                    }
+                }
+
+                @media (max-width: 376px) {
+                    .user_about_title {
+                        font-size: 24px;
+                    }
+    
+                    .user_about_title span {
+                        top: -17px;
+                    }
+    
+                    .user_about_description {
+                        font-size: 12px;
+                        line-height: 25px;
+                    }
+                }
             `}</style>
         </div>
     )

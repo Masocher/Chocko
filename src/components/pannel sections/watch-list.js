@@ -14,7 +14,7 @@ const WatchList = () => {
         <div className={`watch_list_container ${dashboardSectionsNumber === 3 ? 'show' : ''}`}>
             <div className="watch_list_box">
                 {
-                    filmsAndSerialsInformation.map(movie => <Movie key={movie.id} title={movie.title} />)
+                    filmsAndSerialsInformation[0].map(movie => <Movie key={movie.id} title={movie.category} />)
                 }
             </div>
             <style jsx>{`
@@ -54,6 +54,19 @@ const WatchList = () => {
                 }
                 .watch_list_box::-webkit-scrollbar-thumb:hover {
                     background: #333;
+                }
+
+                @media (max-width: 769px) {
+                    .watch_list_container {
+                        width: calc(100% - 60px);
+                        height: 525px;
+                        padding: 0 30px 0 30px;
+                        margin-top: 115px;
+                    }
+                    
+                    .watch_list_box {
+                        padding: 20px 50px 30px 50px;
+                    }
                 }
             `}</style>
         </div>

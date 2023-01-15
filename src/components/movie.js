@@ -7,13 +7,13 @@ const Movie = (data) => {
             <style jsx>{`
                 .movie_container {
                     position: relative;
-                    margin: 10px;
+                    margin: 0 10px 40px 10px;
                 }
 
                 .movie_img {
                     width: 180px;
                     height: 260px;
-                    background-color: #111;
+                    background-color: #222;
                     border-radius: 10px;
                 }
 
@@ -24,6 +24,49 @@ const Movie = (data) => {
                     font-weight: 100;
                     font-size: 16px;
                     letter-spacing: .5px;
+                }
+
+                @media (max-width: 1025px) {
+                    .movie_img {
+                        width: 160px;
+                        height: 220px;
+                    }
+
+                    .movie_container {
+                        margin: 0 0 50px 0;
+                    }
+
+                    .movie_title {
+                        font-size: 14px;
+                    }
+                }
+
+                @media (max-width: 376px) {
+                    .movie_img {
+                        width: 140px;
+                        height: 180px;
+                    }
+
+                    .movie_container {
+                        margin: 0 0 40px 0;
+                    }
+
+                    .movie_title {
+                        font-size: 12px;
+                        bottom: -30px;
+                    }
+                }
+
+                @media (max-width: 321px) {
+                    .movie_img {
+                        width: 120px;
+                        height: 160px;
+                    }
+
+                    .movie_title {
+                        font-size: 10px;
+                        bottom: -25px;
+                    }
                 }
             `}</style>
         </div>

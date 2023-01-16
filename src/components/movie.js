@@ -33,7 +33,7 @@ const Movie = (data) => {
                     }
 
                     .movie_container {
-                        margin: 0 0 50px 0;
+                        margin: 0 5px 50px 5px;
                     }
 
                     .movie_title {
@@ -48,7 +48,7 @@ const Movie = (data) => {
                     }
 
                     .movie_container {
-                        margin: 0 0 40px 0;
+                        margin: 0 5px 40px 5px;
                     }
 
                     .movie_title {
@@ -61,6 +61,10 @@ const Movie = (data) => {
                     .movie_img {
                         width: 120px;
                         height: 160px;
+                    }
+
+                    .movie_container {
+                        margin: 0 5px 40px 5px;
                     }
 
                     .movie_title {

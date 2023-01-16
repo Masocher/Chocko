@@ -436,7 +436,7 @@ const DashboardBox = () => {
                 @media (max-width: 769px) {
                     .dashboard_box {
                         padding: 135px 0 0 0;
-                        height: 501px;
+                        height: 420px;
                         width: 100%;
                         position: relative;
                     }
@@ -448,7 +448,7 @@ const DashboardBox = () => {
 
                 @media (max-width: 426px) {
                     .dashboard_box {
-                        height: 363px;
+                        height: 435px;
                     }
 
                     .user_tickets {
@@ -502,7 +502,7 @@ const DashboardBox = () => {
 
                 @media (max-width: 376px) {
                     .dashboard_box {
-                        height: 363px;
+                        height: 435px;
                     }
 
                     .user_inf_boxes {
@@ -542,7 +542,7 @@ const DashboardBox = () => {
 
                 @media (max-width: 321px) {
                     .dashboard_box {
-                        height: 371px;
+                        height: 440px;
                     }
 
                     .user_inf_boxes {

@@ -39,7 +39,7 @@ const WatchList = () => {
                     padding: 50px;
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-between;
+                    justify-content: center;
                     overflow-y: scroll;
                     align-items: flex-start;
                 }
@@ -59,13 +59,22 @@ const WatchList = () => {
                 @media (max-width: 769px) {
                     .watch_list_container {
                         width: calc(100% - 60px);
-                        height: 525px;
+                        height: 450px;
                         padding: 0 30px 0 30px;
                         margin-top: 115px;
                     }
                     
                     .watch_list_box {
                         padding: 20px 50px 30px 50px;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .watch_list_container {
+                        width: 100%;
+                        height: 480px;
+                        margin-top: 88px;
+                        padding: 30px 0;
                     }
                 }
             `}</style>

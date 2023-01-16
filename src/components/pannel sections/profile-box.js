@@ -268,24 +268,20 @@ const ProfileBox = () => {
 
                 @media (max-width: 1025px) {
                     .user_about_box {
-                        margin: -40px 0 0 0;
+                        margin: 20px 0 0 0;
                     }
                 }
 
                 @media (max-width: 769px) {
                     .profile_container {
                         width: calc(100% - 100px);
-                        height: 521px;
+                        height: 435px;
                         padding: 0 50px 0 50px;
                         margin-top: 115px;
                     }
                     
                     .profile_box {
                         padding: 20px 50px 30px 50px;
-                    }
-
-                    .user_about_box {
-                        margin: 20px 0 0 0;
                     }
                 }
 
@@ -314,6 +310,7 @@ const ProfileBox = () => {
                     .profile_container {
                         width: calc(100% - 40px);
                         padding: 0 20px 0 20px;
+                        height: 455px;
                     }
                 }
 
@@ -329,6 +326,32 @@ const ProfileBox = () => {
                     .user_about_description {
                         font-size: 12px;
                         line-height: 25px;
+                    }
+                }
+
+                @media (max-width: 321px) {
+                    .profile_container {
+                        height: 460px;
+                    }
+
+                    .user_profile_img {
+                        position: relative;
+                        top: -55px;
+                        right: 0;
+                        width: 70px;
+                        height: 70px;
+                        border-width: 10px;
+                        margin-bottom: -55px;
+                    }
+
+                    .edit_profile_information {
+                        padding: 5px 20px;
+                        font-size: 12px;
+                    }
+
+                    .user_name {
+                        font-size: 26px;
+                        letter-spacing: .5px;
                     }
                 }
             `}</style>

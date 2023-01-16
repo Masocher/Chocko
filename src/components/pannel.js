@@ -6,6 +6,7 @@ import PannelMenu from "./pannel sections/pannel-menu"
 import DashboardBox from "./pannel sections/dashboard-box"
 import ProfileBox from "./pannel sections/profile-box"
 import WatchList from "./pannel sections/watch-list"
+import MovieRequest from "./pannel sections/movie-request"
 
 const Pannel = () => {
 
@@ -18,6 +19,7 @@ const Pannel = () => {
             <DashboardBox />
             <ProfileBox />
             <WatchList />
+            <MovieRequest />
 
             <style>{`
                 .profile_container {

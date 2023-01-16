@@ -6,6 +6,9 @@ import { closeProfileBox, openDashboardSections } from "../../redux/actions"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClose, faStar, faHome, faCrown, faEdit, faSquarePlus, faUser, faMessage } from "@fortawesome/free-solid-svg-icons"
 
+// tools
+import Link from "next/link"
+
 const PannelMenu = () => {
 
     const dispatch = useDispatch()
@@ -35,7 +38,7 @@ const PannelMenu = () => {
                     <div className={`dashboard_section ${dashboardSectionsNumber == 1 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(1))}><FontAwesomeIcon icon={faHome} /> <div>داشبورد</div></div>
                     <div className={`dashboard_section ${dashboardSectionsNumber == 2 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(2))}><FontAwesomeIcon icon={faUser} /> <div>مشاهده پروفایل</div></div>
                     <div className={`dashboard_section ${dashboardSectionsNumber == 3 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(3))}><FontAwesomeIcon icon={faStar} /> <div>لیست تماشا</div></div>
-                    <div className={`dashboard_section ${dashboardSectionsNumber == 4 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(4))}><FontAwesomeIcon icon={faCrown} /> <div>خرید اشتراک</div></div>
+                    <Link href='/buy-subscription' style={{textDecoration: 'none', width: 'calc(100% - 20px)', marginRight: '-40px'}} onClick={() => dispatch(closeProfileBox())}><div style={{width: '100%'}} className="dashboard_section" onClick={() => dispatch(openDashboardSections(1))}><FontAwesomeIcon icon={faCrown} /> <div>خرید اشتراک</div></div></Link>
                     <div className={`dashboard_section ${dashboardSectionsNumber == 5 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(5))}><FontAwesomeIcon icon={faSquarePlus} /> <div>درخواست فیلم و سریال</div></div>
                     <div className={`dashboard_section ${dashboardSectionsNumber == 6 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(6))}><FontAwesomeIcon icon={faMessage} /> <div>کامنت ها</div></div>
                     <div className={`dashboard_section ${dashboardSectionsNumber == 7 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(7))}><FontAwesomeIcon icon={faEdit} /> <div>ویرایش اطلاعات</div></div>

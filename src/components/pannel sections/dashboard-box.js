@@ -436,7 +436,7 @@ const DashboardBox = () => {
                 @media (max-width: 769px) {
                     .dashboard_box {
                         padding: 135px 0 0 0;
-                        height: 420px;
+                        height: 501px;
                         width: 100%;
                         position: relative;
                     }

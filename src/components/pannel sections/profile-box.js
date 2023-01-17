@@ -275,7 +275,7 @@ const ProfileBox = () => {
                 @media (max-width: 769px) {
                     .profile_container {
                         width: calc(100% - 100px);
-                        height: 435px;
+                        height: 525px;
                         padding: 0 50px 0 50px;
                         margin-top: 115px;
                     }

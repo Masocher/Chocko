@@ -59,7 +59,7 @@ const WatchList = () => {
                 @media (max-width: 769px) {
                     .watch_list_container {
                         width: calc(100% - 60px);
-                        height: 450px;
+                        height: 520px;
                         padding: 0 30px 0 30px;
                         margin-top: 115px;
                     }

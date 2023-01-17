@@ -476,6 +476,13 @@ const ItemPage = () => {
                     .attribute {
                         margin-bottom: 5px
                     }
+
+                    .serial_cover {
+                        background-color: #222;
+                        border-radius: 10px;
+                        width: 220px;
+                        height: 280px;
+                    }
                 }
 
                 @media (max-width: 376px) {

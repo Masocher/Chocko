@@ -45,21 +45,21 @@ const DownloadPopUpBox = () => {
                     font-size: 38px;
                     font-weight: 100;
                     height: fit-content;
-                    border-bottom: 1px solid #ff9000;
+                    border-bottom: 1px solid #333;
                     width: 90%;
                     text-align: center;
-                    padding-bottom: 10px;
+                    padding-bottom: 20px;
                 }
 
                 .close_btn {
                     position: absolute;
-                    top: 62px;
+                    top: 70px;
                     right: 80px;
-                    font-size: 16px;
+                    font-size: 14px;
                     color: #000;
                     background-color: #ff9000;
-                    width: 35px;
-                    height: 35px;
+                    width: 25px;
+                    height: 25px;
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
@@ -85,17 +85,17 @@ const DownloadPopUpBox = () => {
                     }
 
                     .close_btn {
-                        top: 58px;
+                        top: 63px;
                         right: 40px;
-                        font-size: 14px;
-                        width: 30px;
-                        height: 30px;
+                        width: 23px;
+                        height: 23px;
+                        font-size: 12px;
                     }
                 }
 
                 @media (max-width: 376px) {
                     .close_btn {
-                        top: 39px;
+                        top: 43px;
                     }
 
                     .download_box_container {
@@ -115,11 +115,11 @@ const DownloadPopUpBox = () => {
                     }
 
                     .close_btn {
-                        top: 38px;
-                        right: 30px;
+                        top: 41px;
+                        right: 35px;
                         font-size: 12px;
-                        width: 25px;
-                        height: 25px;
+                        width: 20px;
+                        height: 20px;
                     }
                 }
             `}</style>

@@ -1338,8 +1338,6 @@ const reducer_16 = (state = dashboardSectionsNumber, action) => {
         case 3: return state = 3
         case 4: return state = 4
         case 5: return state = 5
-        case 6: return state = 6
-        case 7: return state = 7
         default: return state
     }
 }

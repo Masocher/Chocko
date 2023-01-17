@@ -35,9 +35,8 @@ const PannelMenu = () => {
                     <div className={`dashboard_section ${dashboardSectionsNumber == 1 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(1))}><FontAwesomeIcon icon={faHome} /> <div>داشبورد</div></div>
                     <div className={`dashboard_section ${dashboardSectionsNumber == 2 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(2))}><FontAwesomeIcon icon={faUser} /> <div>مشاهده پروفایل</div></div>
                     <div className={`dashboard_section ${dashboardSectionsNumber == 3 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(3))}><FontAwesomeIcon icon={faStar} /> <div>لیست تماشا</div></div>
-                    <div className={`dashboard_section ${dashboardSectionsNumber == 5 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(5))}><FontAwesomeIcon icon={faPlus} /> <div>درخواست فیلم و سریال</div></div>
-                    <div className={`dashboard_section ${dashboardSectionsNumber == 6 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(6))}><FontAwesomeIcon icon={faMessage} /> <div>کامنت ها</div></div>
-                    <div className={`dashboard_section ${dashboardSectionsNumber == 7 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(7))}><FontAwesomeIcon icon={faEdit} /> <div>ویرایش اطلاعات</div></div>
+                    <div className={`dashboard_section ${dashboardSectionsNumber == 4 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(4))}><FontAwesomeIcon icon={faPlus} /> <div>درخواست فیلم و سریال</div></div>
+                    <div className={`dashboard_section ${dashboardSectionsNumber == 5 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(5))}><FontAwesomeIcon icon={faEdit} /> <div>ویرایش اطلاعات</div></div>
                 </div>
             </div>
 
@@ -47,7 +46,7 @@ const PannelMenu = () => {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin-top: 50px;
+                    margin-top: 70px;
                     padding: 0 60px;
                     transition: .5s;
                     opacity: 0;
@@ -68,9 +67,8 @@ const PannelMenu = () => {
                     transition: .2s;
                     border: 1px solid #ff9000;
                     cursor: pointer;
-                    margin-bottom: 50px;
                     position: absolute;
-                    top: 55px;
+                    top: 75px;
                     right: 50px;
                     font-size: 14px;
                 }
@@ -126,7 +124,7 @@ const PannelMenu = () => {
                     color: #fff;
                     width: calc(100% - 20px);
                     text-align: start;
-                    margin-bottom: 15px;
+                    margin-bottom: 20px;
                     font-weight: 100;
                     letter-spacing: .5px;
                     cursor: pointer;
@@ -182,6 +180,7 @@ const PannelMenu = () => {
                     .close_icon {
                         width: 26px;
                         height: 26px;
+                        top: 56px;
                     }
                 }
 

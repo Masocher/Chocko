@@ -6,7 +6,7 @@ const MovieRequest = () => {
     const dashboardSectionsNumber = useSelector(rootReducer => rootReducer.reducer_16)
 
     return (
-        <div className={`movie_request_container ${dashboardSectionsNumber === 5 ? 'show' : ''}`}>
+        <div className={`movie_request_container ${dashboardSectionsNumber === 4 ? 'show' : ''}`}>
             <div className="movie_request_box">
                 <div className="title">درخواست فیلم و سریال</div>
                 <form className="movie_request_form">

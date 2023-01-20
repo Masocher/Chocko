@@ -9,10 +9,25 @@ const MovieRequest = () => {
         <div className={`movie_request_container ${dashboardSectionsNumber === 4 ? 'show' : ''}`}>
             <div className="movie_request_box">
                 <div className="title">درخواست فیلم و سریال</div>
+
+                <div className="movie_or_serial_box">
+                    <div className="item_input_box">
+                        <label for="movie" className="input_title">فیلم</label>
+                        <input id="movie" name="item_type" checked="checked" className="item_input" type='radio' />
+                    </div>
+
+                    <div className="item_input_box">
+                        <label for="serial" className="input_title">سریال</label>
+                        <input id="serial" name="item_type" className="item_input" type='radio' />
+                    </div>
+                </div>
+
                 <form className="movie_request_form">
                     <input className="movie_name movie_req_input" type="text" placeholder="نام فیلم یا سریال" />
-                    <textarea className="about_movie movie_req_input" placeholder="درباره فیلم یا سریال" />
+                    <textarea className="about_movie movie_req_input" placeholder="درباره فیلم یا سریال ( اختیاری )"/>
+                    <input className="movie_name movie_req_input" type="text" placeholder="لینک imdb ( اختیاری)" />
                 </form>
+                
                 <div className="submit_btn">ارسال</div>
             </div>
 
@@ -51,7 +66,7 @@ const MovieRequest = () => {
                     align-items: center;
                     width: calc(100% - 100px);
                     padding: 0 50px;
-                    margin: 30px 0 20px 0;
+                    margin: 15px 0 20px 0;
                 }
 
                 .movie_req_input {
@@ -69,7 +84,7 @@ const MovieRequest = () => {
                     font-size: 13px;
                 }
                 .movie_req_input:focus {
-                    border-color: #ff9000;
+                    border-color: #444;
                 }
 
                 .movie_name {
@@ -78,15 +93,44 @@ const MovieRequest = () => {
                 }
 
                 .about_movie {
-                    height: 200px;
+                    height: 100px;
                     resize: none;
                     font-family: Vazir;
-                    margin-top: 15px;
+                    margin: 15px 0;
                     width: 100% !important;
+                }
+                .about_movie::-webkit-scrollbar {
+                    width: 7px;
+                }
+                .about_movie::-webkit-scrollbar-track {
+                    background: #000;
+                }
+                .about_movie::-webkit-scrollbar-thumb {
+                    background: #333;
                 }
 
                 .submit_btn {
                     padding: 5px 20px;
+                }
+
+                .movie_or_serial_box {
+                    display: flex;
+                    padding: 0 80px;
+                    width: calc(100% - 160px);
+                    justify-content: space-between;
+                }
+
+                .item_input_box {
+                    display: flex;
+                    align-items: center;
+                    background-color: #000;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    margin: 20px 0 0 0;
+                }
+
+                .input_title {
+                    margin: 3px 0 0 10px;
                 }
 
                 @media (max-width: 1025px) {
@@ -126,6 +170,20 @@ const MovieRequest = () => {
                     .about_movie {
                         height: 100px;
                     }
+
+                    .movie_or_serial_box {
+                        padding: 0 50px;
+                        width: calc(100% - 100px);
+                    }
+    
+                    .item_input_box {
+                        padding: 10px 20px 12px 16px;
+                    }
+    
+                    .input_title {
+                        font-size: 14px;
+                        margin: 2px 0 0 8px;
+                    }
                 }
 
                 @media (max-width: 321px) {
@@ -136,6 +194,11 @@ const MovieRequest = () => {
                     .movie_request_form {
                         width: calc(100% - 40px);
                         padding: 0 20px;
+                    }
+
+                    .movie_or_serial_box {
+                        padding: 0 15px;
+                        width: calc(100% - 30px);
                     }
                 }
             `}</style>

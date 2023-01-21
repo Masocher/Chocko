@@ -157,6 +157,164 @@ const EditInformations = () => {
                     letter-spacing: .5px;
                     margin: -10px 10px 0 0;
                 }
+
+                @media (max-width: 1140px) {
+                    .informations_box {
+                        width: 500px;
+                    }
+
+                    .inf_input {
+                        width: 180px;
+                    }
+
+                    .pass_input {
+                        width: 110px;
+                    }
+                }
+
+                @media (max-width: 1025px) {
+                    .edit_informations_container {
+                        width: 100%;
+                    }
+
+                    .password_description {
+                        font-size: 10px;
+                        letter-spacing: 0;
+                        margin: -15px 10px 0 0;
+                    }
+                }
+
+                @media (max-width: 426px) {
+                    .informations_box {
+                        width: 360px;
+                    }
+
+                    .input_boxes {
+                        margin-bottom: 25px;
+                    }
+
+                    .inf_input {
+                        width: 130px;
+                        padding: 15px 20px;
+                        font-size: 12px;
+                        letter-spacing: 0;
+                    }
+
+                    .pass_input {
+                        width: 90px;
+                        padding: 15px 40px;
+                    }
+
+                    span {
+                        font-size: 10px;
+                        margin: 0 15px 7px 0;
+                    }
+
+                    .password_description {
+                        margin: -5px 10px 0 0;
+                    }
+
+                    .lock_icon {
+                        top: 38px;
+                        right: 20px;
+                        font-size: 12px;
+                    }
+
+                    .save_changes_btn {
+                        padding: 10px 30px;
+                        font-size: 12px;
+                        margin: 30px auto 0 auto;
+                    }
+                }
+
+                @media (max-width: 376px) {
+                    .edit_informations_container {
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+
+                    .password_description {
+                        width: 65%;
+                        margin: -5px auto 0 auto;
+                        text-align: center;
+                        line-height: 22px;
+                    }
+
+                    span {
+                        font-size: 8px;
+                    }
+
+                    .informations_box {
+                        width: 320px;
+                    }
+
+                    .input_boxes {
+                        margin-bottom: 20px;
+                    }
+
+                    .inf_input {
+                        width: 110px;
+                        padding: 12px 20px;
+                        font-size: 12px;
+                        letter-spacing: 0;
+                    }
+
+                    .lock_icon {
+                        top: 34px;
+                        right: 18px;
+                        font-size: 10px;
+                    }
+
+                    .pass_input {
+                        width: 80px;
+                        padding: 12px 35px;
+                    }
+
+                    .save_changes_btn {
+                        padding: 10px 50px;
+                        font-size: 10px;
+                        letter-spacing: .5px;
+                        margin: 20px auto 0 auto;
+                    }
+                }
+
+                @media (max-width: 321px) {
+                    .informations_box {
+                        width: 280px;
+                    }
+
+                    .inf_input {
+                        width: 95px;
+                        padding: 12px 18px;
+                        font-size: 10px;
+                    }
+
+                    .pass_input {
+                        width: 60px;
+                        padding: 12px 35px;
+                    }
+
+                    .lock_icon {
+                        top: 30px;
+                        right: 18px;
+                        font-size: 10px;
+                    }
+
+                    .password_description {
+                        width: 60%;
+                        margin: -10px auto 0 auto;
+                        line-height: 16px;
+                        font-size: 8px;
+                    }
+
+                    span {
+                        font-size: 6px;
+                    }
+
+                    .save_changes_btn {
+                        padding: 10px 80px;
+                    }
+                }
             `}</style>
         </div>
     )

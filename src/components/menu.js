@@ -3,7 +3,7 @@ import Categories from "./categories"
 
 // redux
 import { useDispatch, useSelector } from "react-redux"
-import { closeMenu, setLight, openCategories, closeCategories } from "./../redux/actions"
+import { closeMenu, setLight, openCategories, closeCategories, openProfileBox } from "./../redux/actions"
 
 // tools
 import Link from "next/link"
@@ -11,7 +11,7 @@ import { useRouter } from "next/router"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPhone, faHome, faTicket, faClose } from "@fortawesome/free-solid-svg-icons"
+import { faPhone, faHome, faTicket, faClose, faAngleLeft } from "@fortawesome/free-solid-svg-icons"
 
 const Menu = () => {
 
@@ -21,6 +21,7 @@ const Menu = () => {
     let menuStatus = useSelector(rootReducer => rootReducer.reducer_1)
     let temStatus = useSelector(rootReducer => rootReducer.reducer_2)
     let categoriesStatus = useSelector(rootReducer => rootReducer.reducer_3)
+    const isAuthenticated = useSelector(rootReducer => rootReducer.reducer_14)
 
     return (
         <div className={`menu_container ${menuStatus ? "show" : ""}`}>
@@ -77,13 +78,25 @@ const Menu = () => {
                     </div>
                 </div>
 
-                <div className="user_box">
-                    <div className="have_not_account">شما حساب کاربری ندارید !</div>
-                    <div className="sign_buttons">
-                        <Link href="/sign-in" style={{ textDecoration: "none" }}><div className="sign_btn">ورود</div></Link>
-                        <Link href="/sign-up" style={{ textDecoration: "none" }}><div className="sign_btn">عضویت</div></Link>
-                    </div>
-                </div>
+                {
+                    isAuthenticated ?
+                        <div className="user_box_2">
+                            <div className="user_inf_box">
+                                <div className="user_image"></div>
+                                <div className="user_name">Masocher</div>
+                            </div>
+
+                            <div className="pannel_link" onClick={() => dispatch(openProfileBox())}>مشاهده پنل کاربری</div>
+                        </div>
+                        :
+                        <div className="user_box">
+                            <div className="have_not_account">شما حساب کاربری ندارید !</div>
+                            <div className="sign_buttons">
+                                <Link href="/sign-in" style={{ textDecoration: "none" }}><div className="sign_btn">ورود</div></Link>
+                                <Link href="/sign-up" style={{ textDecoration: "none" }}><div className="sign_btn">عضویت</div></Link>
+                            </div>
+                        </div>
+                }
             </div>
 
             <style jsx>{`
@@ -184,7 +197,7 @@ const Menu = () => {
                     color: #111;
                 }
 
-                .user_box {
+                .user_box, .user_box_2 {
                     width: 85%;
                     display: flex;
                     justify-content: center;
@@ -316,6 +329,52 @@ const Menu = () => {
                     font-size: 14px;
                 }
                 .close_box:hover {
+                    background: none;
+                    color: #ff9000;
+                }
+
+                .user_box_2 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    padding: 30px;
+                    width: calc(85% - 60px);
+                    position: relative;
+                }
+
+                .user_inf_box {
+                    display: flex;
+                }
+
+                .user_image {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: #222;
+                }
+
+                .user_name {
+                    color: #fff;
+                    font-size: 18px;
+                    margin: 8px 12px 0 0;
+                }
+
+                .pannel_link {
+                    background-color: #ff9000;
+                    color: #000;
+                    display: flex;
+                    aling-items: center;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 112px;
+                    top: 70px;
+                    font-size: 12px;
+                    padding: 0 10px;
+                    border-radius: 5px;
+                    transition: .2s;
+                    border: 1px solid #ff9000;
+                }
+                .pannel_link:hover {
                     background: none;
                     color: #ff9000;
                 }

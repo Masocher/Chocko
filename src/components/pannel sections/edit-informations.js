@@ -53,6 +53,8 @@ const EditInformations = () => {
                     </div>
 
                     <div className="password_description">اگه میخوای رمزتو تغییر بدی رمز جدیدتو اینجا بنویس در غیر این صورت خالی رهاش کن.</div>
+                    
+                    <div className="save_changes_btn">ذخیره اطلاعات</div>
                 </div>
             </div>
 
@@ -119,6 +121,23 @@ const EditInformations = () => {
                 }
                 .inf_input:focus {
                     border-color: #ff9000;
+                }
+
+                .save_changes_btn {
+                    padding: 10px 40px;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    border: 1px solid;
+                    background-color: #ff9000;
+                    color: #000;
+                    transition: .2s;
+                    cursor: pointer;
+                    width: fit-content;
+                    margin: 40px auto 0 auto;
+                }
+                .save_changes_btn:hover {
+                    background: none;
+                    color: #ff9000;
                 }
 
                 .lock_icon {

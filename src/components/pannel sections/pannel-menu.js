@@ -17,7 +17,7 @@ const PannelMenu = () => {
             <div className={`user_box_2 ${profileBoxStatus ? 'show' : ''}`}>
                 <div className="user_img"></div>
                 <div className="user_name">Masocher</div>
-                <div className="user_phone_number">09031698509</div>
+                <div className="user_phone_number">09012345678</div>
 
                 <div className="close_icon_2" onClick={() => dispatch(closeProfileBox())}><FontAwesomeIcon icon={faClose} /></div>    
             </div>
@@ -28,7 +28,7 @@ const PannelMenu = () => {
                 <div className="user_box">
                     <div className="user_img"></div>
                     <div className="user_name">Masocher</div>
-                    <div className="user_phone_number">09031698509</div>
+                    <div className="user_phone_number">09012345678</div>
                 </div>
 
                 <div className="dashboard_sections">

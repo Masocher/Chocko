@@ -84,7 +84,7 @@ const MovieRequest = () => {
                     font-size: 13px;
                 }
                 .movie_req_input:focus {
-                    border-color: #444;
+                    border-color: #555;
                 }
 
                 .movie_name {

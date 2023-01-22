@@ -76,7 +76,7 @@ const EditInformations = () => {
                 .edit_informations_box {
                     width: 100%;
                     height: 100%;
-                    background-color: #111;
+                    background-color: #000;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -107,7 +107,7 @@ const EditInformations = () => {
                 }
 
                 .inf_input {
-                    background-color: #000;
+                    background-color: #111;
                     border: 1px solid #000;
                     padding: 20px 25px;
                     border-radius: 15px;

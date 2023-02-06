@@ -39,6 +39,12 @@ const Layout = (props) => {
                     height: 95vh;
                 }
 
+                .sign_form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
                 .title_box {
                     color: #ff9000;
                     font-size: 40px;
@@ -48,31 +54,30 @@ const Layout = (props) => {
 
                 .sign_input {
                     background-color: #121212;
-                    padding: 8px 20px;
-                    border: 1px solid #2c2c2c;
+                    padding: 15px 20px;
                     border-radius: 5px;
                     margin-bottom: 15px;
-                    font-family: Lalezar;
-                    font-size: 16px;
+                    font-family: Vazir;
+                    font-size: 14px;
                     font-weight: 0;
-                    letter-spacing: .5px;
                     color: #fff;
                     width: 250px;
                     outline: 0;
+                    border: 1px solid #121212;
                 }
                 .sign_input::placeholder {
                     color: #757575;
-                    font-size: 14px;
+                    font-size: 12px;
                 }
                 .sign_input:focus {
-                    border-color: #5c5c5c;
+                    border-color: #454545;
                 }
 
                 .submit_btn {
                     background-color: #ff9000;
                     font-weight: 0;
                     color: #000;
-                    padding: 2px 0;
+                    padding: 5px 0;
                     border-radius: 5px;
                     border: 1px solid #ff9000;
                     cursor: pointer;
@@ -80,10 +85,19 @@ const Layout = (props) => {
                     margin-top: 10px;
                     width: 75px;
                     text-align: center;
+                    font-family: Lalezar;
+                    font-size: 14px;
+                    opacity: 1;
                 }
                 .submit_btn:hover {
                     background: none;
                     color: #ff9000;
+                }
+
+                .submit_btn.show {
+                    opacity: .65;
+                    pointer-events: none;
+                    user-select: none;
                 }
 
                 .sign_link {

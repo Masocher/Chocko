@@ -8,11 +8,16 @@ import { Provider } from "react-redux"
 // styles
 import './../../public/styles/main.css'
 
+// react-toastify
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <Layout>
         <Component {...pageProps} />
+        <ToastContainer />
       </Layout>
     </Provider>
   )

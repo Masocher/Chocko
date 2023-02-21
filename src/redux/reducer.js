@@ -1,14 +1,16 @@
 import {
     OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, CLOSE_CATEGORIES, OPEN_CATEGORIES,
     OPEN_DOWNLOAD_BOX, CLOSE_DOWNLOAD_BOX, OPEN_PROFILE_BOX, CLOSE_PROFILE_BOX,
+    SIGN_UP
 } from "./types";
 import { combineReducers } from "redux";
+import axios from "axios";
 
 let menuStatus = false;
 let temStatus = false;
 let categoriesStatus = false;
 let downloadBoxStatus = false
-let isAuthenticated = true;
+let isAuthenticated = false;
 let profileBoxStatus = false;
 let categoriesSectionsNumber = 1;
 let dashboardSectionsNumber = 1;
@@ -1342,13 +1344,32 @@ const reducer_16 = (state = dashboardSectionsNumber, action) => {
     }
 }
 
+let userInformation = {
+    username: null,
+    password: null
+}
+
+const signUp = (state = userInformation, action) => {
+    switch (action.type) {
+        case SIGN_UP:
+            state.username = action.payload.username
+            state.password = action.payload.password
+            axios.post('http://127.0.0.1:8000/api/auth/users/', {username : state.username, password : state.password})
+            .then(response => console.log(response))
+            return state
+    
+        default:
+            return state
+    }
+}
+
 const rootReducer = combineReducers({
     reducer_1, reducer_2, reducer_3,
     reducer_4, reducer_5, reducer_6,
     reducer_7, reducer_8, reducer_9,
     reducer_10, reducer_11, reducer_12,
     reducer_13, reducer_14, reducer_15,
-    reducer_16
+    reducer_16, signUp
 })
 
 export default rootReducer

@@ -21,7 +21,7 @@ const ProfileBox = () => {
         <div className={`profile_container ${dashboardSectionsNumber === 2 ? 'show' : ''}`}>
             <div className="profile_box">
                 <div className="profile_user_box">
-                    <Image style={{borderRadius: '10px'}} src={cover_img} fill="true" height={700} objectFit="cover" />
+                    <Image alt="user_cover" style={{borderRadius: '10px'}} src={cover_img} fill="true" height={700} objectFit="cover" />
 
                     <div className="user_informations_container">
                         <div className="user_informations_box">

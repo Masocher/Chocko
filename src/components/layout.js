@@ -53,24 +53,28 @@ const Layout = (props) => {
                 }
 
                 .sign_input {
-                    background-color: #121212;
-                    padding: 15px 20px;
-                    border-radius: 5px;
+                    background-color: #111;
+                    border: 1px solid #000;
+                    padding: 18px 25px;
+                    border-radius: 15px;
                     margin-bottom: 15px;
-                    font-family: Vazir;
-                    font-size: 14px;
-                    font-weight: 0;
                     color: #fff;
-                    width: 250px;
                     outline: 0;
-                    border: 1px solid #121212;
+                    font-size: 14px;
+                    font-family: Vazir;
+                    width: 250px;
+                    letter-spacing: .5px;
+                    transition: .2s;
                 }
                 .sign_input::placeholder {
                     color: #757575;
                     font-size: 12px;
                 }
                 .sign_input:focus {
-                    border-color: #454545;
+                    border-color: #ff9000;
+                }
+                .sign_input.error {
+                    border-color: red;
                 }
 
                 .submit_btn {

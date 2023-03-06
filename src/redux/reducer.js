@@ -292,6 +292,153 @@ let filmsAndSerialsInformation = [
             ]
         },
 
+        {
+            id: 7, categoryNumber: 0, category: "serial", manufacturingCountry: "هند", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+
+        {
+            id: 8, categoryNumber: 0, category: "serial", manufacturingCountry: "ایران", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+
+        {
+            id: 9, categoryNumber: 0, category: "serial", manufacturingCountry: "چین", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+
+        {
+            id: 10, categoryNumber: 0, category: "serial", manufacturingCountry: "آفریقای جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+
+        {
+            id: 11, categoryNumber: 0, category: "serial", manufacturingCountry: "آمریکا", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+
+        {
+            id: 12, categoryNumber: 0, category: "serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+
+        {
+            id: 13, categoryNumber: 0, category: "serial", manufacturingCountry: "انگلستان", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+
     ],
     [
         {
@@ -416,6 +563,146 @@ let filmsAndSerialsInformation = [
         },
         {
             id: 6, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 7, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 8, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 9, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 10, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 11, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 12, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 13, categoryNumber: 1, category: "korean-serial", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
             genres: [
                 { id: 0, title: "خانوادگی" },
                 { id: 1, title: "درام" },
@@ -576,6 +863,146 @@ let filmsAndSerialsInformation = [
                 { id: 9, name: "Sahil Mehta" },
             ]
         },
+        {
+            id: 7, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 8, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 9, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 10, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 11, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 12, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 13, categoryNumber: 2, category: "film", manufacturingCountry: "کره جنوبی", score: "7.5", votes: "7,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
     ],
     [
         {
@@ -700,6 +1127,146 @@ let filmsAndSerialsInformation = [
         },
         {
             id: 6, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 7, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 8, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 9, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 10, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 11, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 12, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 13, categoryNumber: 3, category: "indian-film", manufacturingCountry: "هند", score: "5.5", votes: "2,149",
             genres: [
                 { id: 0, title: "خانوادگی" },
                 { id: 1, title: "درام" },
@@ -860,6 +1427,146 @@ let filmsAndSerialsInformation = [
                 { id: 9, name: "Sahil Mehta" },
             ]
         },
+        {
+            id: 7, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 8, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 9, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 10, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 11, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 12, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 13, categoryNumber: 4, category: "anime", manufacturingCountry: "ژاپن", score: "8.8", votes: "14,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
     ],
     [
         {
@@ -984,6 +1691,146 @@ let filmsAndSerialsInformation = [
         },
         {
             id: 6, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 7, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 8, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 9, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 10, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 11, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 12, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
+            genres: [
+                { id: 0, title: "خانوادگی" },
+                { id: 1, title: "درام" },
+                { id: 2, title: "کمدی" },
+            ],
+            stars: [
+                { id: 0, name: "Sahil Mehta" },
+                { id: 1, name: "Sahil Mehta" },
+                { id: 2, name: "Sahil Mehta" },
+                { id: 3, name: "Sahil Mehta" },
+                { id: 4, name: "Sahil Mehta" },
+                { id: 5, name: "Sahil Mehta" },
+                { id: 6, name: "Sahil Mehta" },
+                { id: 7, name: "Sahil Mehta" },
+                { id: 8, name: "Sahil Mehta" },
+                { id: 9, name: "Sahil Mehta" },
+            ]
+        },
+        {
+            id: 13, categoryNumber: 5, category: "animation", manufacturingCountry: "آمریکا", score: "9.5", votes: "3,149",
             genres: [
                 { id: 0, title: "خانوادگی" },
                 { id: 1, title: "درام" },
@@ -1354,10 +2201,10 @@ const signUp = (state = userInformation, action) => {
         case SIGN_UP:
             state.username = action.payload.username
             state.password = action.payload.password
-            axios.post('http://127.0.0.1:8000/api/auth/users/', {username : state.username, password : state.password})
-            .then(response => console.log(response))
+            axios.post('http://127.0.0.1:8000/api/auth/users/', { username: state.username, password: state.password })
+                .then(response => console.log(response))
             return state
-    
+
         default:
             return state
     }

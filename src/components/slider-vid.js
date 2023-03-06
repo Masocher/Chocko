@@ -10,7 +10,7 @@ import { faCaretLeft } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-const SliderVid = ({ title, information }) => {
+const SliderVid = ({ title, information, itemName }) => {
 
     const [windowSize, setWindowSize] = useState({ width: undefined })
 
@@ -55,7 +55,7 @@ const SliderVid = ({ title, information }) => {
 
     return (
         <div className="slider_box">
-            <div className="slider_title">{title} <div className="show_more_btn">مشاهده بیشتر <span><FontAwesomeIcon icon={faCaretLeft} /></span></div></div>
+            <div className="slider_title">{title} <Link href={`/filmsAndSerialsPages/${itemName}`} style={{textDecoration: 'none', display: 'flex'}}><div className="show_more_btn">مشاهده بیشتر</div> <span className="show_more_icon"><FontAwesomeIcon icon={faCaretLeft} /></span></Link></div>
 
             <Swiper
                 style={{
@@ -114,8 +114,7 @@ const SliderVid = ({ title, information }) => {
                 .show_more_btn {
                     color: #999;
                     font-size: 14px;
-                    display: flex;
-                    align-items: center;
+                    display: inline;
                     transition: .2s;
                     cursor: pointer;
                 }
@@ -123,17 +122,17 @@ const SliderVid = ({ title, information }) => {
                     color: #ff9000;
                 }
 
-                .show_more_btn span {
+                .show_more_icon {
                     background-color: #ff9000;
+                    color: #000;
                     width: 20px;
                     height: 20px;
                     border-radius: 50%;
+                    font-size: 16px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     margin-right: 10px;
-                    font-size: 14px;
-                    color: #000;
                 }
 
                 .slide_title {
@@ -153,7 +152,8 @@ export const getServerSideProps = (props) => {
     return {
         data: {
             title: props.title,
-            information: props.information
+            information: props.information,
+            itemName: props.itemName
         }
     }
 }

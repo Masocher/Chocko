@@ -54,12 +54,12 @@ export default function Home() {
 
       <FilterBox />
 
-      <SliderVid title="سریال ها" information={filmsAndSerialsInformation[0]} />
-      <SliderVid title="سریال کره ای" information={filmsAndSerialsInformation[1]} />
-      <SliderVid title="فیلم ها" information={filmsAndSerialsInformation[2]} />
-      <SliderVid title="فیلم هندی" information={filmsAndSerialsInformation[3]} />
-      <SliderVid title="انیمه ها" information={filmsAndSerialsInformation[4]} />
-      <SliderVid title="انیمیشن ها" information={filmsAndSerialsInformation[5]} />
+      <SliderVid itemName='serials' title="سریال ها" information={filmsAndSerialsInformation[0]} />
+      <SliderVid itemName='korean_serials' title="سریال کره ای" information={filmsAndSerialsInformation[1]} />
+      <SliderVid itemName='films' title="فیلم ها" information={filmsAndSerialsInformation[2]} />
+      <SliderVid itemName='indian_films' title="فیلم هندی" information={filmsAndSerialsInformation[3]} />
+      <SliderVid itemName='animes' title="انیمه ها" information={filmsAndSerialsInformation[4]} />
+      <SliderVid itemName='animations' title="انیمیشن ها" information={filmsAndSerialsInformation[5]} />
 
       <Footer />
     </div>

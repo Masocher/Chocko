@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
     <Provider store={store}>
       <Layout>
         <Component {...pageProps} />
-        <ToastContainer />
+        <ToastContainer toastStyle={{ color: "#000" }} />
       </Layout>
     </Provider>
   )

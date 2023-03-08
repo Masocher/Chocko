@@ -2,7 +2,7 @@ import {
     OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, OPEN_CATEGORIES,
     CLOSE_CATEGORIES, OPEN_CATEGORIES_SECTIONS, OPEN_DOWNLOAD_BOX,
     CLOSE_DOWNLOAD_BOX, OPEN_PROFILE_BOX, CLOSE_PROFILE_BOX, OPEN_DASHBOARD_SECTIONS,
-    SIGN_UP
+    SIGN_UP, START_LOADING, STOP_LOADING
 } from "./types";
 
 export const openMenu = () => {
@@ -35,6 +35,13 @@ export const openProfileBox = () => {
 }
 export const closeProfileBox = () => {
     return { type: CLOSE_PROFILE_BOX }
+}
+
+export const startLoading = () => {
+    return { type: START_LOADING }
+}
+export const stopLoading = () => {
+    return { type: STOP_LOADING }
 }
 
 export const openCategoriesSections = (section_number) => {

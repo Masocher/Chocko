@@ -1,7 +1,7 @@
 import {
     OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, CLOSE_CATEGORIES, OPEN_CATEGORIES,
     OPEN_DOWNLOAD_BOX, CLOSE_DOWNLOAD_BOX, OPEN_PROFILE_BOX, CLOSE_PROFILE_BOX,
-    SIGN_UP
+    SIGN_UP, START_LOADING, STOP_LOADING
 } from "./types";
 import { combineReducers } from "redux";
 import axios from "axios";
@@ -12,6 +12,7 @@ let categoriesStatus = false;
 let downloadBoxStatus = false
 let isAuthenticated = false;
 let profileBoxStatus = false;
+let loadingStatus = false;
 let categoriesSectionsNumber = 1;
 let dashboardSectionsNumber = 1;
 
@@ -2191,9 +2192,18 @@ const reducer_16 = (state = dashboardSectionsNumber, action) => {
     }
 }
 
+const reducer_17 = (state = loadingStatus, action) => {
+    switch (action.type) {
+        case START_LOADING: return state = true
+        case STOP_LOADING: return state = false
+        default: return state
+    }
+}
+
 let userInformation = {
     username: null,
-    password: null
+    password: null,
+    email: null
 }
 
 const signUp = (state = userInformation, action) => {
@@ -2201,12 +2211,14 @@ const signUp = (state = userInformation, action) => {
         case SIGN_UP:
             state.username = action.payload.username
             state.password = action.payload.password
-            axios.post('http://127.0.0.1:8000/api/auth/users/', { username: state.username, password: state.password })
-                .then(response => console.log(response))
+            console.log(state.username + '---' + state.password)
+            axios.post('https://chocko-api.iran.liara.run/api/auth/users/', { username: state.username, password: state.password })
+                .then(response => console.log(response.data))
+                .catch(err => console.log(err.response.data))
             return state
 
         default:
-            return state
+            return state    
     }
 }
 
@@ -2216,7 +2228,7 @@ const rootReducer = combineReducers({
     reducer_7, reducer_8, reducer_9,
     reducer_10, reducer_11, reducer_12,
     reducer_13, reducer_14, reducer_15,
-    reducer_16, signUp
+    reducer_16, reducer_17, signUp
 })
 
 export default rootReducer

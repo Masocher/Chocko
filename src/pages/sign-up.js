@@ -1,5 +1,6 @@
 // tools
 import Link from "next/link"
+import Router from "next/router"
 import { useState } from "react";
 
 // react-toastify
@@ -8,6 +9,10 @@ import { toast } from "react-toastify";
 // react-redux
 import { useDispatch } from "react-redux";
 import { signUp } from "../redux/actions";
+import { startLoading, stopLoading } from "../redux/actions";
+
+// components
+import Loading from '../components/loading';
 
 const SignUp = () => {
 
@@ -34,10 +39,13 @@ const SignUp = () => {
             toast('رمز عبور قابل قبول نمی باشد', { hideProgressBar: true, autoClose: 2000, type: 'error' })
             setPasswordInputStatus(true)
         } else {
+            dispatch(startLoading())
             dispatch(signUp(username, password))
-            toast('اطلاعات ارسال شد', { hideProgressBar: true, autoClose: 2000, type: 'success' })
-            setUsernameInputStatus(false)
-            setPasswordInputStatus(false)
+            setTimeout(() => {
+                Router.push('/sign-in')
+                dispatch(stopLoading())
+            }, 4000)
+            toast('با موفقیت ثبت نام کردید', { hideProgressBar: true, autoClose: 2000, type: 'success' })
         }
     }
 
@@ -58,6 +66,8 @@ const SignUp = () => {
             }}>ثبت نام</div>
 
             <div className="sign_link">قبلا عضو بودی ؟<Link style={{ textDecoration: "none", color: "#ff9000", marginRight: "5px" }} href="/sign-in">ورود</Link></div>
+
+            <Loading />
         </div>
     )
 }

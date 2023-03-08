@@ -17,7 +17,7 @@ const SignIn = () => {
             <div className="title_box">فرم ورود</div>
 
             <form className="sign_form" onSubmit={e => e.preventDefault()}>
-                <input className="sign_input" type="email" placeholder="نام کاربری یا ایمیل" onChange={e => set_user_email(e.target.value)} />
+                <input className="sign_input" type="text" placeholder="نام کاربری" onChange={e => set_user_email(e.target.value)} />
                 <input className="sign_input" type="password" placeholder="رمز عبور" onChange={e => set_user_password(e.target.value)} />
                 <button className="submit_btn">ورود</button>
             </form>

@@ -12,7 +12,7 @@ const Loading = () => {
         <div className={`loading_coantiner ${loadingStatus ? 'show' : ''}`}>
             <div className="loading_box">
                 <Link href="/" style={{ textDecoration: "none" }}><div className="logo_box">CHO|CKO</div></Link>
-                <div class="lds-ellipsis">
+                <div className="lds-ellipsis">
                     <div></div>
                     <div></div>
                     <div></div>

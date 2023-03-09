@@ -57,9 +57,9 @@ const SignUp = () => {
 
             <div className="title_box">فرم عضویت</div>
 
-            <input autocomplete="off" onChange={e => setUsername(e.target.value)} className={`sign_input ${usernameInputStatus ? 'error' : ''}`} type="text" placeholder="نام کاربری" />
-            <input autocomplete="off" onChange={e => setPassword(e.target.value)} className={`sign_input ${passwordInputStatus ? 'error' : ''}`} type="password" placeholder="رمز عبور" />
-            <input autocomplete="off" className="sign_input" type="email" placeholder="ایمیل ( اختیاری )" />
+            <input autoComplete="off" onChange={e => setUsername(e.target.value)} className={`sign_input ${usernameInputStatus ? 'error' : ''}`} type="text" placeholder="نام کاربری" />
+            <input autoComplete="off" onChange={e => setPassword(e.target.value)} className={`sign_input ${passwordInputStatus ? 'error' : ''}`} type="password" placeholder="رمز عبور" />
+            <input autoComplete="off" className="sign_input" type="email" placeholder="ایمیل ( اختیاری )" />
 
             <div className="submit_btn" onClick={() => {
                 submitForm(username, password)

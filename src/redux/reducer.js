@@ -2228,6 +2228,8 @@ const keepUser = (state, token) => {
 const signIn = (state = userInformation, action) => {
     switch (action.type) {
         case SIGN_IN:
+            state.username = action.payload.username
+            state.password = action.payload.password
             axios.post('https://chocko-api.iran.liara.run/api/auth/token/login/', { username: state.username, password: state.password })
                 .then(response => {
                     keepUser(state, response.data.auth_token)

@@ -12,12 +12,12 @@ const MovieRequest = () => {
 
                 <div className="movie_or_serial_box">
                     <div className="item_input_box">
-                        <label for="movie" className="input_title">فیلم</label>
-                        <input id="movie" name="item_type" checked="checked" className="item_input" type='radio' />
+                        <label className="input_title">فیلم</label>
+                        <input id="movie" name="item_type" className="item_input" type='radio' />
                     </div>
 
                     <div className="item_input_box">
-                        <label for="serial" className="input_title">سریال</label>
+                        <label className="input_title">سریال</label>
                         <input id="serial" name="item_type" className="item_input" type='radio' />
                     </div>
                 </div>

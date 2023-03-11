@@ -4,18 +4,31 @@ import FilterBox from "../components/filter-box";
 import SliderVid from "../components/slider-vid";
 import Footer from "../components/footer";
 
-// redux
-import { useSelector } from "react-redux";
+// react-redux
+import { useSelector, useDispatch } from "react-redux";
+import { onStart } from "../redux/actions";
 
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
 
+// tools
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+
 export default function Home() {
 
   const topSliderSlides = useSelector(rootReducer => rootReducer.reducer_9)
   const filmsAndSerialsInformation = useSelector(rootReducer => rootReducer.reducer_11)
+
+  const dispatch = useDispatch()
+
+  const router = useRouter();
+
+  useEffect(() => {
+    dispatch(onStart())
+  }, [router.asPath]);
 
   return (
     <div className="home_container">

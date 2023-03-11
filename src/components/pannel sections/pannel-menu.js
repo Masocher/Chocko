@@ -1,10 +1,13 @@
-// redux
+// react-redux
 import { useSelector, useDispatch } from "react-redux"
-import { closeProfileBox, openDashboardSections } from "../../redux/actions"
+import { closeProfileBox, openDashboardSections, logOut } from "../../redux/actions"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faClose, faStar, faHome, faPlus, faEdit, faUser, faMessage } from "@fortawesome/free-solid-svg-icons"
+import { faClose, faStar, faHome, faPlus, faEdit, faUser } from "@fortawesome/free-solid-svg-icons"
+
+// tools
+import Link from "next/link"
 
 const PannelMenu = () => {
 
@@ -15,6 +18,8 @@ const PannelMenu = () => {
     return (
         <div className="pannel_menu">
             <div className={`user_box_2 ${profileBoxStatus ? 'show' : ''}`}>
+                <Link href="/"><div className="log_out_btn_2" onClick={() => dispatch(logOut())}>خروج از حساب</div></Link>
+
                 <div className="user_img"></div>
                 <div className="user_name">Masocher</div>
                 <div className="user_phone_number">09012345678</div>
@@ -38,6 +43,8 @@ const PannelMenu = () => {
                     <div className={`dashboard_section ${dashboardSectionsNumber == 4 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(4))}><FontAwesomeIcon icon={faPlus} /> <div>درخواست فیلم و سریال</div></div>
                     <div className={`dashboard_section ${dashboardSectionsNumber == 5 ? 'show' : ''}`} onClick={() => dispatch(openDashboardSections(5))}><FontAwesomeIcon icon={faEdit} /> <div>ویرایش اطلاعات</div></div>
                 </div>
+
+                <div className="log_out_btn" onClick={() => dispatch(logOut())}>خروج از حساب کاربری</div>
             </div>
 
             <style jsx>{`
@@ -165,6 +172,30 @@ const PannelMenu = () => {
                     right: 20px;
                     top: 20px;
                     cursor: pointer;
+                }
+
+                .log_out_btn, .log_out_btn_2 {
+                    background-color: #ff9000;
+                    color: #000;
+                    border: 1px solid #ff9000;
+                    cursor: pointer;
+                    transition: .2s;
+                    font-size: 13px;
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                }
+                .log_out_btn:hover, .log_out_btn_2:hover {
+                    background: none;
+                    color: #ff9000;
+                }
+
+                .log_out_btn_2 {
+                    margin: 0;
+                    position: absolute;
+                    left: 20px;
+                    top: 20px;
+                    font-size: 11px;
                 }
 
                 @media (max-width: 1025px) {

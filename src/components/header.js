@@ -8,6 +8,7 @@ import { openMenu, openProfileBox } from "./../redux/actions"
 
 // tools
 import Link from "next/link"
+import { useEffect } from "react"
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -16,7 +17,9 @@ import { faSearch, faBars, faUser } from "@fortawesome/free-solid-svg-icons"
 const Header = () => {
 
     const dispatch = useDispatch()
-    const isAuthenticated = useSelector(rootReducer => rootReducer.reducer_14)
+
+    let authenticated = useSelector(rootReducer => rootReducer.signIn.authenticated)
+    console.log('authenticated : ' + authenticated)
 
     return (
         <div className="header_container">
@@ -31,7 +34,7 @@ const Header = () => {
                 <div className="menu_icon" onClick={() => dispatch(openMenu())}><FontAwesomeIcon icon={faBars} /></div>
 
                 {
-                    isAuthenticated ?
+                    authenticated === true ?
                         <div className="profile_box">
                             <div className="profile_icon" onClick={() => dispatch(openProfileBox())}><FontAwesomeIcon icon={faUser} /></div>
                         </div>

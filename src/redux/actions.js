@@ -2,7 +2,7 @@ import {
     OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, OPEN_CATEGORIES,
     CLOSE_CATEGORIES, OPEN_CATEGORIES_SECTIONS, OPEN_DOWNLOAD_BOX,
     CLOSE_DOWNLOAD_BOX, OPEN_PROFILE_BOX, CLOSE_PROFILE_BOX, OPEN_DASHBOARD_SECTIONS,
-    SIGN_UP, START_LOADING, STOP_LOADING
+    SIGN_UP, SIGN_IN, LOG_OUT, ON_START, START_LOADING, STOP_LOADING
 } from "./types";
 
 export const openMenu = () => {
@@ -54,4 +54,13 @@ export const openDashboardSections = (section_number) => {
 
 export const signUp = (username, password) => {
     return { type: SIGN_UP, payload: {username : username, password : password} }
+}
+export const signIn = (username, password) => {
+    return { type: SIGN_IN, payload: {username : username, password : password} }
+}
+export const logOut = () => {
+    return { type: LOG_OUT }
+}
+export const onStart = () => {
+    return { type: ON_START }
 }

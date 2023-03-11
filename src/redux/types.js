@@ -20,3 +20,6 @@ export const OPEN_DASHBOARD_SECTIONS = 'OPEN_DASHBOARD_SECTIONS';
 export const SET_LIGHT_STATUS = 'SET_LIGHT_STATUS';
 
 export const SIGN_UP = 'SIGN_UP';
+export const SIGN_IN = 'SIGN_IN';
+export const LOG_OUT = 'LOG_OUT';
+export const ON_START = 'ON_START';

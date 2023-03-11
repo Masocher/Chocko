@@ -1,16 +1,23 @@
 import {
     OPEN_MENU, CLOSE_MENU, SET_LIGHT_STATUS, CLOSE_CATEGORIES, OPEN_CATEGORIES,
     OPEN_DOWNLOAD_BOX, CLOSE_DOWNLOAD_BOX, OPEN_PROFILE_BOX, CLOSE_PROFILE_BOX,
-    SIGN_UP, START_LOADING, STOP_LOADING
+    SIGN_UP, SIGN_IN, LOG_OUT, ON_START, START_LOADING, STOP_LOADING
 } from "./types";
 import { combineReducers } from "redux";
 import axios from "axios";
+
+let userInformation = {
+    username: null,
+    password: null,
+    email: null,
+    token: null,
+    authenticated: false,
+}
 
 let menuStatus = false;
 let temStatus = false;
 let categoriesStatus = false;
 let downloadBoxStatus = false
-let isAuthenticated = false;
 let profileBoxStatus = false;
 let loadingStatus = false;
 let categoriesSectionsNumber = 1;
@@ -2169,10 +2176,6 @@ const reducer_13 = (state = downloadBoxStatus, action) => {
     }
 }
 
-const reducer_14 = (state = isAuthenticated) => {
-    return state
-}
-
 const reducer_15 = (state = profileBoxStatus, action) => {
     switch (action.type) {
         case OPEN_PROFILE_BOX: return state = true
@@ -2200,25 +2203,84 @@ const reducer_17 = (state = loadingStatus, action) => {
     }
 }
 
-let userInformation = {
-    username: null,
-    password: null,
-    email: null
-}
-
 const signUp = (state = userInformation, action) => {
     switch (action.type) {
         case SIGN_UP:
             state.username = action.payload.username
             state.password = action.payload.password
-            console.log(state.username + '---' + state.password)
             axios.post('https://chocko-api.iran.liara.run/api/auth/users/', { username: state.username, password: state.password })
                 .then(response => console.log(response.data))
-                .catch(err => console.log(err.response.data))
+                .catch(error => console.log(error.response))
             return state
 
         default:
             return state    
+    }
+}
+
+const keepUser = (state, token) => {
+    axios.defaults.headers.common['Authorization'] = "Token " + token
+    state.token = token
+    state.authenticated = true
+    localStorage.setItem('token', token)
+}
+
+const signIn = (state = userInformation, action) => {
+    switch (action.type) {
+        case SIGN_IN:
+            axios.post('https://chocko-api.iran.liara.run/api/auth/token/login/', { username: state.username, password: state.password })
+                .then(response => {
+                    keepUser(state, response.data.auth_token)
+                })
+                .catch(error => console.log(error.response))
+            console.log(state)
+            return state
+    
+        default:
+            return state
+    }
+}
+
+const logOut = (state = userInformation, action) => {
+    switch (action.type) {
+        case LOG_OUT:
+            state.token = ''
+            state.authenticated = false
+            localStorage.removeItem('token')
+            axios.defaults.headers.common['Authorization'] = ''
+            console.log(state)
+            return state
+
+        default:
+            return state
+    }
+}
+
+const onStart = (state = userInformation, action) => {
+    switch (action.type) {
+        case ON_START:
+            let token = localStorage.getItem('token')
+            if (token) {
+                axios.get('https://chocko-api.iran.liara.run/api/auth/users/me')
+                    .then(response => {
+                        keepUser(state, token)
+                    })
+                    .catch(error => {
+                        state.token = ''
+                        localStorage.removeItem('token')
+                        axios.defaults.headers.common['Authorization'] = ''
+                        console.log(error.response);
+                    })
+            } else {
+                state.token = ''
+                localStorage.removeItem('token')
+                axios.defaults.headers.common['Authorization'] = ''
+            }
+
+            return state
+    
+        default:
+            return state
     }
 }
 
@@ -2227,8 +2289,9 @@ const rootReducer = combineReducers({
     reducer_4, reducer_5, reducer_6,
     reducer_7, reducer_8, reducer_9,
     reducer_10, reducer_11, reducer_12,
-    reducer_13, reducer_14, reducer_15,
-    reducer_16, reducer_17, signUp
+    reducer_13, reducer_15, reducer_16,
+    reducer_17, signUp, signIn, logOut,
+    logOut, onStart
 })
 
 export default rootReducer

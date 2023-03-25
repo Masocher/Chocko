@@ -2228,6 +2228,7 @@ const keepUser = (state, token) => {
 const signIn = (state = userInformation, action) => {
     switch (action.type) {
         case SIGN_IN:
+            axios.defaults.headers.common['Authorization'] = ""
             state.username = action.payload.username
             state.password = action.payload.password
             axios.post('https://chocko-api.iran.liara.run/api/auth/token/login/', { username: state.username, password: state.password })
@@ -2250,7 +2251,6 @@ const logOut = (state = userInformation, action) => {
             state.authenticated = false
             localStorage.removeItem('token')
             axios.defaults.headers.common['Authorization'] = ''
-            console.log(state)
             return state
 
         default:
@@ -2263,18 +2263,20 @@ const onStart = (state = userInformation, action) => {
         case ON_START:
             let token = localStorage.getItem('token')
             if (token) {
+                axios.defaults.headers.common['Authorization'] = "Token " + token
                 axios.get('https://chocko-api.iran.liara.run/api/auth/users/me')
                     .then(response => {
                         keepUser(state, token)
                     })
                     .catch(error => {
                         state.token = ''
+                        state.authenticated = false
                         localStorage.removeItem('token')
                         axios.defaults.headers.common['Authorization'] = ''
-                        console.log(error.response);
                     })
             } else {
                 state.token = ''
+                state.authenticated = false
                 localStorage.removeItem('token')
                 axios.defaults.headers.common['Authorization'] = ''
             }

@@ -41,15 +41,15 @@ const SignIn = () => {
         } else {
             dispatch(startLoading())
             dispatch(signIn(username, password))
-            setTimeout(() => {
-                Router.push('/')
-                dispatch(stopLoading())
-            }, 4000)
             toast('با موفقیت وارد شدید', { hideProgressBar: true, autoClose: 2000, type: 'success' })
+            Router.push('/')
+            dispatch(stopLoading())
         }
     }
 
     const dispatch = useDispatch()
+
+    let [status, setStatus] = useState(false)
 
     return (
         <div className="sign_container">
@@ -61,6 +61,7 @@ const SignIn = () => {
                 <input className={`sign_input ${usernameInputStatus ? 'error' : ''}`} type="text" placeholder="نام کاربری" onChange={e => setUsername(e.target.value)} />
                 <input className={`sign_input ${passwordInputStatus ? 'error' : ''}`} type="password" placeholder="رمز عبور" onChange={e => setPassword(e.target.value)} />
                 <button className="submit_btn" onClick={() => {
+                    setStatus(true)
                     submitForm(username, password)
                 }}>ورود</button>
             </form>

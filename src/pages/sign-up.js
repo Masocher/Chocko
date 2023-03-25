@@ -41,15 +41,16 @@ const SignUp = () => {
         } else {
             dispatch(startLoading())
             dispatch(signUp(username, password))
-            setTimeout(() => {
-                Router.push('/sign-in')
-                dispatch(stopLoading())
-            }, 4000)
             toast('با موفقیت ثبت نام کردید', { hideProgressBar: true, autoClose: 2000, type: 'success' })
+            Router.push('/sign-in')
+            dispatch(stopLoading())
         }
     }
 
     const dispatch = useDispatch()
+
+    let [
+        , setStatus] = useState(false)
 
     return (
         <div className="sign_container">
@@ -62,6 +63,7 @@ const SignUp = () => {
             <input className="sign_input" type="email" placeholder="ایمیل ( اختیاری )" />
 
             <div className="submit_btn" onClick={() => {
+                setStatus(true)
                 submitForm(username, password)
             }}>ثبت نام</div>
 

@@ -7,7 +7,7 @@ const Movie = (data) => {
             <style jsx>{`
                 .movie_container {
                     position: relative;
-                    margin: 0 10px 40px 10px;
+                    margin: 0 10px 60px 10px;
                 }
 
                 .movie_img {

@@ -1,6 +1,3 @@
-// tools
-import Link from "next/link"
-
 // redux
 import { useSelector } from "react-redux"
 
@@ -11,7 +8,7 @@ const Loading = () => {
     return (
         <div className={`loading_coantiner ${loadingStatus ? 'show' : ''}`}>
             <div className="loading_box">
-                <Link href="/" style={{ textDecoration: "none" }}><div className="logo_box">CHO|CKO</div></Link>
+                <div className="logo_box">CHO|CKO</div>
                 <div className="lds-ellipsis">
                     <div></div>
                     <div></div>

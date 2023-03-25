@@ -18,9 +18,6 @@ const Header = () => {
 
     const dispatch = useDispatch()
 
-    let authenticated = useSelector(rootReducer => rootReducer.signIn.authenticated)
-    console.log('authenticated : ' + authenticated)
-
     return (
         <div className="header_container">
             <Link href="/" style={{ textDecoration: "none" }}><div className="logo_box">CHO|CKO</div></Link>
@@ -34,7 +31,7 @@ const Header = () => {
                 <div className="menu_icon" onClick={() => dispatch(openMenu())}><FontAwesomeIcon icon={faBars} /></div>
 
                 {
-                    authenticated === true ?
+                    useSelector(rootReducer => rootReducer.signIn.authenticated) === true ?
                         <div className="profile_box">
                             <div className="profile_icon" onClick={() => dispatch(openProfileBox())}><FontAwesomeIcon icon={faUser} /></div>
                         </div>
